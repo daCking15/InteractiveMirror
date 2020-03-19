@@ -1,133 +1,140 @@
-var labelArea = 160;
-var chart,
-        width = 400,
-        bar_height = 2,
-        height = bar_height * 200;
-var rightOffset = width + labelArea;
-var lCol = "Infections";
-var rCol = "Deaths";
-var xFrom = d3.scale.linear()
-        .range([0, width]);
-var xTo = d3.scale.linear()
-        .range([0, width]);
-var y = d3.scale.ordinal()
-        .rangeBands([20, height]);
+window.onload=function(){
 
-var date = "15-Mar";
-if (localStorage.getItem("currentDate") != null){
-    date = localStorage.getItem("currentDate");
-}
+    var labelArea = 160;
+    var chart,
+            width = 400,
+            bar_height = 2,
+            height = bar_height * 200;
+    var rightOffset = width + labelArea;
+    var lCol = "Infections";
+    var rCol = "Deaths";
+    var xFrom = d3.scale.linear()
+            .range([0, width]);
+    var xTo = d3.scale.linear()
+            .range([0, width]);
+    var y = d3.scale.ordinal()
+            .rangeBands([20, height]);
+    
+    var date;
+    if (localStorage.getItem("changeDate")==null){
+        date = "22-Jan";
+    }else{
+        date = localStorage.getItem("changeDate");
+    }
+    document.getElementById("date").innerHTML = date;
+    
+    //Prompt for date
+    document.getElementById("button").addEventListener("click", changeDate);
+    function changeDate(){
+        date = prompt("Date: ", "");
+        document.getElementById("date").innerHTML = date;
+        localStorage.setItem("changeDate", date);
+    }
 
-function changeDate(){
-    localStorage.setItem("currentDate", document.getElementById("changeDate").getAttribute("value"));
-    date = localStorage.getItem("currentDate");
+    function render(data) {
 
-}
-
-
-function render(data) {
-
-    var dateSlice = new Array();
-    data.forEach(
-        function(item){
-            if (item.Date == date){
-                dateSlice.push(item);
+        var dateSlice = new Array();
+        data.forEach(
+            function(item){
+                if (item.Date == date){
+                    dateSlice.push(item);
+                }
             }
-        }
-    );
+        );
 
-    var chart = d3.select("body")
-            .append('svg')
-            .attr('class', 'chart')
-            .attr('width', labelArea + width + width)
-            .attr('height', height);
+        var chart = d3.select("body")
+                .append('svg')
+                .attr('class', 'chart')
+                .attr('width', labelArea + width + width)
+                .attr('height', height);
 
-    xFrom.domain(d3.extent(dateSlice, function (d) {
-        return d[lCol];
-    }));
-    xTo.domain(d3.extent(dateSlice, function (d) {
-        return d[rCol];
-    }));
+        xFrom.domain(d3.extent(dateSlice, function (d) {
+            return d[lCol];
+        }));
+        xTo.domain(d3.extent(dateSlice, function (d) {
+            return d[rCol];
+        }));
 
-    y.domain(dateSlice.map(function (d) {
-        return d.Country;
-    }));
+        y.domain(dateSlice.map(function (d) {
+            return d.Country;
+        }));
 
-    var yPosByIndex = function (d) {
-        return y(d.Country);
-    };
-    chart.selectAll("rect.left")
-            .data(dateSlice)
-            .enter().append("rect")
-            .attr("x", function (d) {
-                return width - xFrom(d[lCol]);
-            })  
-            .attr("y", yPosByIndex)
-            .attr("class", "left")
-            .attr("width", function (d) {
-                return xFrom(d[lCol]);
-            })
-            .attr("height", y.rangeBand());
-    chart.selectAll("text.leftscore")
-            .data(dateSlice)
-            .enter().append("text")
-            .attr("x", function (d) {
-                return width - xFrom(d[lCol])-40;
-            })
-            .attr("y", function (d) {
-                return y(d.Country) + y.rangeBand() / 2;
-            })
-            .attr("dx", "20")
-            .attr("dy", ".36em")
-            .attr("text-anchor", "end")
-            .attr('class', 'leftscore')
-            .text(function(d){return d[lCol];});
-    chart.selectAll("text.name")
-            .data(dateSlice)
-            .enter().append("text")
-            .attr("x", (labelArea / 2) + width)
-            .attr("y", function (d) {
-                return y(d.Country) + y.rangeBand() / 2;
-            })
-            .attr("dy", ".20em")
-            .attr("text-anchor", "middle")
-            .attr('class', 'name')
-            .text(function(d){return d.Country;});
+        var yPosByIndex = function (d) {
+            return y(d.Country);
+        };
+        chart.selectAll("rect.left")
+                .data(dateSlice)
+                .enter().append("rect")
+                .attr("x", function (d) {
+                    return width - xFrom(d[lCol]);
+                })  
+                .attr("y", yPosByIndex)
+                .attr("class", "left")
+                .attr("width", function (d) {
+                    return xFrom(d[lCol]);
+                })
+                .attr("height", y.rangeBand());
+        chart.selectAll("text.leftscore")
+                .data(dateSlice)
+                .enter().append("text")
+                .attr("x", function (d) {
+                    return width - xFrom(d[lCol])-40;
+                })
+                .attr("y", function (d) {
+                    return y(d.Country) + y.rangeBand() / 2;
+                })
+                .attr("dx", "20")
+                .attr("dy", ".36em")
+                .attr("text-anchor", "end")
+                .attr('class', 'leftscore')
+                .text(function(d){return d[lCol];});
+        chart.selectAll("text.name")
+                .data(dateSlice)
+                .enter().append("text")
+                .attr("x", (labelArea / 2) + width)
+                .attr("y", function (d) {
+                    return y(d.Country) + y.rangeBand() / 2;
+                })
+                .attr("dy", ".20em")
+                .attr("text-anchor", "middle")
+                .attr('class', 'name')
+                .text(function(d){return d.Country;});
 
-    chart.selectAll("rect.right")
-            .data(dateSlice)
-            .enter().append("rect")
-            .attr("x", rightOffset)
-            .attr("y", yPosByIndex)
-            .attr("class", "right")
-            .attr("width", function (d) {
-                return xTo(d[rCol]);
-            })
-            .attr("height", y.rangeBand());
-    chart.selectAll("text.score")
-            .data(dateSlice)
-            .enter().append("text")
-            .attr("x", function (d) {
-                return xTo(d[rCol]) + rightOffset+40;
-            })
-            .attr("y", function (d) {
-                return y(d.Country) + y.rangeBand() / 2;
-            })
-            .attr("dx", -5)
-            .attr("dy", ".36em")
-            .attr("text-anchor", "end")
-            .attr('class', 'score')
-            .text(function(d){return d[rCol];});
-    chart.append("text").attr("x",width/3).attr("y", 10).attr("class","title").text("Infections");
-    chart.append("text").attr("x",width/3+rightOffset).attr("y", 10).attr("class","title").text("Deaths");
-    chart.append("text").attr("x",width+labelArea/3).attr("y", 10).attr("class","title").text("Country");
+        chart.selectAll("rect.right")
+                .data(dateSlice)
+                .enter().append("rect")
+                .attr("x", rightOffset)
+                .attr("y", yPosByIndex)
+                .attr("class", "right")
+                .attr("width", function (d) {
+                    return xTo(d[rCol]);
+                })
+                .attr("height", y.rangeBand());
+        chart.selectAll("text.score")
+                .data(dateSlice)
+                .enter().append("text")
+                .attr("x", function (d) {
+                    return xTo(d[rCol]) + rightOffset+40;
+                })
+                .attr("y", function (d) {
+                    return y(d.Country) + y.rangeBand() / 2;
+                })
+                .attr("dx", -5)
+                .attr("dy", ".36em")
+                .attr("text-anchor", "end")
+                .attr('class', 'score')
+                .text(function(d){return d[rCol];});
+        chart.append("text").attr("x",width/3).attr("y", 10).attr("class","title").text("Infections");
+        chart.append("text").attr("x",width/3+rightOffset).attr("y", 10).attr("class","title").text("Deaths");
+        chart.append("text").attr("x",width+labelArea/3).attr("y", 10).attr("class","title").text("Country");
+    }
+
+    function type(d) {
+        d["Deaths"] = +d["Deaths"];
+        d["Infections"] = +d["Infections"];
+        d["Recovered"] = +d["Recovered"];
+        return d;
+    }
+
+    d3.csv("Corona_March15th.csv", type, render);
 }
-
-function type(d) {
-    d["Deaths"] = +d["Deaths"];
-    d["Infections"] = +d["Infections"];
-    d["Recovered"] = +d["Recovered"];
-    return d;
-}
-
-d3.csv("Corona_March15th.csv", type, render);

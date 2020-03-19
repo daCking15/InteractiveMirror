@@ -6,14 +6,27 @@ window.onload=function(){
             bar_height = 2,
             height = bar_height * 200;
     var rightOffset = width + labelArea;
-    var lCol = "Infections";
-    var rCol = "Deaths";
     var xFrom = d3.scale.linear()
             .range([0, width]);
     var xTo = d3.scale.linear()
             .range([0, width]);
     var y = d3.scale.ordinal()
             .rangeBands([20, height]);
+    
+    var lCol;
+    var rCol;
+    if (localStorage.getItem("left")==null){
+        lCol = "Infections";
+    }else{
+        lCol = localStorage.getItem("left");
+    }
+    if (localStorage.getItem("right")==null){
+        rCol = "Deaths";
+    }else{
+        rCol = localStorage.getItem("right");
+    }
+    document.getElementById("left").addEventListener("click", changeLeft);
+    document.getElementById("right").addEventListener("click", changeRight);
     
     var date;
     if (localStorage.getItem("changeDate")==null){
@@ -29,6 +42,16 @@ window.onload=function(){
         date = prompt("Date: ", "");
         document.getElementById("date").innerHTML = date;
         localStorage.setItem("changeDate", date);
+    }
+    
+    function changeLeft(){
+        lCol = prompt("Data: ", "");
+        localStorage.setItem("left", lCol);
+    }
+    
+    function changeRight(){
+        rCol = prompt("Data: ", "");
+        localStorage.setItem("right", rCol);
     }
 
     function render(data) {
@@ -124,8 +147,8 @@ window.onload=function(){
                 .attr("text-anchor", "end")
                 .attr('class', 'score')
                 .text(function(d){return d[rCol];});
-        chart.append("text").attr("x",width/3).attr("y", 10).attr("class","title").text("Infections");
-        chart.append("text").attr("x",width/3+rightOffset).attr("y", 10).attr("class","title").text("Deaths");
+        chart.append("text").attr("x",width/3).attr("y", 10).attr("class","title").text(lCol);
+        chart.append("text").attr("x",width/3+rightOffset).attr("y", 10).attr("class","title").text(rCol);
         chart.append("text").attr("x",width+labelArea/3).attr("y", 10).attr("class","title").text("Country");
     }
 

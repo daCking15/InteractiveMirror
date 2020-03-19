@@ -28,3 +28,6 @@
 .chart text.title {
     fill: #2216ff;
 }
+.button {
+    display:inline-block;
+}

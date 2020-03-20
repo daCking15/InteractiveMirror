@@ -53,6 +53,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,China,80945,64196,3180
 14-Mar,China,80977,65660,3193
 15-Mar,China,81003,67017,3203
+16-Mar,China,81033,67910,3217
+17-Mar,China,81058,68798,3230
+18-Mar,China,81102,69755,3241
+19-Mar,China,81156,70535,3249
 22-Jan,Italy,0,0,0
 23-Jan,Italy,0,0,0
 24-Jan,Italy,0,0,0
@@ -107,6 +111,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,Italy,17660,1439,1266
 14-Mar,Italy,21157,1966,1441
 15-Mar,Italy,24747,2335,1809
+16-Mar,Italy,27980,2749,2158
+17-Mar,Italy,31506,2941,2503
+18-Mar,Italy,35713,4025,2978
+19-Mar,Italy,41035,4440,3405
 22-Jan,Iran,0,0,0
 23-Jan,Iran,0,0,0
 24-Jan,Iran,0,0,0
@@ -161,6 +169,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,Iran,11364,2959,514
 14-Mar,Iran,12729,2959,611
 15-Mar,Iran,13938,4590,724
+16-Mar,Iran,14991,4590,853
+17-Mar,Iran,16169,5389,988
+18-Mar,Iran,17361,5389,1135
+19-Mar,Iran,18407,5710,1284
 22-Jan,South Korea,1,0,0
 23-Jan,South Korea,1,0,0
 24-Jan,South Korea,2,0,0
@@ -215,6 +227,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,South Korea,7979,510,66
 14-Mar,South Korea,8086,510,72
 15-Mar,South Korea,8162,510,75
+16-Mar,South Korea,8236,1137,75
+17-Mar,South Korea,8320,1407,81
+18-Mar,South Korea,8413,1540,84
+19-Mar,South Korea,8565,1540,91
 22-Jan,France,0,0,0
 23-Jan,France,0,0,0
 24-Jan,France,2,0,0
@@ -269,6 +285,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,France,3667,12,79
 14-Mar,France,4475,12,91
 15-Mar,France,4506,12,91
+16-Mar,France,6656,12,148
+17-Mar,France,7687,12,148
+18-Mar,France,9090,12,148
+19-Mar,France,10928,12,243
 22-Jan,Spain,0,0,0
 23-Jan,Spain,0,0,0
 24-Jan,Spain,0,0,0
@@ -323,6 +343,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,Spain,5232,193,133
 14-Mar,Spain,6391,517,195
 15-Mar,Spain,7798,517,289
+16-Mar,Spain,9942,530,342
+17-Mar,Spain,11748,1028,533
+18-Mar,Spain,13910,1081,623
+19-Mar,Spain,17963,1107,830
 22-Jan,Germany,0,0,0
 23-Jan,Germany,0,0,0
 24-Jan,Germany,0,0,0
@@ -377,6 +401,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,Germany,3675,46,7
 14-Mar,Germany,4585,46,9
 15-Mar,Germany,5795,46,11
+16-Mar,Germany,7272,67,17
+17-Mar,Germany,9257,67,24
+18-Mar,Germany,12327,105,28
+19-Mar,Germany,15320,113,44
 22-Jan,United States,1,0,0
 23-Jan,United States,1,0,0
 24-Jan,United States,2,0,0
@@ -431,6 +459,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,United States,2179,12,47
 14-Mar,United States,2726,12,54
 15-Mar,United States,3495,12,63
+16-Mar,United States,4626,17,85
+17-Mar,United States,6414,17,108
+18-Mar,United States,7776,17,118
+19-Mar,United States,13669,17,200
 22-Jan,Total,555,28,17
 23-Jan,Total,653,30,18
 24-Jan,Total,941,36,26
@@ -485,42 +517,10 @@ Date,Country,Infections,Recovered,Deaths
 13-Mar,Total,145193,70251,5404
 14-Mar,Total,156097,72624,5819
 15-Mar,Total,167449,76034,6440
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+16-Mar,Total,181527,78088,7126
+17-Mar,Total,197142,80840,7905
+18-Mar,Total,214910,83207,8733
+19-Mar,Total,242708,84854,9867
 ,,,,
 ,,,,
 ,,,,

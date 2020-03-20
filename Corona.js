@@ -6,10 +6,14 @@ window.onload=function(){
             bar_height = 2,
             height = bar_height * 200;
     var rightOffset = width + labelArea;
+    //var xFrom = d3.scale.linear()
+            //.range([0, width]);
     var xFrom = d3.scale.linear()
-            .range([0, width]);
+            .range([0, 300]);
+    //var xTo = d3.scale.linear()
+            //.range([0, width]);
     var xTo = d3.scale.linear()
-            .range([0, width]);
+            .range([0, 330]);
     var y = d3.scale.ordinal()
             .rangeBands([20, height]);
     
@@ -137,7 +141,7 @@ window.onload=function(){
                 .data(dateSlice)
                 .enter().append("text")
                 .attr("x", function (d) {
-                    return xTo(d[rCol]) + rightOffset+40;
+                    return xTo(d[rCol]) + rightOffset+55;
                 })
                 .attr("y", function (d) {
                     return y(d.Country) + y.rangeBand() / 2;
@@ -159,5 +163,5 @@ window.onload=function(){
         return d;
     }
 
-    d3.csv("Corona_March15th.csv", type, render);
+    d3.csv("Corona_March19th.csv", type, render);
 }

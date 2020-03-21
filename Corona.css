@@ -28,6 +28,33 @@
 .chart text.title {
     fill: #2216ff;
 }
+
+
+.html{
+    width: 98%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right:1%;
+}
+.CountryDiv{
+    width: 20%;
+    height: 100%;
+    float:left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.LeftMirrorDiv{
+    width: 40%;
+    float:left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.RightMirrorDiv{
+    width: 40%;
+    float:left;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
 .button {
     display:inline-block;
 }

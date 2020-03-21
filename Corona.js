@@ -1,9 +1,8 @@
 window.onload=function(){
+    main();
+}
     
-    var scroll = document.getElementById("scroll");
-    console.log(scroll.width);
-    scroll.scrollLeft = 100;
-    
+function main (){
     //width of Country Middle Section
     var labelArea = 160;
     var textArea = 75;
@@ -12,7 +11,7 @@ window.onload=function(){
     
     //chart sizing variables
     var chart,
-        width = 2500,           
+        width = 2500;
         bar_height = 2,
         height = bar_height * 200;
     var rightOffset = 50;
@@ -169,9 +168,9 @@ window.onload=function(){
                 .attr("text-anchor", "end")
                 .attr('class', 'score')
                 .text(function(d){return d[rCol];});
-        leftChart.append("text").attr("x",width/3).attr("y", 10).attr("class","title").text(lCol);
-        rightChart.append("text").attr("x",width/3+rightOffset).attr("y", 10).attr("class","title").text(rCol);
-        countries.append("text").attr("x",width+labelArea/3).attr("y", 10).attr("class","title").text("Country");
+        leftChart.append("text").attr("x",width-80).attr("y", 15).attr("class","title").text(lCol);
+        rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(rCol);
+        countries.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Country");
     }
 
     function type(d) {

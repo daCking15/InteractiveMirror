@@ -49,6 +49,13 @@
     overflow-y: hidden;
     overflow-x: scroll;
 }
+.InsideCountry{
+    min-height: 1px;   
+}
+.InsideMirror{
+    width: 2500px;
+    min-height: 1px;
+}
 .RightMirrorDiv{
     width: 40%;
     float:left;

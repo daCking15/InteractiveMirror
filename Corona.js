@@ -1,5 +1,16 @@
 window.onload=function(){
     main();
+    mirror();
+}
+
+function mirror(){
+    $('.LeftMirrorDiv').scrollLeft($('.InsideMirror').innerWidth());
+    console.log($(".LeftMirrorDiv").scrollLeft());
+    $(document).ready(function(){
+        $('.LeftMirrorDiv').on('scroll', function () {
+            $('.RightMirrorDiv').scrollLeft($('.InsideMirror').innerWidth() - $(this).scrollLeft());
+        });
+    });
 }
     
 function main (){

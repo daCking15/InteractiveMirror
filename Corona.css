@@ -41,7 +41,7 @@
     height: 100%;
     float:left;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .LeftMirrorDiv{
     width: 40%;
@@ -60,7 +60,7 @@
     width: 40%;
     float:left;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .button {
     display:inline-block;

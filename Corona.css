@@ -28,8 +28,7 @@
 .chart text.title {
     fill: #2216ff;
 }
-
-
+e
 .html{
     width: 98%;
     height: 100%;
@@ -41,20 +40,15 @@
     height: 100%;
     float:left;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: scroll;
+    min-height: 1px;   
 }
 .LeftMirrorDiv{
     width: 40%;
     float:left;
     overflow-y: hidden;
     overflow-x: scroll;
-}
-.InsideCountry{
     min-height: 1px;   
-}
-.InsideMirror{
-    width: 2500px;
-    min-height: 1px;
 }
 .RightMirrorDiv{
     width: 40%;

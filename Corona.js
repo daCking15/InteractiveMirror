@@ -1,14 +1,15 @@
+var maxWidth;
+
 window.onload=function(){
     main();
     mirror();
 }
 
 function mirror(){
-    $('.LeftMirrorDiv').scrollLeft($('.InsideMirror').innerWidth());
-    console.log($(".LeftMirrorDiv").scrollLeft());
     $(document).ready(function(){
         $('.LeftMirrorDiv').on('scroll', function () {
-            $('.RightMirrorDiv').scrollLeft($('.InsideMirror').innerWidth() - $(this).scrollLeft());
+            $('.RightMirrorDiv').scrollLeft(maxWidth - $(this).scrollLeft());
+            console.log($('.LeftMirrorDiv').scrollLeft());
         });
     });
 }
@@ -182,6 +183,8 @@ function main (){
         leftChart.append("text").attr("x",width-80).attr("y", 15).attr("class","title").text(lCol);
         rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(rCol);
         countries.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Country");
+         $('.LeftMirrorDiv').scrollLeft(9999);
+        maxWidth = $('.LeftMirrorDiv').scrollLeft();
     }
 
     function type(d) {

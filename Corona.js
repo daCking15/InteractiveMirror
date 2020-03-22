@@ -1,6 +1,10 @@
 var maxWidth;
+var scaleFactor;
+var width;
 
 window.onload=function(){
+    scaleFactor = prompt("Scale Factor : ", "");
+    width = 250000*scaleFactor;
     main();
     mirror();
 }
@@ -9,9 +13,23 @@ function mirror(){
     $(document).ready(function(){
         $('.LeftMirrorDiv').on('scroll', function () {
             $('.RightMirrorDiv').scrollLeft(maxWidth - $(this).scrollLeft());
-            console.log($('.LeftMirrorDiv').scrollLeft());
         });
     });
+}
+
+//Button Functions
+function changeDate(){
+    date = prompt("Date: ", "");
+    document.getElementById("date").innerHTML = date;
+    localStorage.setItem("changeDate", date);
+}
+function changeLeft(){
+    lCol = prompt("Data: ", "");
+    localStorage.setItem("left", lCol);
+}
+function changeRight(){
+    rCol = prompt("Data: ", "");
+    localStorage.setItem("right", rCol);
 }
     
 function main (){
@@ -23,7 +41,6 @@ function main (){
     
     //chart sizing variables
     var chart,
-        width = 2500;
         bar_height = 2,
         height = bar_height * 200;
     var rightOffset = 50;
@@ -57,21 +74,6 @@ function main (){
     }
     document.getElementById("date").innerHTML = date;
     document.getElementById("button").addEventListener("click", changeDate);
-    
-    //Button Functions
-    function changeDate(){
-        date = prompt("Date: ", "");
-        document.getElementById("date").innerHTML = date;
-        localStorage.setItem("changeDate", date);
-    }
-    function changeLeft(){
-        lCol = prompt("Data: ", "");
-        localStorage.setItem("left", lCol);
-    }
-    function changeRight(){
-        rCol = prompt("Data: ", "");
-        localStorage.setItem("right", rCol);
-    }
 
     //Render
     function render(data) {
@@ -122,19 +124,19 @@ function main (){
                 .data(dateSlice)
                 .enter().append("rect")
                 .attr("x", function (d) {
-                    return width - xFrom(d[lCol]/100);
+                    return width - xFrom(d[lCol]*scaleFactor);
                 })  
                 .attr("y", yPosByIndex)
                 .attr("class", "left")
                 .attr("width", function (d) {
-                    return xFrom(d[lCol]);
+                    return xFrom(d[lCol]*scaleFactor);
                 })
                 .attr("height", y.rangeBand());
         leftChart.selectAll("text.leftscore")
                 .data(dateSlice)
                 .enter().append("text")
                 .attr("x", function (d) {
-                    return width - xFrom(d[lCol]/100)-40;
+                    return width - xFrom(d[lCol]*scaleFactor)-40;
                 })
                 .attr("y", function (d) {
                     return y(d.Country) + y.rangeBand() / 2;
@@ -163,14 +165,14 @@ function main (){
                 .attr("y", yPosByIndex)
                 .attr("class", "right")
                 .attr("width", function (d) {
-                    return xTo(d[rCol]/100);
+                    return xTo(d[rCol]*scaleFactor);
                 })
                 .attr("height", y.rangeBand());
         rightChart.selectAll("text.score")
                 .data(dateSlice)
                 .enter().append("text")
                 .attr("x", function (d) {
-                    return xTo(d[rCol]/100)+rightOffset;
+                    return xTo(d[rCol]*scaleFactor)+rightOffset;
                 })
                 .attr("y", function (d) {
                     return y(d.Country) + y.rangeBand() / 2;
@@ -183,7 +185,7 @@ function main (){
         leftChart.append("text").attr("x",width-80).attr("y", 15).attr("class","title").text(lCol);
         rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(rCol);
         countries.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Country");
-         $('.LeftMirrorDiv').scrollLeft(9999);
+         $('.LeftMirrorDiv').scrollLeft(width);
         maxWidth = $('.LeftMirrorDiv').scrollLeft();
     }
 

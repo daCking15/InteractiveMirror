@@ -5,7 +5,11 @@ var compare;
 
 window.onload=function(){
     scaleFactor = prompt("Scale Factor : ", "");
+<<<<<<< Updated upstream
     width = 250000*scaleFactor+80;
+=======
+    width = 500000*scaleFactor+80;
+>>>>>>> Stashed changes
     main();
     mirror();
 }
@@ -61,8 +65,15 @@ function main (){
     if (localStorage.getItem("compare")==null){
         compare = "Infections";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     }else{
         compare = localStorage.getItem("compare");
+=======
+        document.getElementById("compare").innerHTML = compare;
+    }else{
+        compare = localStorage.getItem("compare");
+        document.getElementById("compare").innerHTML = compare;
+>>>>>>> Stashed changes
 =======
         document.getElementById("compare").innerHTML = compare;
     }else{

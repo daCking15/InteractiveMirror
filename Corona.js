@@ -60,8 +60,15 @@ function main (){
     }
     if (localStorage.getItem("compare")==null){
         compare = "Infections";
+<<<<<<< Updated upstream
     }else{
         compare = localStorage.getItem("compare");
+=======
+        document.getElementById("compare").innerHTML = compare;
+    }else{
+        compare = localStorage.getItem("compare");
+        document.getElementById("compare").innerHTML = compare;
+>>>>>>> Stashed changes
     }
     document.getElementById("changeLeft").addEventListener("click", changeLeft);
     document.getElementById("changeRight").addEventListener("click", changeRight);

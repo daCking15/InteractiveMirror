@@ -33,10 +33,10 @@ function changeRight(){
 }
     
 function main (){
-    //width of Country Middle Section
+    //width of Health Condition Middle Section
     var labelArea = 160;
     var textArea = 75;
-    var countryWidth = 94;
+    var conditionWidth = 94;
     var textHeight = 20;
     
     //chart sizing variables
@@ -53,12 +53,12 @@ function main (){
     var lCol;
     var rCol;
     if (localStorage.getItem("left")==null){
-        lCol = "Infections";
+        lCol = "China";
     }else{
         lCol = localStorage.getItem("left");
     }
     if (localStorage.getItem("right")==null){
-        rCol = "Deaths";
+        rCol = "United States";
     }else{
         rCol = localStorage.getItem("right");
     }
@@ -100,10 +100,10 @@ function main (){
             .attr('width', width)
             .attr('height', height);
 
-        var countries = d3.select(".CountryDiv")
+        var conditions = d3.select(".ConditionDiv")
             .append('svg')
             .attr('class', 'chart')
-            .attr('width', countryWidth)
+            .attr('width', conditionWidth)
             .attr('height', height);
 
         xFrom.domain(d3.extent(dateSlice, function (d) {
@@ -114,11 +114,11 @@ function main (){
         }));
 
         y.domain(dateSlice.map(function (d) {
-            return d.Country;
+            return d.Conditions;
         }));
 
         var yPosByIndex = function (d) {
-            return y(d.Country);
+            return y(d.Conditions);
         };
         leftChart.selectAll("rect.left")
                 .data(dateSlice)
@@ -139,24 +139,24 @@ function main (){
                     return width - xFrom(d[lCol]*scaleFactor)-40;
                 })
                 .attr("y", function (d) {
-                    return y(d.Country) + y.rangeBand() / 2;
+                    return y(d.Conditions) + y.rangeBand() / 2;
                 })
                 .attr("dx", "20")
                 .attr("dy", ".36em")
                 .attr("text-anchor", "end")
                 .attr('class', 'leftscore')
                 .text(function(d){return d[lCol];});
-        countries.selectAll("text.name")
+        conditions.selectAll("text.name")
                 .data(dateSlice)
                 .enter().append("text")
                 .attr("x", 45)
                 .attr("y", function (d) {
-                    return y(d.Country) + y.rangeBand() / 2;
+                    return y(d.Conditions) + y.rangeBand() / 2;
                 })
                 .attr("dy", ".20em")
                 .attr("text-anchor", "middle")
                 .attr('class', 'name')
-                .text(function(d){return d.Country;});
+                .text(function(d){return d.Conditions;});
 
         rightChart.selectAll("rect.right")
                 .data(dateSlice)
@@ -175,7 +175,7 @@ function main (){
                     return xTo(d[rCol]*scaleFactor)+rightOffset;
                 })
                 .attr("y", function (d) {
-                    return y(d.Country) + y.rangeBand() / 2;
+                    return y(d.Conditions) + y.rangeBand() / 2;
                 })
                 .attr("dx", -5)
                 .attr("dy", ".36em")
@@ -184,17 +184,23 @@ function main (){
                 .text(function(d){return d[rCol];});
         leftChart.append("text").attr("x",width-80).attr("y", 15).attr("class","title").text(lCol);
         rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(rCol);
-        countries.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Country");
+        conditions.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Condition");
          $('.LeftMirrorDiv').scrollLeft(width);
         maxWidth = $('.LeftMirrorDiv').scrollLeft();
     }
 
     function type(d) {
-        d["Deaths"] = +d["Deaths"];
-        d["Infections"] = +d["Infections"];
-        d["Recovered"] = +d["Recovered"];
+        d["China"] = +d["China"];
+        d["Italy"] = +d["Italy"];
+        d["Iran"] = +d["Iran"];
+        d["South Korea"] = +d["South Korea"];
+        d["France"] = +d["France"];
+        d["Spain"] = +d["Spain"];
+        d["Germany"] = +d["Germany"];
+        d["United States"] = +d["United States"];
+        d["Total"] = +d["Total"];
         return d;
     }
 
-    d3.csv("Corona_March19th.csv", type, render);
+    d3.csv("Corona_NewFormat.csv", type, render);
 }

@@ -1,10 +1,15 @@
 var maxWidth;
 var scaleFactor;
 var width;
+var compare;
 
 window.onload=function(){
     scaleFactor = prompt("Scale Factor : ", "");
-    width = 250000*scaleFactor;
+<<<<<<< Updated upstream
+    width = 250000*scaleFactor+80;
+=======
+    width = 500000*scaleFactor+80;
+>>>>>>> Stashed changes
     main();
     mirror();
 }
@@ -17,31 +22,29 @@ function mirror(){
     });
 }
 
-//Button Functions
-function changeDate(){
-    date = prompt("Date: ", "");
-    document.getElementById("date").innerHTML = date;
-    localStorage.setItem("changeDate", date);
-}
 function changeLeft(){
-    lCol = prompt("Data: ", "");
-    localStorage.setItem("left", lCol);
+    country1 = prompt("Country: ", "");
+    localStorage.setItem("left", country1);
 }
 function changeRight(){
-    rCol = prompt("Data: ", "");
-    localStorage.setItem("right", rCol);
+    country2 = prompt("Country: ", "");
+    localStorage.setItem("right", country2);
+}
+function changeCompare(){
+    compare = prompt("Compare: ", "");
+    localStorage.setItem("compare", compare);
 }
     
 function main (){
     //width of Country Middle Section
     var labelArea = 160;
     var textArea = 75;
-    var countryWidth = 94;
+    var dateWidth = 94;
     var textHeight = 20;
     
     //chart sizing variables
     var chart,
-        bar_height = 2,
+        bar_height = 6,
         height = bar_height * 200;
     var rightOffset = 50;
     var xFrom = d3.scale.identity();
@@ -49,45 +52,60 @@ function main (){
     var y = d3.scale.ordinal()
             .rangeBands([textHeight, height]);
     
-    //Data
-    var lCol;
-    var rCol;
     if (localStorage.getItem("left")==null){
-        lCol = "Infections";
+        country1 = "China";
     }else{
-        lCol = localStorage.getItem("left");
+        country1 = localStorage.getItem("left");
     }
     if (localStorage.getItem("right")==null){
-        rCol = "Deaths";
+        country2 = "United States";
     }else{
-        rCol = localStorage.getItem("right");
+        country2 = localStorage.getItem("right");
     }
-    document.getElementById("left").addEventListener("click", changeLeft);
-    document.getElementById("right").addEventListener("click", changeRight);
-    
-    //Date
-    var date;
-    if (localStorage.getItem("changeDate")==null){
-        date = "22-Jan";
+    if (localStorage.getItem("compare")==null){
+        compare = "Infections";
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     }else{
-        date = localStorage.getItem("changeDate");
+        compare = localStorage.getItem("compare");
+=======
+        document.getElementById("compare").innerHTML = compare;
+    }else{
+        compare = localStorage.getItem("compare");
+        document.getElementById("compare").innerHTML = compare;
+>>>>>>> Stashed changes
+=======
+        document.getElementById("compare").innerHTML = compare;
+    }else{
+        compare = localStorage.getItem("compare");
+        document.getElementById("compare").innerHTML = compare;
+>>>>>>> Stashed changes
     }
-    document.getElementById("date").innerHTML = date;
-    document.getElementById("button").addEventListener("click", changeDate);
+    document.getElementById("changeLeft").addEventListener("click", changeLeft);
+    document.getElementById("changeRight").addEventListener("click", changeRight);
+    document.getElementById("changeCompare").addEventListener("click", changeCompare);
 
     //Render
     function render(data) {
 
-        //Subset of Data based on date
-        var dateSlice = new Array();
+        var country1Slice = new Array();
         data.forEach(
             function(item){
-                if (item.Date == date){
-                    dateSlice.push(item);
+                if (item.Country == country1){
+                    country1Slice.push(item);
                 }
             }
         );
-
+        
+        var country2Slice = new Array();
+        data.forEach(
+            function(item){
+                if (item.Country == country2){
+                    country2Slice.push(item);
+                }
+            }
+        );
+        
         var leftChart = d3.select(".LeftMirrorDiv")
             .append('svg')
             .attr('class', 'chart')
@@ -100,91 +118,91 @@ function main (){
             .attr('width', width)
             .attr('height', height);
 
-        var countries = d3.select(".CountryDiv")
+        var dates = d3.select(".DateDiv")
             .append('svg')
             .attr('class', 'chart')
-            .attr('width', countryWidth)
+            .attr('width', dateWidth)
             .attr('height', height);
 
-        xFrom.domain(d3.extent(dateSlice, function (d) {
-            return d[lCol];
+        xFrom.domain(d3.extent(country1Slice, function (d) {
+            return d[compare];
         }));
-        xTo.domain(d3.extent(dateSlice, function (d) {
-            return d[rCol];
+        xTo.domain(d3.extent(country2Slice, function (d) {
+            return d[compare];
         }));
 
-        y.domain(dateSlice.map(function (d) {
-            return d.Country;
+        y.domain(country1Slice.map(function (d) {
+            return d.Date;
         }));
 
         var yPosByIndex = function (d) {
-            return y(d.Country);
+            return y(d.Date);
         };
         leftChart.selectAll("rect.left")
-                .data(dateSlice)
+                .data(country1Slice)
                 .enter().append("rect")
                 .attr("x", function (d) {
-                    return width - xFrom(d[lCol]*scaleFactor);
+                    return width - xFrom(d[compare]*scaleFactor);
                 })  
                 .attr("y", yPosByIndex)
                 .attr("class", "left")
                 .attr("width", function (d) {
-                    return xFrom(d[lCol]*scaleFactor);
+                    return xFrom(d[compare]*scaleFactor);
                 })
                 .attr("height", y.rangeBand());
         leftChart.selectAll("text.leftscore")
-                .data(dateSlice)
+                .data(country1Slice)
                 .enter().append("text")
                 .attr("x", function (d) {
-                    return width - xFrom(d[lCol]*scaleFactor)-40;
+                    return width - xFrom(d[compare]*scaleFactor)-40;
                 })
                 .attr("y", function (d) {
-                    return y(d.Country) + y.rangeBand() / 2;
+                    return y(d.Date) + y.rangeBand() / 2;
                 })
                 .attr("dx", "20")
                 .attr("dy", ".36em")
                 .attr("text-anchor", "end")
                 .attr('class', 'leftscore')
-                .text(function(d){return d[lCol];});
-        countries.selectAll("text.name")
-                .data(dateSlice)
+                .text(function(d){return d[compare];});
+        dates.selectAll("text.name")
+                .data(country2Slice)
                 .enter().append("text")
                 .attr("x", 45)
                 .attr("y", function (d) {
-                    return y(d.Country) + y.rangeBand() / 2;
+                    return y(d.Date) + y.rangeBand() / 2;
                 })
                 .attr("dy", ".20em")
                 .attr("text-anchor", "middle")
                 .attr('class', 'name')
-                .text(function(d){return d.Country;});
+                .text(function(d){return d.Date;});
 
         rightChart.selectAll("rect.right")
-                .data(dateSlice)
+                .data(country2Slice)
                 .enter().append("rect")
                 .attr("x", 0)
                 .attr("y", yPosByIndex)
                 .attr("class", "right")
                 .attr("width", function (d) {
-                    return xTo(d[rCol]*scaleFactor);
+                    return xTo(d[compare]*scaleFactor);
                 })
                 .attr("height", y.rangeBand());
         rightChart.selectAll("text.score")
-                .data(dateSlice)
+                .data(country2Slice)
                 .enter().append("text")
                 .attr("x", function (d) {
-                    return xTo(d[rCol]*scaleFactor)+rightOffset;
+                    return xTo(d[compare]*scaleFactor)+rightOffset;
                 })
                 .attr("y", function (d) {
-                    return y(d.Country) + y.rangeBand() / 2;
+                    return y(d.Date) + y.rangeBand() / 2;
                 })
                 .attr("dx", -5)
                 .attr("dy", ".36em")
                 .attr("text-anchor", "end")
                 .attr('class', 'score')
-                .text(function(d){return d[rCol];});
-        leftChart.append("text").attr("x",width-80).attr("y", 15).attr("class","title").text(lCol);
-        rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(rCol);
-        countries.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Country");
+                .text(function(d){return d[compare];});
+        leftChart.append("text").attr("x",width-85).attr("y", 15).attr("class","title").text(country1);
+        rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(country2);
+        dates.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Date");
          $('.LeftMirrorDiv').scrollLeft(width);
         maxWidth = $('.LeftMirrorDiv').scrollLeft();
     }
@@ -196,5 +214,5 @@ function main (){
         return d;
     }
 
-    d3.csv("Corona_March19th.csv", type, render);
+    d3.csv("Corona_March25th.csv", type, render);
 }

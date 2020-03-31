@@ -1,55 +1,55 @@
 Date,Country,Infections,Recovered,Deaths
-22-Jan,China,548,28,17
-23-Jan,China,643,30,18
-24-Jan,China,920,36,26
-25-Jan,China,1406,39,42
-26-Jan,China,2075,49,56
-27-Jan,China,2877,58,82
-28-Jan,China,5509,101,131
-29-Jan,China,6087,120,133
-30-Jan,China,8141,135,171
-31-Jan,China,9802,214,213
-1-Feb,China,11891,275,259
-2-Feb,China,16630,463,361
-3-Feb,China,19716,614,425
-4-Feb,China,23707,843,491
-5-Feb,China,27440,1115,563
-6-Feb,China,30587,1477,633
-7-Feb,China,34110,1999,718
-8-Feb,China,36814,2596,805
-9-Feb,China,39829,3219,905
-10-Feb,China,42354,3918,1012
-11-Feb,China,44386,4636,1112
-12-Feb,China,44759,5082,1117
-13-Feb,China,59895,6217,1369
-14-Feb,China,66358,7977,1521
-15-Feb,China,68413,9298,1663
-16-Feb,China,70513,10755,1766
-17-Feb,China,72434,12462,1864
-18-Feb,China,74211,14206,2003
-19-Feb,China,74619,15962,2116
-20-Feb,China,75077,18014,2238
-21-Feb,China,75550,18704,2238
-22-Feb,China,77001,22699,2443
-23-Feb,China,77022,23187,2445
-24-Feb,China,77241,25015,2595
-25-Feb,China,77754,27676,2665
-26-Feb,China,78166,30084,2717
-27-Feb,China,78600,32930,2746
-28-Feb,China,78928,36329,2790
-29-Feb,China,79356,39320,2837
-1-Mar,China,79932,42162,2872
-2-Mar,China,80136,44854,2914
-3-Mar,China,80261,47450,2947
-4-Mar,China,80386,50001,2983
-5-Mar,China,80537,52292,3015
-6-Mar,China,80690,53944,3044
-7-Mar,China,80770,55539,3072
-8-Mar,China,80823,57388,3100
-9-Mar,China,80860,58804,3123
-10-Mar,China,80887,60181,3139
-11-Mar,China,80921,61644,3161
-12-Mar,China,80932,62901,3172
+22-Jan,China,548,0,17
+23-Jan,China,643,2,18
+24-Jan,China,920,5,26
+25-Jan,China,1406,7,42
+26-Jan,China,2075,7,56
+27-Jan,China,2877,13,82
+28-Jan,China,5509,21,131
+29-Jan,China,6087,32,133
+30-Jan,China,8141,45,171
+31-Jan,China,9802,73,213
+1-Feb,China,11891,107,259
+2-Feb,China,16630,168,361
+3-Feb,China,19716,228,425
+4-Feb,China,23707,321,491
+5-Feb,China,27440,482,563
+6-Feb,China,30587,660,633
+7-Feb,China,34110,884,718
+8-Feb,China,36814,1157,805
+9-Feb,China,39829,1424,905
+10-Feb,China,42354,1696,1012
+11-Feb,China,44386,1997,1112
+12-Feb,China,44759,2396,1117
+13-Feb,China,59895,2758,1369
+14-Feb,China,66358,3203,1521
+15-Feb,China,68413,3675,1663
+16-Feb,China,70513,4116,1766
+17-Feb,China,72434,4600,1864
+18-Feb,China,74211,5078,2003
+19-Feb,China,74619,5625,2116
+20-Feb,China,75077,6226,2238
+21-Feb,China,75550,6823,2238
+22-Feb,China,77001,7400,2443
+23-Feb,China,77022,7844,2445
+24-Feb,China,77241,8267,2595
+25-Feb,China,77754,8705,2665
+26-Feb,China,78166,9115,2717
+27-Feb,China,78600,9547,2746
+28-Feb,China,78928,9926,2790
+29-Feb,China,79356,10327,2837
+1-Mar,China,79932,10626,2872
+2-Mar,China,80136,10920,2914
+3-Mar,China,80261,11242,2947
+4-Mar,China,80386,11444,2983
+5-Mar,China,80537,11700,3015
+6-Mar,China,80690,11911,3044
+7-Mar,China,80770,12039,3072
+8-Mar,China,80823,12153,3100
+9-Mar,China,80860,12316,3123
+10-Mar,China,80887,12438,3139
+11-Mar,China,80921,12510,3161
+12-Mar,China,80932,12583,3172
 13-Mar,China,80945,64196,3180
 14-Mar,China,80977,65660,3193
 15-Mar,China,81003,67017,3203
@@ -57,12 +57,6 @@ Date,Country,Infections,Recovered,Deaths
 17-Mar,China,81058,68798,3230
 18-Mar,China,81102,69755,3241
 19-Mar,China,81156,70535,3249
-20-Mar,China,81250,71266,3253
-21-Mar,China,81305,71857,3259
-22-Mar,China,81435,72362,3274
-23-Mar,China,81498,72814,3274
-24-Mar,China,81591,73280,3281
-25-Mar,China,81661,73773,3285
 22-Jan,Italy,0,0,0
 23-Jan,Italy,0,0,0
 24-Jan,Italy,0,0,0
@@ -121,12 +115,6 @@ Date,Country,Infections,Recovered,Deaths
 17-Mar,Italy,31506,2941,2503
 18-Mar,Italy,35713,4025,2978
 19-Mar,Italy,41035,4440,3405
-20-Mar,Italy,47021,4440,4032
-21-Mar,Italy,53578,6072,4825
-22-Mar,Italy,59138,7024,5476
-23-Mar,Italy,63927,7024,6077
-24-Mar,Italy,69176,8326,6820
-25-Mar,Italy,74386,9362,7503
 22-Jan,Iran,0,0,0
 23-Jan,Iran,0,0,0
 24-Jan,Iran,0,0,0
@@ -185,12 +173,6 @@ Date,Country,Infections,Recovered,Deaths
 17-Mar,Iran,16169,5389,988
 18-Mar,Iran,17361,5389,1135
 19-Mar,Iran,18407,5710,1284
-20-Mar,Iran,19644,6745,1433
-21-Mar,Iran,20610,7635,1556
-22-Mar,Iran,21638,7931,1685
-23-Mar,Iran,23049,7931,1812
-24-Mar,Iran,24811,8913,1934
-25-Mar,Iran,27017,9625,2077
 22-Jan,South Korea,1,0,0
 23-Jan,South Korea,1,0,0
 24-Jan,South Korea,2,0,0
@@ -249,12 +231,6 @@ Date,Country,Infections,Recovered,Deaths
 17-Mar,South Korea,8320,1407,81
 18-Mar,South Korea,8413,1540,84
 19-Mar,South Korea,8565,1540,91
-20-Mar,South Korea,8652,1540,94
-21-Mar,South Korea,8799,1540,102
-22-Mar,South Korea,8961,2909,111
-23-Mar,South Korea,8961,2909,111
-24-Mar,South Korea,9037,3507,120
-25-Mar,South Korea,9137,3730,126
 22-Jan,France,0,0,0
 23-Jan,France,0,0,0
 24-Jan,France,2,0,0
@@ -300,25 +276,19 @@ Date,Country,Infections,Recovered,Deaths
 4-Mar,France,288,12,4
 5-Mar,France,380,12,6
 6-Mar,France,656,12,9
-7-Mar,France,959,12,11
-8-Mar,France,1136,12,19
-9-Mar,France,1219,12,19
-10-Mar,France,1794,12,33
-11-Mar,France,2293,12,48
-12-Mar,France,2293,12,48
-13-Mar,France,3681,12,79
-14-Mar,France,4496,12,91
-15-Mar,France,4532,12,91
-16-Mar,France,6683,12,149
-17-Mar,France,7715,12,149
-18-Mar,France,9124,12,149
-19-Mar,France,10970,12,244
-20-Mar,France,12758,12,451
-21-Mar,France,14463,12,563
-22-Mar,France,16243,2206,676
-23-Mar,France,20123,2206,862
-24-Mar,France,22622,3250,1102
-25-Mar,France,25600,3907,1333
+7-Mar,France,952,12,11
+8-Mar,France,1129,12,19
+9-Mar,France,1212,12,19
+10-Mar,France,1787,12,33
+11-Mar,France,2284,12,48
+12-Mar,France,2284,12,48
+13-Mar,France,3667,12,79
+14-Mar,France,4475,12,91
+15-Mar,France,4506,12,91
+16-Mar,France,6656,12,148
+17-Mar,France,7687,12,148
+18-Mar,France,9090,12,148
+19-Mar,France,10928,12,243
 22-Jan,Spain,0,0,0
 23-Jan,Spain,0,0,0
 24-Jan,Spain,0,0,0
@@ -377,12 +347,6 @@ Date,Country,Infections,Recovered,Deaths
 17-Mar,Spain,11748,1028,533
 18-Mar,Spain,13910,1081,623
 19-Mar,Spain,17963,1107,830
-20-Mar,Spain,20410,1588,1043
-21-Mar,Spain,25374,2125,1375
-22-Mar,Spain,28768,2575,1772
-23-Mar,Spain,35136,2575,2311
-24-Mar,Spain,39885,3794,2808
-25-Mar,Spain,49515,5367,3647
 22-Jan,Germany,0,0,0
 23-Jan,Germany,0,0,0
 24-Jan,Germany,0,0,0
@@ -441,12 +405,6 @@ Date,Country,Infections,Recovered,Deaths
 17-Mar,Germany,9257,67,24
 18-Mar,Germany,12327,105,28
 19-Mar,Germany,15320,113,44
-20-Mar,Germany,19848,180,67
-21-Mar,Germany,22213,233,84
-22-Mar,Germany,24873,266,94
-23-Mar,Germany,29056,266,123
-24-Mar,Germany,32986,3243,157
-25-Mar,Germany,37323,3547,206
 22-Jan,United States,1,0,0
 23-Jan,United States,1,0,0
 24-Jan,United States,2,0,0
@@ -499,212 +457,14 @@ Date,Country,Infections,Recovered,Deaths
 11-Mar,United States,1281,8,36
 12-Mar,United States,1663,12,40
 13-Mar,United States,2179,12,47
-14-Mar,United States,2727,12,54
-15-Mar,United States,3499,12,63
-16-Mar,United States,4632,17,85
-17-Mar,United States,6421,17,108
-18-Mar,United States,7783,105,118
-19-Mar,United States,13677,121,200
-20-Mar,United States,19100,147,244
-21-Mar,United States,25489,176,307
-22-Mar,United States,33276,178,417
-23-Mar,United States,43847,178,557
-24-Mar,United States,53740,348,706
-25-Mar,United States,65778,361,942
-22-Jan,Switzerland,0,0,0
-23-Jan,Switzerland,0,0,0
-24-Jan,Switzerland,0,0,0
-25-Jan,Switzerland,0,0,0
-26-Jan,Switzerland,0,0,0
-27-Jan,Switzerland,0,0,0
-28-Jan,Switzerland,0,0,0
-29-Jan,Switzerland,0,0,0
-30-Jan,Switzerland,0,0,0
-31-Jan,Switzerland,0,0,0
-1-Feb,Switzerland,0,0,0
-2-Feb,Switzerland,0,0,0
-3-Feb,Switzerland,0,0,0
-4-Feb,Switzerland,0,0,0
-5-Feb,Switzerland,0,0,0
-6-Feb,Switzerland,0,0,0
-7-Feb,Switzerland,0,0,0
-8-Feb,Switzerland,0,0,0
-9-Feb,Switzerland,0,0,0
-10-Feb,Switzerland,0,0,0
-11-Feb,Switzerland,0,0,0
-12-Feb,Switzerland,0,0,0
-13-Feb,Switzerland,0,0,0
-14-Feb,Switzerland,0,0,0
-15-Feb,Switzerland,0,0,0
-16-Feb,Switzerland,0,0,0
-17-Feb,Switzerland,0,0,0
-18-Feb,Switzerland,0,0,0
-19-Feb,Switzerland,0,0,0
-20-Feb,Switzerland,0,0,0
-21-Feb,Switzerland,0,0,0
-22-Feb,Switzerland,0,0,0
-23-Feb,Switzerland,0,0,0
-24-Feb,Switzerland,0,0,0
-25-Feb,Switzerland,1,0,0
-26-Feb,Switzerland,1,0,0
-27-Feb,Switzerland,8,0,0
-28-Feb,Switzerland,8,0,0
-29-Feb,Switzerland,18,0,0
-1-Mar,Switzerland,27,0,0
-2-Mar,Switzerland,42,0,0
-3-Mar,Switzerland,56,2,0
-4-Mar,Switzerland,90,3,0
-5-Mar,Switzerland,114,3,1
-6-Mar,Switzerland,214,3,1
-7-Mar,Switzerland,268,3,1
-8-Mar,Switzerland,337,3,2
-9-Mar,Switzerland,374,3,2
-10-Mar,Switzerland,491,3,3
-11-Mar,Switzerland,652,4,4
-12-Mar,Switzerland,652,4,4
-13-Mar,Switzerland,1139,4,11
-14-Mar,Switzerland,1359,4,13
-15-Mar,Switzerland,2200,4,14
-16-Mar,Switzerland,2200,4,14
-17-Mar,Switzerland,2700,4,27
-18-Mar,Switzerland,3028,15,28
-19-Mar,Switzerland,4075,15,41
-20-Mar,Switzerland,5294,15,54
-21-Mar,Switzerland,6575,15,75
-22-Mar,Switzerland,7474,131,98
-23-Mar,Switzerland,8795,131,120
-24-Mar,Switzerland,9877,131,122
-25-Mar,Switzerland,10897,131,153
-22-Jan,United Kingdom,0,0,0
-23-Jan,United Kingdom,0,0,0
-24-Jan,United Kingdom,0,0,0
-25-Jan,United Kingdom,0,0,0
-26-Jan,United Kingdom,0,0,0
-27-Jan,United Kingdom,0,0,0
-28-Jan,United Kingdom,0,0,0
-29-Jan,United Kingdom,0,0,0
-30-Jan,United Kingdom,0,0,0
-31-Jan,United Kingdom,2,0,0
-1-Feb,United Kingdom,2,0,0
-2-Feb,United Kingdom,2,0,0
-3-Feb,United Kingdom,2,0,0
-4-Feb,United Kingdom,2,0,0
-5-Feb,United Kingdom,2,0,0
-6-Feb,United Kingdom,2,0,0
-7-Feb,United Kingdom,3,0,0
-8-Feb,United Kingdom,3,0,0
-9-Feb,United Kingdom,3,0,0
-10-Feb,United Kingdom,8,0,0
-11-Feb,United Kingdom,8,0,0
-12-Feb,United Kingdom,9,1,0
-13-Feb,United Kingdom,9,1,0
-14-Feb,United Kingdom,9,1,0
-15-Feb,United Kingdom,9,1,0
-16-Feb,United Kingdom,9,8,0
-17-Feb,United Kingdom,9,8,0
-18-Feb,United Kingdom,9,8,0
-19-Feb,United Kingdom,9,8,0
-20-Feb,United Kingdom,9,8,0
-21-Feb,United Kingdom,9,8,0
-22-Feb,United Kingdom,9,8,0
-23-Feb,United Kingdom,9,8,0
-24-Feb,United Kingdom,13,8,0
-25-Feb,United Kingdom,13,8,0
-26-Feb,United Kingdom,13,8,0
-27-Feb,United Kingdom,15,8,0
-28-Feb,United Kingdom,20,8,0
-29-Feb,United Kingdom,23,8,0
-1-Mar,United Kingdom,36,8,0
-2-Mar,United Kingdom,40,8,0
-3-Mar,United Kingdom,51,8,0
-4-Mar,United Kingdom,86,8,0
-5-Mar,United Kingdom,116,8,1
-6-Mar,United Kingdom,164,8,2
-7-Mar,United Kingdom,207,18,2
-8-Mar,United Kingdom,274,18,3
-9-Mar,United Kingdom,322,18,4
-10-Mar,United Kingdom,384,19,6
-11-Mar,United Kingdom,459,19,8
-12-Mar,United Kingdom,459,19,8
-13-Mar,United Kingdom,802,19,8
-14-Mar,United Kingdom,1144,19,21
-15-Mar,United Kingdom,1145,19,21
-16-Mar,United Kingdom,1551,21,56
-17-Mar,United Kingdom,1960,53,56
-18-Mar,United Kingdom,2642,67,72
-19-Mar,United Kingdom,2716,67,138
-20-Mar,United Kingdom,4014,67,178
-21-Mar,United Kingdom,5067,67,234
-22-Mar,United Kingdom,5745,67,282
-23-Mar,United Kingdom,6726,67,336
-24-Mar,United Kingdom,8164,140,423
-25-Mar,United Kingdom,9640,140,466
-22-Jan,Netherlands,0,0,0
-23-Jan,Netherlands,0,0,0
-24-Jan,Netherlands,0,0,0
-25-Jan,Netherlands,0,0,0
-26-Jan,Netherlands,0,0,0
-27-Jan,Netherlands,0,0,0
-28-Jan,Netherlands,0,0,0
-29-Jan,Netherlands,0,0,0
-30-Jan,Netherlands,0,0,0
-31-Jan,Netherlands,0,0,0
-1-Feb,Netherlands,0,0,0
-2-Feb,Netherlands,0,0,0
-3-Feb,Netherlands,0,0,0
-4-Feb,Netherlands,0,0,0
-5-Feb,Netherlands,0,0,0
-6-Feb,Netherlands,0,0,0
-7-Feb,Netherlands,0,0,0
-8-Feb,Netherlands,0,0,0
-9-Feb,Netherlands,0,0,0
-10-Feb,Netherlands,0,0,0
-11-Feb,Netherlands,0,0,0
-12-Feb,Netherlands,0,0,0
-13-Feb,Netherlands,0,0,0
-14-Feb,Netherlands,0,0,0
-15-Feb,Netherlands,0,0,0
-16-Feb,Netherlands,0,0,0
-17-Feb,Netherlands,0,0,0
-18-Feb,Netherlands,0,0,0
-19-Feb,Netherlands,0,0,0
-20-Feb,Netherlands,0,0,0
-21-Feb,Netherlands,0,0,0
-22-Feb,Netherlands,0,0,0
-23-Feb,Netherlands,0,0,0
-24-Feb,Netherlands,0,0,0
-25-Feb,Netherlands,0,0,0
-26-Feb,Netherlands,0,0,0
-27-Feb,Netherlands,1,0,0
-28-Feb,Netherlands,1,0,0
-29-Feb,Netherlands,6,0,0
-1-Mar,Netherlands,10,0,0
-2-Mar,Netherlands,18,0,0
-3-Mar,Netherlands,24,0,0
-4-Mar,Netherlands,38,0,0
-5-Mar,Netherlands,82,0,0
-6-Mar,Netherlands,128,0,1
-7-Mar,Netherlands,188,0,1
-8-Mar,Netherlands,265,0,3
-9-Mar,Netherlands,321,0,3
-10-Mar,Netherlands,382,0,4
-11-Mar,Netherlands,503,0,5
-12-Mar,Netherlands,503,0,5
-13-Mar,Netherlands,806,0,10
-14-Mar,Netherlands,962,2,12
-15-Mar,Netherlands,1138,2,20
-16-Mar,Netherlands,1416,2,24
-17-Mar,Netherlands,1711,2,43
-18-Mar,Netherlands,2058,2,58
-19-Mar,Netherlands,2467,2,77
-20-Mar,Netherlands,3003,2,107
-21-Mar,Netherlands,3640,2,137
-22-Mar,Netherlands,4217,2,180
-23-Mar,Netherlands,4764,2,214
-24-Mar,Netherlands,5580,3,277
-25-Mar,Netherlands,6438,4,357
+14-Mar,United States,2726,12,54
+15-Mar,United States,3495,12,63
+16-Mar,United States,4626,17,85
+17-Mar,United States,6414,17,108
+18-Mar,United States,7776,17,118
+19-Mar,United States,13669,17,200
 22-Jan,Total,555,28,17
-23-Jan,Total,654,30,18
+23-Jan,Total,653,30,18
 24-Jan,Total,941,36,26
 25-Jan,Total,1434,39,42
 26-Jan,Total,2118,52,56
@@ -718,7 +478,7 @@ Date,Country,Infections,Recovered,Deaths
 3-Feb,Total,19881,623,426
 4-Feb,Total,23892,852,492
 5-Feb,Total,27635,1124,564
-6-Feb,Total,30794,1487,634
+6-Feb,Total,30817,1487,634
 7-Feb,Total,34391,2011,719
 8-Feb,Total,37120,2616,806
 9-Feb,Total,40150,3244,906
@@ -733,37 +493,67 @@ Date,Country,Infections,Recovered,Deaths
 18-Feb,Total,75136,14352,2007
 19-Feb,Total,75639,16121,2122
 20-Feb,Total,76197,18177,2247
-21-Feb,Total,76819,18890,2251
-22-Feb,Total,78572,22886,2458
-23-Feb,Total,78958,23394,2469
-24-Feb,Total,79561,25227,2629
-25-Feb,Total,80406,27905,2708
-26-Feb,Total,81388,30384,2770
-27-Feb,Total,82746,33277,2814
-28-Feb,Total,84112,36711,2872
+21-Feb,Total,76823,18890,2251
+22-Feb,Total,78579,22886,2458
+23-Feb,Total,78965,23394,2469
+24-Feb,Total,79568,25227,2629
+25-Feb,Total,80413,27905,2708
+26-Feb,Total,81395,30384,2770
+27-Feb,Total,82754,33277,2814
+28-Feb,Total,84120,36711,2872
 29-Feb,Total,86011,39782,2941
 1-Mar,Total,88369,42716,2996
 2-Mar,Total,90306,45602,3085
 3-Mar,Total,92840,48228,3160
 4-Mar,Total,95120,51170,3254
-5-Mar,Total,97886,53796,3348
-6-Mar,Total,101801,55865,3460
-7-Mar,Total,105847,58358,3558
-8-Mar,Total,109821,60694,3802
-9-Mar,Total,113590,62494,3988
-10-Mar,Total,118620,64404,4262
-11-Mar,Total,125875,67003,4615
-12-Mar,Total,128352,68324,4720
-13-Mar,Total,145205,70251,5404
-14-Mar,Total,156101,72624,5819
-15-Mar,Total,167454,76034,6440
-16-Mar,Total,181574,78088,7126
-17-Mar,Total,197102,80840,7905
-18-Mar,Total,214821,83312,8733
-19-Mar,Total,242500,84975,9867
-20-Mar,Total,272035,87420,11299
-21-Mar,Total,304396,91692,12973
-22-Mar,Total,336953,97899,14651
-23-Mar,Total,378235,98351,16505
-24-Mar,Total,418045,108000,18625
-25-Mar,Total,467653,113787,21181
+5-Mar,Total,97882,53796,3348
+6-Mar,Total,101784,55865,3460
+7-Mar,Total,105821,58358,3558
+8-Mar,Total,109795,60694,3802
+9-Mar,Total,113561,62494,3988
+10-Mar,Total,118592,64404,4262
+11-Mar,Total,125865,67003,4615
+12-Mar,Total,128343,68324,4720
+13-Mar,Total,145193,70251,5404
+14-Mar,Total,156097,72624,5819
+15-Mar,Total,167449,76034,6440
+16-Mar,Total,181527,78088,7126
+17-Mar,Total,197142,80840,7905
+18-Mar,Total,214910,83207,8733
+19-Mar,Total,242708,84854,9867
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

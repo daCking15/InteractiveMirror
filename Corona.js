@@ -2,6 +2,8 @@ var maxWidth;
 var scaleFactor;
 var width;
 var compare;
+var h = 50;
+var padding = 5;
 
 window.onload=function(){
     scaleFactor = prompt("Scale Factor : ", "");
@@ -14,6 +16,12 @@ function mirror(){
     $(document).ready(function(){
         $('.LeftMirrorDiv').on('scroll', function () {
             $('.RightMirrorDiv').scrollLeft(maxWidth - $(this).scrollLeft());
+            $('.RightScale').scrollLeft(maxWidth - $(this).scrollLeft());
+            $('.LeftScale').scrollLeft($(this).scrollLeft());
+        });
+        $('.DateDiv').on('scroll', function () {
+            $('.LeftMirrorDiv').scrollTop($(this).scrollTop());
+            $('.RightMirrorDiv').scrollTop($(this).scrollTop());
         });
     });
 }
@@ -60,10 +68,10 @@ function main (){
     }
     if (localStorage.getItem("compare")==null){
         compare = "Infections";
-        document.getElementById("compare").innerHTML = compare;
+        document.getElementById("compare").innerHTML = "COVID-19: "+compare;
     }else{
         compare = localStorage.getItem("compare");
-        document.getElementById("compare").innerHTML = compare;
+        document.getElementById("compare").innerHTML = "COVID-19: "+compare;
     }
     document.getElementById("changeLeft").addEventListener("click", changeLeft);
     document.getElementById("changeRight").addEventListener("click", changeRight);
@@ -71,7 +79,7 @@ function main (){
 
     //Render
     function render(data) {
-
+        
         var country1Slice = new Array();
         data.forEach(
             function(item){
@@ -89,6 +97,43 @@ function main (){
                 }
             }
         );
+        
+        var hScale = d3.scale.ordinal()
+            .domain(d3.range(0, 500000))
+            .rangeBands([0, width]);
+        
+        var hAxis = d3.svg.axis()
+            .scale(hScale)
+            .orient('bottom')
+            .tickValues(hScale.domain().filter(function(d, i){
+                return !(i % (500000/20));
+            }))
+        
+        var hGuide1 = d3.select(".LeftScale")
+            .append('svg')
+                .attr("width", width)
+                .attr("height", 50)
+            .append('g')
+                hAxis(hGuide1)
+                hGuide1.attr('transform', 'translate(35,10)')
+                hGuide1.selectAll('path')
+                    .style('fill', 'none')
+                    .style('stroke', '#000')
+                hGuide1.selectAll('line')
+                    .style('stroke', '#000');
+        
+        var hGuide2 = d3.select(".RightScale")
+            .append('svg')
+                .attr("width", width)
+                .attr("height", 50)
+            .append('g')
+                hAxis(hGuide2)
+                hGuide2.attr('transform', 'translate(35,10)')
+                hGuide2.selectAll('path')
+                    .style('fill', 'none')
+                    .style('stroke', '#000')
+                hGuide2.selectAll('line')
+                    .style('stroke', '#000');
         
         var leftChart = d3.select(".LeftMirrorDiv")
             .append('svg')
@@ -184,11 +229,15 @@ function main (){
                 .attr("text-anchor", "end")
                 .attr('class', 'score')
                 .text(function(d){return d[compare];});
+        
         leftChart.append("text").attr("x",width-85).attr("y", 15).attr("class","title").text(country1);
         rightChart.append("text").attr("x",0).attr("y", 15).attr("class","title").text(country2);
         dates.append("text").attr("x",18).attr("y", 15).attr("class","title").text("Date");
          $('.LeftMirrorDiv').scrollLeft(width);
         maxWidth = $('.LeftMirrorDiv').scrollLeft();
+        
+        $('.LeftScale').scrollLeft(width);
+        maxWidth = $('.LeftScale').scrollLeft();
     }
 
     function type(d) {

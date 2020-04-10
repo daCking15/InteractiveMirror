@@ -1,61 +1,107 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .chart {
     margin: 10px;
     padding-top: 10px;
 }
-
 .chart .right {
     stroke: white;
     fill: indianred;
 }
-
 .chart .left {
     stroke: white;
     fill: steelblue;
 }
-
 .chart rect:hover {
     fill: #64707d;
 }
-
 .chart text {
     fill: #24da82;
 }
-
 .chart text.name {
     fill: black;
 }
-
 .chart text.title {
     fill: #2216ff;
 }
-e
+
 .html{
     width: 98%;
     height: 100%;
     margin-left: 1%;
     margin-right:1%;
 }
+.body{
+    height: 100%;
+}
+.header{
+    background-color: black;
+    height: 5%;
+    text-align: center;
+}
+.data{
+    margin-top: 0%;
+    padding-top: 0%;
+    height: 95%;
+}
 .DateDiv{
     width: 20%;
-    height: 100%;
+    height: 94%;
     float:left;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
-    min-height: 1px;   
+    min-height: 1px;
 }
 .LeftMirrorDiv{
     width: 40%;
     float:left;
     overflow-y: hidden;
     overflow-x: scroll;
-    min-height: 1px;   
+    min-height: 1px;
+    height: 94%;
 }
 .RightMirrorDiv{
     width: 40%;
     float:left;
     overflow-y: hidden;
+    overflow-x: scroll;
+    height: 94%;
+}
+.LeftScale{
+    width: 40%;
+    height: 6%;
+    float: right;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+.RightScale{
+    width: 40%;
+    height: 6%;
+    float: right;
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+button{
+    font-size: 12pt;
 }
 .button {
     display:inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#compare {
+    display:inline-block;
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }

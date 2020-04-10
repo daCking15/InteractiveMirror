@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html class="html">  
-    <head>
+    <head class="head">
         <title>COVID-19</title>
         <script src="d3/d3.v3.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="Corona.js"></script>
         <link rel="stylesheet" href="Corona.css">
     </head>
-    <body>
-        <h1>COVID-19</h1>
-        <form class="button">
-            <button id="changeLeft">Change Left Country</button>
-        </form>
-        <form class="button">
-            <button id="changeRight">Change Right Country</button>
-        </form>
-        <form class="button">
-            <button id="changeCompare">Change Comparison</button>
-        </form>
-        <form class="button">
-            <button id="changeScale">Change Scale Factor</button>
-        </form>
-        <h2 id=compare></h2>
-        <div class="DateDiv">
+    <body class="body">
+        <div class="header">
+            <form class="button">
+                <button id="changeLeft">Left Country</button>
+            </form>
+            <form class="button">
+                <button id="changeRight">Right Country</button>
+            </form>
+            <div id=compare></div>
+            <form class="button">
+                <button id="changeCompare">Comparison</button>
+            </form>
+            <form class="button">
+                <button id="changeScale">Scale Factor</button>
+            </form>
         </div>
-        <div class="LeftMirrorDiv">
-        </div>
-        <div class="RightMirrorDiv">
+            <div class="data">
+            <div class="DateDiv">
+            </div>
+            <div class="LeftMirrorDiv">
+            </div>
+            <div class="RightMirrorDiv">
+            </div>
+            <div class="RightScale">
+            </div>
+            <div class="LeftScale">
+            </div>
         </div>
     </body>
 </html>

@@ -90,6 +90,11 @@ function mirror(){
             $('.RightScale').scrollLeft(maxWidth - $(this).scrollLeft());
             $('.LeftScale').scrollLeft($(this).scrollLeft());
         });
+        $('.RightMirrorDiv').on('scroll', function () {
+            $('.LeftMirrorDiv').scrollLeft(maxWidth - $(this).scrollLeft());
+            $('.LeftScale').scrollLeft(maxWidth - $(this).scrollLeft());
+            $('.RightScale').scrollLeft($(this).scrollLeft());
+        });
         $('.DateDiv').on('scroll', function () {
             $('.LeftMirrorDiv').scrollTop($(this).scrollTop());
             $('.RightMirrorDiv').scrollTop($(this).scrollTop());

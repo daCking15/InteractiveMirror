@@ -1,15 +1,86 @@
 var maxWidth;
 var scaleFactor;
 var width;
+var country1;
+var country2;
 var compare;
 var h = 50;
 var padding = 5;
 
-window.onload=function(){
-    scaleFactor = prompt("Scale Factor : ", "");
-    width = 500000*scaleFactor+80;
+var countries = ["Total"];
+var comparisons = ["Infections","Recovered","Deaths"];
+
+d3.csv("Corona_March25th.csv", function(data){
+    data.forEach(function(item){
+        if ($.inArray(item.Country,countries) == -1){
+            countries.push(item.Country)
+        }
+    });
+});
+
+// get parameters from url
+// reference: https://blog.csdn.net/weixin_38676276/java/article/details/86594494
+(function ($) {
+    $.getUrlParam = function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+})(jQuery);
+
+window.onload = function(){
+    generateItems();
+    width = 500000 * scaleFactor + 80;
     main();
     mirror();
+}
+
+function generateItems(){
+
+    countries.forEach(function(item){
+        $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
+        $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
+    });
+    comparisons.forEach(function(item){
+        $('#changeCompare').append("<option value = '" + item + "'>" + item + "</option>");
+    });
+
+    country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
+    country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
+    compare = ($.getUrlParam("compare") == undefined) ? $('#changeCompare').val() : $.getUrlParam("compare");
+    scaleFactor = $.getUrlParam("scaleFactor");
+
+    $('#changeLeft').val(country1);
+    $('#changeRight').val(country2);
+    $('#changeCompare').val(compare);
+    $('#changeScale').val(scaleFactor);
+
+    $('#changeLeft').change(function(){
+        country1 = $(this).val();
+        localStorage.setItem("left", country1);
+    });
+
+    $('#changeRight').change(function(){
+        country2 = $(this).val();
+        localStorage.setItem("right", country2);
+    });
+
+    $('#changeCompare').change(function(){
+        compare = $(this).val();
+        localStorage.setItem("compare", compare);
+    });
+
+    if ($('#changeScale').val() == '') {
+        scaleFactor = 1;
+    } else {
+        scaleFactor = $('#changeScale').val();
+    }
+
+    $('#submit').click(function(){
+        scaleFactor = $('#changeScale').val();
+        url = window.location.href.replace(window.location.search,'') + "?country1=" + country1 + "&country2=" + country2 + "&compare=" + compare + "&scaleFactor=" + scaleFactor;
+        window.location.href = url;
+    });
 }
 
 function mirror(){
@@ -26,19 +97,6 @@ function mirror(){
     });
 }
 
-function changeLeft(){
-    country1 = prompt("Country: ", "");
-    localStorage.setItem("left", country1);
-}
-function changeRight(){
-    country2 = prompt("Country: ", "");
-    localStorage.setItem("right", country2);
-}
-function changeCompare(){
-    compare = prompt("Compare: ", "");
-    localStorage.setItem("compare", compare);
-}
-    
 function main (){
     //width of Country Middle Section
     var labelArea = 160;
@@ -53,29 +111,7 @@ function main (){
     var rightOffset = 50;
     var xFrom = d3.scale.identity();
     var xTo = d3.scale.identity();
-    var y = d3.scale.ordinal()
-            .rangeBands([textHeight, height]);
-    
-    if (localStorage.getItem("left")==null){
-        country1 = "China";
-    }else{
-        country1 = localStorage.getItem("left");
-    }
-    if (localStorage.getItem("right")==null){
-        country2 = "United States";
-    }else{
-        country2 = localStorage.getItem("right");
-    }
-    if (localStorage.getItem("compare")==null){
-        compare = "Infections";
-        document.getElementById("compare").innerHTML = "COVID-19: "+compare;
-    }else{
-        compare = localStorage.getItem("compare");
-        document.getElementById("compare").innerHTML = "COVID-19: "+compare;
-    }
-    document.getElementById("changeLeft").addEventListener("click", changeLeft);
-    document.getElementById("changeRight").addEventListener("click", changeRight);
-    document.getElementById("changeCompare").addEventListener("click", changeCompare);
+    var y = d3.scale.ordinal().rangeBands([textHeight, height]);
 
     //Render
     function render(data) {

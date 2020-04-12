@@ -2,7 +2,8 @@ var bar_height = 6;
 var chart;
 var compare;
 var comparisons = ["Infections","Recovered","Deaths"];
-var countries = ["Total", "China", "Italy", "Iran", "South Korea", "France", "Spain", "Germany", "United States", "Switzerland", "United Kingdom", "Netherlands"];
+//var countries = ["Total", "China", "Italy", "Iran", "South Korea", "France", "Spain", "Germany", "United States", "Switzerland", "United Kingdom", "Netherlands"];
+var countries = new Array();
 var country1;
 var country1Slice = new Array();
 var country2;
@@ -107,6 +108,11 @@ function mirror(){
             $('.LeftMirrorDiv').scrollLeft(maxWidth - $(this).scrollLeft());
             $('.LeftScale').scrollLeft(maxWidth - $(this).scrollLeft());
             $('.RightMirrorDiv').scrollLeft($(this).scrollLeft());
+        });
+        $('.RightMirrorDiv').on('scroll', function () {
+            $('.LeftMirrorDiv').scrollLeft(maxWidth - $(this).scrollLeft());
+            $('.LeftScale').scrollLeft(maxWidth - $(this).scrollLeft());
+            $('.RightScale').scrollLeft($(this).scrollLeft());
         });
         $('.DateDiv').on('scroll', function () {
             $('.LeftMirrorDiv').scrollTop($(this).scrollTop());

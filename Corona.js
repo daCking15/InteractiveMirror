@@ -50,24 +50,50 @@ window.onload = function(){
 }
 
 function generateItems(){
+    d3.csv("Corona_March25th.csv", function(data){
+        data.forEach(function(item){
+            if ($.inArray(item.Country,countries) == -1){
+                countries.push(item.Country)
+            }
+        });
 
-    countries.forEach(function(item){
-        $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
-        $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
+        countries.forEach(function(item){
+            $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
+            $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
+        });
+
+        comparisons.forEach(function(item){
+            $('#changeCompare').append("<option value = '" + item + "'>" + item + "</option>");
+        });
+
+        country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
+        country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
+        compare = ($.getUrlParam("compare") == undefined) ? $('#changeCompare').val() : $.getUrlParam("compare");
+        scaleFactor = $.getUrlParam("scaleFactor");
+    
+        $('#changeLeft').val(country1);
+        $('#changeRight').val(country2);
+        $('#changeCompare').val(compare);
+        $('#changeScale').val(scaleFactor);    
     });
-    comparisons.forEach(function(item){
-        $('#changeCompare').append("<option value = '" + item + "'>" + item + "</option>");
-    });
+    
+    // countries.forEach(function(item){
+    //     $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
+    //     $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
+    // });
+    // comparisons.forEach(function(item){
+    //     $('#changeCompare').append("<option value = '" + item + "'>" + item + "</option>");
+    // });
 
-    country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
-    country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
-    compare = ($.getUrlParam("compare") == undefined) ? $('#changeCompare').val() : $.getUrlParam("compare");
-    scaleFactor = $.getUrlParam("scaleFactor");
+    // country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
+    // country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
+    // compare = ($.getUrlParam("compare") == undefined) ? $('#changeCompare').val() : $.getUrlParam("compare");
+    // scaleFactor = $.getUrlParam("scaleFactor");
 
-    $('#changeLeft').val(country1);
-    $('#changeRight').val(country2);
-    $('#changeCompare').val(compare);
-    $('#changeScale').val(scaleFactor);
+    // $('#changeLeft').val(country1);
+    // $('#changeRight').val(country2);
+    // $('#changeCompare').val(compare);
+    // $('#changeScale').val(scaleFactor);
 
     $('#changeLeft').change(function(){
         country1 = $(this).val();

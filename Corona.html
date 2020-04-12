@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="utf-8"/>
 <html class="html">  
     <head class="head">
         <title>COVID-19</title>
@@ -9,19 +10,22 @@
     </head>
     <body class="body">
         <div class="header">
-            <form class="button">
-                <button id="changeLeft">Left Country</button>
-            </form>
-            <form class="button">
-                <button id="changeRight">Right Country</button>
-            </form>
-            <div id=compare></div>
-            <form class="button">
-                <button id="changeCompare">Comparison</button>
-            </form>
-            <form class="button">
-                <button id="changeScale">Scale Factor</button>
-            </form>
+            <div class=headerElement>
+                <font color = "white">Left Country: </font><select id = "changeLeft"></select>
+            </div>
+            <div class=headerElement>
+                <font color = "white">Right Country: </font><select id = "changeRight"></select>
+            </div>
+            <div class=headerElement>
+                <font color = "white">Compare Option: </font><select id = "changeCompare"></select>
+            </div>
+            <div class=headerElement>
+                <font color = "white">
+                    Scale Factor: 
+                </font>
+                <input id = "changeScale"></input>
+            </div>
+            <button class = "button" id = "submit"> Compare </button>
         </div>
             <div class="data">
             <div class="DateDiv">

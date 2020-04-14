@@ -63,32 +63,12 @@ function generateItems(){
 
         country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
         country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
-        compare = ($.getUrlParam("compare") == undefined) ? $('#changeCompare').val() : $.getUrlParam("compare");
         scaleFactor = $.getUrlParam("scaleFactor");
     
         $('#changeLeft').val(country1);
         $('#changeRight').val(country2);
-        $('#changeCompare').val(compare);
         $('#changeScale').val(scaleFactor);    
     });
-    
-    // countries.forEach(function(item){
-    //     $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
-    //     $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
-    // });
-    // comparisons.forEach(function(item){
-    //     $('#changeCompare').append("<option value = '" + item + "'>" + item + "</option>");
-    // });
-
-    // country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
-    // country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
-    // compare = ($.getUrlParam("compare") == undefined) ? $('#changeCompare').val() : $.getUrlParam("compare");
-    // scaleFactor = $.getUrlParam("scaleFactor");
-
-    // $('#changeLeft').val(country1);
-    // $('#changeRight').val(country2);
-    // $('#changeCompare').val(compare);
-    // $('#changeScale').val(scaleFactor);
 
     $('#changeLeft').change(function(){
         country1 = $(this).val();
@@ -100,15 +80,11 @@ function generateItems(){
         localStorage.setItem("right", country2);
     });
 
-    if ($('#changeScale').val() == '') {
-        scaleFactor = 1;
-    } else {
-        scaleFactor = $('#changeScale').val();
-    }
+    scaleFactor = ($('#changeScale').val() == '') ? 1 : $('#changeScale').val();
 
     $('#submit').click(function(){
         scaleFactor = $('#changeScale').val();
-        url = window.location.href.replace(window.location.search,'') + "?country1=" + country1 + "&country2=" + country2 + "&compare=" + compare + "&scaleFactor=" + scaleFactor;
+        url = window.location.href.replace(window.location.search,'') + "?country1=" + country1 + "&country2=" + country2 + "&scaleFactor=" + scaleFactor;
         window.location.href = url;
     });
 }

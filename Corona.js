@@ -1,7 +1,6 @@
 var bar_height = 6;
 var chart;
-var compare;
-var comparisons = ["Infections","Recovered","Deaths"];
+var compare = "Infections";
 //var countries = ["Total", "China", "Italy", "Iran", "South Korea", "France", "Spain", "Germany", "United States", "Switzerland", "United Kingdom", "Netherlands"];
 var countries = new Array();
 var country1;
@@ -24,7 +23,7 @@ var xFrom = d3.scale.identity();
 var xTo = d3.scale.identity();
 var y = d3.scale.ordinal().rangeBands([textHeight, height]);   
          
-d3.csv("Corona_March25th.csv", function(data){
+d3.csv("Corona_April13th.csv", function(data){
     data.forEach(function(item){
         if ($.inArray(item.Country,countries) == -1){
             countries.push(item.Country)
@@ -50,7 +49,7 @@ window.onload = function(){
 }
 
 function generateItems(){
-    d3.csv("Corona_March25th.csv", function(data){
+    d3.csv("Corona_April13th.csv", function(data){
         data.forEach(function(item){
             if ($.inArray(item.Country,countries) == -1){
                 countries.push(item.Country)
@@ -60,10 +59,6 @@ function generateItems(){
         countries.forEach(function(item){
             $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
             $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
-        });
-
-        comparisons.forEach(function(item){
-            $('#changeCompare').append("<option value = '" + item + "'>" + item + "</option>");
         });
 
         country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
@@ -103,11 +98,6 @@ function generateItems(){
     $('#changeRight').change(function(){
         country2 = $(this).val();
         localStorage.setItem("right", country2);
-    });
-
-    $('#changeCompare').change(function(){
-        compare = $(this).val();
-        localStorage.setItem("compare", compare);
     });
 
     if ($('#changeScale').val() == '') {
@@ -176,15 +166,15 @@ function main (){
             );           
         }
         function setWidth(data){
-            dataMax = country1Slice[0][compare];
+            dataMax = country1Slice[0]["Infections"];
             for (i=1; i<country1Slice.length; i++){
-                if (country1Slice[i][compare] > dataMax){
-                    dataMax = country1Slice[i][compare];
+                if (country1Slice[i]["Infections"] > dataMax){
+                    dataMax = country1Slice[i]["Infections"];
                 }
             }
             for (i=0; i<country2Slice.length; i++){
-                if (country2Slice[i][compare] > dataMax){
-                    dataMax = country2Slice[i][compare];
+                if (country2Slice[i]["Infections"] > dataMax){
+                    dataMax = country2Slice[i]["Infections"];
                 }
             }
 
@@ -202,7 +192,7 @@ function main (){
             
             tickArray = new Array();
             for (i=0; i<(dataMax/(100/scaleFactor)); i++){
-                tickArray.push((100/scaleFactor)*i);
+                tickArray.push(((100/scaleFactor)*i).toFixed());
             }
             
             var hAxis = d3.svg.axis()
@@ -243,6 +233,16 @@ function main (){
                         .style('stroke', '#000');            
         }
         function originalRender(data){
+            
+            var infectionsLegend = d3.select("#infectionsSquare")
+                .append('svg')
+                    .append("rect")
+                        .attr("class", "infectionsBar")
+                        .attr("x", 1)
+                        .attr("y", 1)
+                        .attr("width", 33)
+                        .attr("height", 33)
+                        .attr("float", "left");
             var leftChart = d3.select(".LeftMirrorDiv")
                 .append('svg')
                 .attr('class', 'chart')
@@ -275,18 +275,44 @@ function main (){
             var yPosByIndex = function (d) {
                 return y(d.Date);
             };
+            
             leftChart.selectAll("rect.left")
                     .data(country1Slice)
                     .enter().append("rect")
                     .attr("x", function (d) {
-                        return width - xFrom(d[compare]*scaleFactor);
+                        return width - xFrom(d["Infections"]*scaleFactor);
                     })  
                     .attr("y", yPosByIndex)
-                    .attr("class", "left")
+                    .attr("class", "infectionsBar")
                     .attr("width", function (d) {
-                        return xFrom(d[compare]*scaleFactor);
+                        return xFrom(d["Infections"]*scaleFactor);
                     })
                     .attr("height", y.rangeBand());
+            leftChart.selectAll("rect.left")
+                    .data(country1Slice)
+                    .enter().append("rect")
+                    .attr("x", function (d) {
+                        return width - xFrom(d["Recovered"]*scaleFactor);
+                    })  
+                    .attr("y", yPosByIndex)
+                    .attr("class", "recoveredBar")
+                    .attr("width", function (d) {
+                        return xFrom(d["Recovered"]*scaleFactor);
+                    })
+                    .attr("height", y.rangeBand());
+            leftChart.selectAll("rect.left")
+                    .data(country1Slice)
+                    .enter().append("rect")
+                    .attr("x", function (d) {
+                        return width - xFrom(d["Deaths"]*scaleFactor);
+                    })  
+                    .attr("y", yPosByIndex)
+                    .attr("class", "deathsBar")
+                    .attr("width", function (d) {
+                        return xFrom(d["Deaths"]*scaleFactor);
+                    })
+                    .attr("height", y.rangeBand());
+            /*
             leftChart.selectAll("text.leftscore")
                     .data(country1Slice)
                     .enter().append("text")
@@ -301,6 +327,8 @@ function main (){
                     .attr("text-anchor", "end")
                     .attr('class', 'leftscore')
                     .text(function(d){return d[compare];});
+                    */
+                    
             dates.selectAll("text.name")
                     .data(country2Slice)
                     .enter().append("text")
@@ -318,16 +346,36 @@ function main (){
                     .enter().append("rect")
                     .attr("x", 0)
                     .attr("y", yPosByIndex)
-                    .attr("class", "right")
+                    .attr("class", "infectionsBar")
                     .attr("width", function (d) {
-                        return xTo(d[compare]*scaleFactor);
+                        return xTo(d["Infections"]*scaleFactor);
                     })
                     .attr("height", y.rangeBand());
-            rightChart.selectAll("text.score")
+            rightChart.selectAll("rect.right")
+                    .data(country2Slice)
+                    .enter().append("rect")
+                    .attr("x", 0)
+                    .attr("y", yPosByIndex)
+                    .attr("class", "recoveredBar")
+                    .attr("width", function (d) {
+                        return xTo(d["Recovered"]*scaleFactor);
+                    })
+                    .attr("height", y.rangeBand());
+            rightChart.selectAll("rect.right")
+                    .data(country2Slice)
+                    .enter().append("rect")
+                    .attr("x", 0)
+                    .attr("y", yPosByIndex)
+                    .attr("class", "deathsBar")
+                    .attr("width", function (d) {
+                        return xTo(d["Deaths"]*scaleFactor);
+                    })
+                    .attr("height", y.rangeBand());
+           /* rightChart.selectAll("text.score")
                     .data(country2Slice)
                     .enter().append("text")
                     .attr("x", function (d) {
-                        return xTo(d[compare]*scaleFactor)+rightOffset;
+                        return xTo(d["Infections"]*scaleFactor)+rightOffset;
                     })
                     .attr("y", function (d) {
                         return y(d.Date) + y.rangeBand() / 2;
@@ -336,7 +384,8 @@ function main (){
                     .attr("dy", ".36em")
                     .attr("text-anchor", "end")
                     .attr('class', 'score')
-                    .text(function(d){return d[compare];});
+                    .text(function(d){return d["Infections"];});
+            */
         }
         function setInitialScroll(){
             $('.LeftMirrorDiv').scrollLeft(width);
@@ -355,5 +404,5 @@ function main (){
         return d;
     }
     
-    d3.csv("Corona_March25th.csv", type, render);
+    d3.csv("Corona_April13th.csv", type, render);
 }

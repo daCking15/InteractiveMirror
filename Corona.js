@@ -158,30 +158,42 @@ function main (){
                         if (item.Country == country1 && item.Date >= startDate && item.Date <= endDate){
                             country1Slice.push(item);
                         }
-                        if (item.Country == country2 && item.Date >= startDate && item.Date <= endDate){
-                            country2Slice.push(item);
-                        }
                     }
                     else if (startDate) {
                         if (item.Country == country1 && item.Date >= startDate){
                             country1Slice.push(item);
-                        }
-                        if (item.Country == country2 && item.Date >= startDate){
-                            country2Slice.push(item);
                         }
                     }
                     else if(endDate) {
                         if (item.Country == country1 && item.Date <= endDate){
                             country1Slice.push(item);
                         }
-                        if (item.Country == country2 && item.Date <= endDate){
-                            country2Slice.push(item);
-                        }
                     }
                     else {
                         if (item.Country == country1){
                             country1Slice.push(item);
                         }
+                    }
+                }
+            );
+            data.forEach(
+                function(item){
+                    if (startDate && endDate) {
+                        if (item.Country == country2 && item.Date >= startDate && item.Date <= endDate){
+                            country2Slice.push(item);
+                        }
+                    }
+                    else if (startDate) {
+                        if (item.Country == country2 && item.Date >= startDate){
+                            country2Slice.push(item);
+                        }
+                    }
+                    else if(endDate) {
+                        if (item.Country == country2 && item.Date <= endDate){
+                            country2Slice.push(item);
+                        }
+                    }
+                    else {
                         if (item.Country == country2){
                             country2Slice.push(item);
                         }
@@ -232,10 +244,10 @@ function main (){
             var hGuide = d3.select(".RightScale")
                 .append('svg')
                     .attr("width", width)
-                    .attr("height", 50)
+                    .attr("height", 30)
                 .append('g')
                     hAxis(hGuide)
-                    hGuide.attr('transform', 'translate(0,10)')
+                    hGuide.attr('transform', 'translate(0,2)')
                     hGuide.selectAll('path')
                         .style('fill', 'none')
                         .style('stroke', '#000')
@@ -245,11 +257,11 @@ function main (){
             var hGuideR = d3.select(".LeftScale")
                 .append('svg')
                     .attr("width", width)
-                    .attr("height", 50)
+                    .attr("height", 30)
                     .attr("class", "nav")
                 .append('g')
                     hAxisR(hGuideR)
-                    hGuideR.attr('transform', 'translate('+$(".LeftMirrorDiv").width()+',10)')
+                    hGuideR.attr('transform', 'translate('+$(".LeftMirrorDiv").width()+',2)')
                     hGuideR.selectAll('path')
                         .style('fill', 'none')
                         .style('stroke', '#000')

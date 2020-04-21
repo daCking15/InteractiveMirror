@@ -41,6 +41,17 @@ button{
 .chart text.title {
     fill: #2216ff;
 }
+#compare {
+    display:inline-block;
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .d{
     background: white;
 }
@@ -49,10 +60,12 @@ button{
     width: 100%;
 }
 .DateDiv{
+    width: 98px;
+    height: 90%;
     float:left;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 98px;
+    min-height: 1px;
     height: calc(100% - 50px);
 }
 .deathsBar{
@@ -61,8 +74,8 @@ button{
 }
 .header{
     background-color: black;
-    text-align: center;
     height: 30px;
+    text-align: center;
     width: 100%;
 }
 .headerElement{
@@ -89,14 +102,18 @@ button{
     margin-right: .5em;
     width: 10px;
 }
+#label{
+    float: left;
+}
 .LeftMirrorDiv{
     background-color: lightgray;
+    width: calc(50% - 50px);
     float:left;
     overflow-y: hidden;
     overflow-x: hidden;
-    border-right: 1px solid black;
-    width: calc(50% - 50px);
+    min-height: 1px;
     height: calc(100% - 50px);
+    border-right: 1px solid black;
 }
 .LeftScale{
     width: calc(50% - 50px);
@@ -104,6 +121,7 @@ button{
     float: right;
     overflow-x: scroll;
     overflow-y: hidden;
+    border-right: 1px;
 }
 #legend{
     overflow: hidden;
@@ -143,6 +161,5 @@ button{
     height: 50px;
     float: right;
     overflow-x: scroll;
-    overflow-y: hidden;
-    margin-right: 1px;
+    overflow-y: hidden
 }

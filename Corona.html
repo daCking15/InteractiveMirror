@@ -6,7 +6,10 @@
         <script src="d3/d3.v3.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="Corona.js"></script>
+        <script src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <link rel="stylesheet" href="Corona.css">
+        <link href = "https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      </script>
     </head>
     <body class="body">
         <div class="header">
@@ -19,9 +22,15 @@
                 <select id = "changeRight"></select>
             </div>
             <div class=headerElement>
-                <font color = "white">
-                    Scale Factor: 
-                </font>
+                <font color = "white"> Date Start From: </font>
+                <input type = "text" id = "startDate"></input>
+            </div>
+            <div class=headerElement>
+                <font color = "white"> To: </font>
+                <input type = "text" id = "endDate"></input>
+            </div>
+            <div class=headerElement>
+                <font color = "white"> Scale Factor: </font>
                 <input id = "changeScale"></input>
             </div>
             <button class = "button" id = "submit">Compare</button>

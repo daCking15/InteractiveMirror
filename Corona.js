@@ -21,8 +21,10 @@ var textHeight = 20;
 var width;
 var xFrom = d3.scale.identity();
 var xTo = d3.scale.identity();
-var y = d3.scale.ordinal().rangeBands([textHeight, height]);   
-         
+var y = d3.scale.ordinal().rangeBands([textHeight, height]);
+var startDate = "";
+var endDate = "";
+
 d3.csv("Corona_April13th.csv", function(data){
     data.forEach(function(item){
         if ($.inArray(item.Country,countries) == -1){
@@ -56,18 +58,27 @@ function generateItems(){
             }
         });
 
+        $("#startDate").datepicker();
+        $("#endDate").datepicker();
+
         countries.forEach(function(item){
             $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
             $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
         });
 
-        country1 = ($.getUrlParam("country1") == undefined) ? $('#changeLeft').val() : $.getUrlParam("country1");
-        country2 = ($.getUrlParam("country2") == undefined) ? $('#changeRight').val() : $.getUrlParam("country2");
-        scaleFactor = $.getUrlParam("scaleFactor");
-    
+        country1 = ($.getUrlParam("country1")) ? $.getUrlParam("country1") : "Total";
+        localStorage.setItem("left", country1);
+        country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
+        localStorage.setItem("right", country2);
+        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "";
+        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "";
+        scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
+
         $('#changeLeft').val(country1);
         $('#changeRight').val(country2);
-        $('#changeScale').val(scaleFactor);    
+        $('#changeScale').val(scaleFactor);
+        $("#startDate").datepicker("setDate", startDate);
+        $("#endDate").datepicker("setDate", endDate);
     });
 
     $('#changeLeft').change(function(){
@@ -80,11 +91,27 @@ function generateItems(){
         localStorage.setItem("right", country2);
     });
 
-    scaleFactor = ($('#changeScale').val() == '') ? 1 : $('#changeScale').val();
+    $('#startDate').change(function(){
+        startDate = $("#startDate").datepicker("getDate");
+        if (startDate) {
+            startDate = (startDate.getMonth() + 1) + "/" + startDate.getDate() + "/" + startDate.getFullYear();
+        } else {
+            startDate = ""
+        }
+    });
+
+    $('#endDate').change(function(){
+        endDate = $("#endDate").datepicker("getDate");
+        if (endDate) {
+            endDate = (endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear();
+        } else {
+            endDate = ""
+        }
+    });
 
     $('#submit').click(function(){
         scaleFactor = $('#changeScale').val();
-        url = window.location.href.replace(window.location.search,'') + "?country1=" + country1 + "&country2=" + country2 + "&scaleFactor=" + scaleFactor;
+        url = window.location.href.replace(window.location.search,'') + "?country1=" + country1 + "&country2=" + country2 + "&startDate=" + startDate + "&endDate=" + endDate + "&scaleFactor=" + scaleFactor;
         window.location.href = url;
     });
 }
@@ -123,23 +150,44 @@ function main (){
         makeScale(data);
         originalRender(data);
         setInitialScroll();
-        
+
         function countrySlice(data){
-            
             data.forEach(
                 function(item){
-                    if (item.Country == country1){
-                        country1Slice.push(item);
+                    if (startDate && endDate) {
+                        if (item.Country == country1 && item.Date >= startDate && item.Date <= endDate){
+                            country1Slice.push(item);
+                        }
+                        if (item.Country == country2 && item.Date >= startDate && item.Date <= endDate){
+                            country2Slice.push(item);
+                        }
+                    }
+                    else if (startDate) {
+                        if (item.Country == country1 && item.Date >= startDate){
+                            country1Slice.push(item);
+                        }
+                        if (item.Country == country2 && item.Date >= startDate){
+                            country2Slice.push(item);
+                        }
+                    }
+                    else if(endDate) {
+                        if (item.Country == country1 && item.Date <= endDate){
+                            country1Slice.push(item);
+                        }
+                        if (item.Country == country2 && item.Date <= endDate){
+                            country2Slice.push(item);
+                        }
+                    }
+                    else {
+                        if (item.Country == country1){
+                            country1Slice.push(item);
+                        }
+                        if (item.Country == country2){
+                            country2Slice.push(item);
+                        }
                     }
                 }
             );
-            data.forEach(
-                function(item){
-                    if (item.Country == country2){
-                        country2Slice.push(item);
-                    }
-                }
-            );           
         }
         function setWidth(data){
             dataMax = country1Slice[0]["Infections"];

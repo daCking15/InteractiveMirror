@@ -53,14 +53,14 @@ button{
     transform: translateY(-50%);
 }
 .d{
-    background: white;
+    background: black;
 }
 .data{
     height: calc(100% - 50px);
     width: 100%;
 }
 .DateDiv{
-    width: 98px;
+    width: 100px;
     height: 90%;
     float:left;
     overflow-y: scroll;
@@ -69,8 +69,8 @@ button{
     height: calc(100% - 50px);
 }
 .deathsBar{
-    fill: white;
-    opacity: 1;
+    fill: black;
+    opacity: 0.5;
 }
 .header{
     background-color: black;
@@ -90,11 +90,11 @@ button{
     height: 100%;
 }
 .i{
-    background: #481380;
+    background: steelblue;
 }
 .infectionsBar{
-    fill: #481380;
-    opacity: 1;
+    fill: steelblue;
+    opacity: 0.5;
 }
 .key-dot{
     display: inline-block;
@@ -106,59 +106,53 @@ button{
     float: left;
 }
 .LeftMirrorDiv{
-    background-color: lightgray;
     width: calc(50% - 50px);
     float:left;
     overflow-y: hidden;
     overflow-x: hidden;
     min-height: 1px;
-    height: calc(100% - 50px);
-    border-right: 1px solid black;
+    height: 90%;
 }
 .LeftScale{
     width: calc(50% - 50px);
-    height: 50px;
+    height: 10%;
     float: right;
     overflow-x: scroll;
     overflow-y: hidden;
-    border-right: 1px;
 }
 #legend{
     overflow: hidden;
 }
 .legend{
     display: inline-block;
+    height: 20px;
     margin-right: 2%;
 }
 .legendHub{
     background-color: lightgray;
     text-align: center;
-    width: 100%; 
-    height: 19px;
-    border-bottom: 1px solid black;
+    width: 100%;
 }
 .name{
     margin: 0 !important;
 }
 .recoveredBar{
-    fill: #7F78D2;
-    opacity: 1;
+    fill: gray;
+    opacity: 0.5;
 }
 .r{
-    background: #7F78D2;
+    background: gray;
 }
 .RightMirrorDiv{
-    background-color: lightgray;
     width: calc(50% - 50px);
     float:left;
     overflow-y: hidden;
     overflow-x: hidden;
-    height: calc(100% - 50px);
-    border-left: 1px solid black;
+    height: 90%;
 }
 .RightScale{
     width: calc(50% - 50px);
-    height: 50px;
+    height: 10%;
     float: right;
     overflow-x: scroll;
     overflow-y: hidden

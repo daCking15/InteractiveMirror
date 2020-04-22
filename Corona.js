@@ -166,17 +166,24 @@ function main (){
             );           
         }
         function setWidth(data){
-            dataMax = country1Slice[0]["Infections"];
-            for (i=1; i<country1Slice.length; i++){
+            dataMax = country1Slice[0]["Tests"];
+            for (i=0; i<country1Slice.length; i++){
+                if (country1Slice[i]["Tests"] > dataMax){
+                    dataMax = country1Slice[i]["Tests"];
+                }
                 if (country1Slice[i]["Infections"] > dataMax){
                     dataMax = country1Slice[i]["Infections"];
                 }
             }
             for (i=0; i<country2Slice.length; i++){
-                if (country2Slice[i]["Infections"] > dataMax){
+                if (country2Slice[i]["Tests"] > dataMax){
+                    dataMax = country2Slice[i]["Tests"];
+                }
+                if (country1Slice[i]["Infections"] > dataMax){
                     dataMax = country2Slice[i]["Infections"];
                 }
             }
+            console.log(dataMax);
 
             width = dataMax*scaleFactor+$(".LeftMirrorDiv").width();           
         }
@@ -312,6 +319,18 @@ function main (){
                         return xFrom(d["Deaths"]*scaleFactor);
                     })
                     .attr("height", y.rangeBand());
+            leftChart.selectAll("rect.left")
+                    .data(country1Slice)
+                    .enter().append("rect")
+                    .attr("x", function (d) {
+                        return width - xFrom(d["Tests"]*scaleFactor);
+                    })  
+                    .attr("y", yPosByIndex)
+                    .attr("class", "testsBar")
+                    .attr("width", function (d) {
+                        return xFrom(d["Tests"]*scaleFactor);
+                    })
+                    .attr("height", 2);
             /*
             leftChart.selectAll("text.leftscore")
                     .data(country1Slice)
@@ -371,6 +390,16 @@ function main (){
                         return xTo(d["Deaths"]*scaleFactor);
                     })
                     .attr("height", y.rangeBand());
+            rightChart.selectAll("rect.right")
+                    .data(country2Slice)
+                    .enter().append("rect")
+                    .attr("x", 0)
+                    .attr("y", yPosByIndex)
+                    .attr("class", "testsBar")
+                    .attr("width", function (d) {
+                        return xTo(d["Tests"]*scaleFactor);
+                    })
+                    .attr("height", 2);
            /* rightChart.selectAll("text.score")
                     .data(country2Slice)
                     .enter().append("text")
@@ -401,6 +430,7 @@ function main (){
         d["Deaths"] = +d["Deaths"];
         d["Infections"] = +d["Infections"];
         d["Recovered"] = +d["Recovered"];
+        d["Tests"] = +d["Tests"];
         return d;
     }
     

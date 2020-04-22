@@ -42,7 +42,7 @@ button{
     fill: #2216ff;
 }
 .d{
-    background: white;
+    background: red;
 }
 .data{
     height: calc(100% - 50px);
@@ -56,7 +56,7 @@ button{
     height: calc(100% - 50px);
 }
 .deathsBar{
-    fill: white;
+    fill: red;
     opacity: 1;
 }
 .header{
@@ -77,10 +77,10 @@ button{
     height: 100%;
 }
 .i{
-    background: #481380;
+    background: yellow;
 }
 .infectionsBar{
-    fill: #481380;
+    fill: yellow;
     opacity: 1;
 }
 .key-dot{
@@ -119,15 +119,23 @@ button{
     height: 19px;
     border-bottom: 1px solid black;
 }
+.lines{
+    background: black;
+    display: inline-block;
+    margin-bottom: 3px;
+    height: 2px;
+    margin-right: .5em;
+    width: 40px;
+}
 .name{
     margin: 0 !important;
 }
 .recoveredBar{
-    fill: #7F78D2;
+    fill: green;
     opacity: 1;
 }
 .r{
-    background: #7F78D2;
+    background: green;
 }
 .RightMirrorDiv{
     background-color: lightgray;
@@ -145,4 +153,8 @@ button{
     overflow-x: scroll;
     overflow-y: hidden;
     margin-right: 1px;
+}
+.testsBar{
+    fill: black;
+    height: 1;
 }

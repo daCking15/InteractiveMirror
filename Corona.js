@@ -71,9 +71,9 @@ function generateItems(){
         localStorage.setItem("left", country1);
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
         localStorage.setItem("right", country2);
-        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "2020-1-1";
+        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "2020-01-01";
         startDateFormat = new Date(startDate);
-        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "2020-5-31";
+        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "2020-05-31";
         endDateFormat = new Date(endDate);
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
@@ -466,7 +466,7 @@ function main (){
         }
         
     }
-    
+
     function type(d) {
         d["Deaths"] = +d["Deaths"];
         d["Infections"] = +d["Infections"];
@@ -475,5 +475,10 @@ function main (){
         return d;
     }
     
+    d3.csv("Corona_April13th.csv", type, function(data){
+        render
+        covidData = data;
+    });
+
     d3.csv("Corona_April13th.csv", type, render);
 }

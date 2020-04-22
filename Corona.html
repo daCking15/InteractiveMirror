@@ -7,34 +7,37 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="Corona.js"></script>
         <script src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="dateRangeSlider/js/jQDateRangeSlider-min.js"></script>
+        <script src="dateRangeSlider/js/jQDateRangeSlider-withRuler-min.js"></script>
+
         <link rel="stylesheet" href="Corona.css">
-        <link href = "https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
-      </script>
+        <link rel="stylesheet" href="dateRangeSlider/css/iThing.css" type="text/css" />
     </head>
     <body class="body">
         <div class="header">
-            <div class=headerElement>
+            <div class="headerElement">
                 <font color = "white">Left Country: </font>
                 <select id = "changeLeft"></select>
             </div>
-            <div class=headerElement>
+            <div class="headerElement">
                 <font color = "white">Right Country: </font>
                 <select id = "changeRight"></select>
             </div>
-            <div class=headerElement>
+            <div class="headerElement">
                 <font color = "white"> Date Start From: </font>
-                <input type = "text" id = "startDate"></input>
+                <input type = "text" id = "startDate" disabled></input>
             </div>
-            <div class=headerElement>
+            <div class="headerElement">
                 <font color = "white"> To: </font>
-                <input type = "text" id = "endDate"></input>
+                <input type = "text" id = "endDate" disabled></input>
             </div>
-            <div class=headerElement>
+            <div class="headerElement">
                 <font color = "white"> Scale Factor: </font>
                 <input id = "changeScale"></input>
             </div>
             <button class = "button" id = "submit">Compare</button>
         </div>
+        <font color = "black"> Date Range: </font><div id="dateSlider"></div>
         <div class="legendHub" id=legend>
             <div class="legend">
                 <p class="name">

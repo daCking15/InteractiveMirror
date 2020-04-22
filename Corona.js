@@ -25,8 +25,9 @@ var y = d3.scale.ordinal().rangeBands([textHeight, height]);
 var startDate = "";
 var endDate = "";
 var dateFormat = new Date();
-var startDateFormat = new Date();
-var endDateFormat = new Date();
+var startDateFormat = new Date(2020, 0, 1);
+var endDateFormat = new Date(2020, 5, 31);
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
 d3.csv("Corona_April13th.csv", function(data){
     data.forEach(function(item){
@@ -61,9 +62,6 @@ function generateItems(){
             }
         });
 
-        $("#startDate").datepicker();
-        $("#endDate").datepicker();
-
         countries.forEach(function(item){
             $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
             $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
@@ -73,18 +71,46 @@ function generateItems(){
         localStorage.setItem("left", country1);
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
         localStorage.setItem("right", country2);
-        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "";
-        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "";
+        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "2020-1-1";
+        startDateFormat = new Date(startDate);
+        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "2020-5-31";
+        endDateFormat = new Date(endDate);
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
-        startDateFormat = new Date(startDate);
-        endDateFormat = new Date(endDate);
+        $("#dateSlider").dateRangeSlider({
+            bounds: {min: new Date(2020, 0, 1), max: new Date(2020, 11, 31, 12, 59, 59)},
+            defaultValues: {min: startDate ? new Date(startDate) : startDateFormat,
+                max: endDate ? new Date(endDate) : endDateFormat},
+            scales: [{
+                first: function(value){ return value; },
+                end: function(value) {return value; },
+                next: function(value){
+                    var next = new Date(value);
+                    return new Date(next.setMonth(value.getMonth() + 1));
+                },
+                label: function(value){
+                    return months[value.getMonth()];
+                },
+                format: function(tickContainer, tickStart, tickEnd){
+                    tickContainer.addClass("myCustomClass");
+                }
+            }]
+        });
+
+        $("#dateSlider").bind("valuesChanged", function(e, data){
+            startDateFormat = data.values.min;
+            endDateFormat = data.values.max;
+            startDate = startDateFormat.getFullYear() + "-" + (startDateFormat.getMonth() + 1) + "-" + startDateFormat.getDate();
+            endDate = endDateFormat.getFullYear() + "-" + (endDateFormat.getMonth() + 1) + "-" + endDateFormat.getDate();
+            $("#startDate").val(startDate);
+            $("#endDate").val(endDate);
+        });
 
         $('#changeLeft').val(country1);
         $('#changeRight').val(country2);
         $('#changeScale').val(scaleFactor);
-        $("#startDate").datepicker("setDate", startDate);
-        $("#endDate").datepicker("setDate", endDate);
+        $("#startDate").val(startDate);
+        $("#endDate").val(endDate);
     });
 
     $('#changeLeft').change(function(){
@@ -95,26 +121,6 @@ function generateItems(){
     $('#changeRight').change(function(){
         country2 = $(this).val();
         localStorage.setItem("right", country2);
-    });
-
-    $('#startDate').change(function(){
-        startDate = $("#startDate").datepicker("getDate");
-        if (startDate) {
-            startDate = (startDate.getMonth() + 1) + "/" + startDate.getDate() + "/" + startDate.getFullYear();
-            // startDate = startDate.getFullYear() + "/" + (startDate.getMonth() + 1) + "/" + startDate.getDate();
-        } else {
-            startDate = ""
-        }
-    });
-
-    $('#endDate').change(function(){
-        endDate = $("#endDate").datepicker("getDate");
-        if (endDate) {
-            endDate = endDate.getFullYear() + "/" + (endDate.getMonth() + 1) + "/" + endDate.getDate();
-            // endDate = (endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear();
-        } else {
-            endDate = ""
-        }
     });
 
     $('#submit').click(function(){

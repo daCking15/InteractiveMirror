@@ -24,6 +24,9 @@ var xTo = d3.scale.identity();
 var y = d3.scale.ordinal().rangeBands([textHeight, height]);
 var startDate = "";
 var endDate = "";
+var dateFormat = new Date();
+var startDateFormat = new Date();
+var endDateFormat = new Date();
 
 d3.csv("Corona_April13th.csv", function(data){
     data.forEach(function(item){
@@ -74,6 +77,9 @@ function generateItems(){
         endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "";
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
+        startDateFormat = new Date(startDate);
+        endDateFormat = new Date(endDate);
+
         $('#changeLeft').val(country1);
         $('#changeRight').val(country2);
         $('#changeScale').val(scaleFactor);
@@ -95,6 +101,7 @@ function generateItems(){
         startDate = $("#startDate").datepicker("getDate");
         if (startDate) {
             startDate = (startDate.getMonth() + 1) + "/" + startDate.getDate() + "/" + startDate.getFullYear();
+            // startDate = startDate.getFullYear() + "/" + (startDate.getMonth() + 1) + "/" + startDate.getDate();
         } else {
             startDate = ""
         }
@@ -103,7 +110,8 @@ function generateItems(){
     $('#endDate').change(function(){
         endDate = $("#endDate").datepicker("getDate");
         if (endDate) {
-            endDate = (endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear();
+            endDate = endDate.getFullYear() + "/" + (endDate.getMonth() + 1) + "/" + endDate.getDate();
+            // endDate = (endDate.getMonth() + 1) + "/" + endDate.getDate() + "/" + endDate.getFullYear();
         } else {
             endDate = ""
         }
@@ -154,48 +162,41 @@ function main (){
         function countrySlice(data){
             data.forEach(
                 function(item){
+                    dateFormat = new Date(item.Date);
                     if (startDate && endDate) {
-                        if (item.Country == country1 && item.Date >= startDate && item.Date <= endDate){
-                            country1Slice.push(item);
+                        if (dateFormat >= startDateFormat && dateFormat <= endDateFormat) {
+                            if (item.Country == country1) {
+                                country1Slice.push(item);
+                            }
+                            if (item.Country == country2) {
+                                country2Slice.push(item);
+                            }
                         }
-                    }
-                    else if (startDate) {
-                        if (item.Country == country1 && item.Date >= startDate){
-                            country1Slice.push(item);
+                    } else if (startDate) {
+                        if (dateFormat >= startDateFormat) {
+                            if (item.Country == country1) {
+                                country1Slice.push(item);
+                            } 
+                            if (item.Country == country2) {
+                                country2Slice.push(item);
+                            }
                         }
-                    }
-                    else if(endDate) {
-                        if (item.Country == country1 && item.Date <= endDate){
-                            country1Slice.push(item);
+                    } else if (endDate) {
+                        if (dateFormat <= endDateFormat) {
+                            if (item.Country == country1) {
+                                country1Slice.push(item);
+                            } 
+                            if (item.Country == country2) {
+                                country2Slice.push(item);
+                            }
                         }
                     }
                     else {
-                        if (item.Country == country1){
+                        if (item.Country == country1) {
                             country1Slice.push(item);
-                        }
-                    }
-                }
-            );
-            data.forEach(
-                function(item){
-                    if (startDate && endDate) {
-                        if (item.Country == country2 && item.Date >= startDate && item.Date <= endDate){
-                            country2Slice.push(item);
-                        }
-                    }
-                    else if (startDate) {
-                        if (item.Country == country2 && item.Date >= startDate){
-                            country2Slice.push(item);
-                        }
-                    }
-                    else if(endDate) {
-                        if (item.Country == country2 && item.Date <= endDate){
-                            country2Slice.push(item);
-                        }
-                    }
-                    else {
-                        if (item.Country == country2){
-                            country2Slice.push(item);
+                        } 
+                        if (item.Country == country2) {
+                           country2Slice.push(item);
                         }
                     }
                 }
@@ -219,8 +220,6 @@ function main (){
                     dataMax = country2Slice[i]["Infections"];
                 }
             }
-            console.log(dataMax);
-
             width = dataMax*scaleFactor+$(".LeftMirrorDiv").width();           
         }
         function makeScale(data){

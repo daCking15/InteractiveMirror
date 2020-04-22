@@ -1,2162 +1,1080 @@
 Date,Country,Infections,Recovered,Deaths,Tests
-22-Jan,China,548,28,17,0
-23-Jan,China,643,30,18,0
-24-Jan,China,920,35,26,0
-25-Jan,China,1406,38,42,0
-26-Jan,China,2075,48,56,0
-27-Jan,China,2877,57,82,0
-28-Jan,China,5509,98,131,0
-29-Jan,China,6087,117,133,0
-30-Jan,China,8141,131,171,0
-31-Jan,China,9802,199,213,0
-1-Feb,China,11891,252,259,0
-2-Feb,China,16630,427,361,0
-3-Feb,China,19716,565,425,0
-4-Feb,China,23707,774,491,0
-5-Feb,China,27440,1030,563,0
-6-Feb,China,30587,1374,633,0
-7-Feb,China,34110,1862,718,0
-8-Feb,China,36814,2400,805,0
-9-Feb,China,39829,2996,905,0
-10-Feb,China,42354,3649,1012,0
-11-Feb,China,44386,4333,1112,0
-12-Feb,China,44759,4721,1117,0
-13-Feb,China,59895,5803,1369,0
-14-Feb,China,66358,7501,1521,0
-15-Feb,China,68413,8781,1663,0
-16-Feb,China,70513,10200,1766,0
-17-Feb,China,72434,11850,1864,0
-18-Feb,China,74211,13554,2003,0
-19-Feb,China,74619,15224,2116,0
-20-Feb,China,75077,17221,2238,0
-21-Feb,China,75550,17845,2238,0
-22-Feb,China,77001,21785,2443,0
-23-Feb,China,77022,22205,2445,0
-24-Feb,China,77241,23994,2595,0
-25-Feb,China,77754,26620,2665,0
-26-Feb,China,78166,28945,2717,0
-27-Feb,China,78600,31708,2746,0
-28-Feb,China,78928,35049,2790,0
-29-Feb,China,79356,37981,2837,0
-1-Mar,China,79932,40783,2872,0
-2-Mar,China,80136,43445,2914,0
-3-Mar,China,80261,46001,2947,0
-4-Mar,China,80386,48530,2983,0
-5-Mar,China,80537,50806,3015,0
-6-Mar,China,80690,52433,3044,0
-7-Mar,China,80770,54022,3072,0
-8-Mar,China,80823,55863,3100,0
-9-Mar,China,80860,57262,3123,0
-10-Mar,China,80887,58623,3139,0
-11-Mar,China,80921,60082,3161,0
-12-Mar,China,80932,61336,3172,0
-13-Mar,China,80945,62631,3180,0
-14-Mar,China,80977,64079,3193,0
-15-Mar,China,81003,65435,3203,0
-16-Mar,China,81033,66324,3217,0
-17-Mar,China,81058,67212,3230,0
-18-Mar,China,81102,68169,3241,0
-19-Mar,China,81156,68948,3249,0
-20-Mar,China,81250,69683,3253,0
-21-Mar,China,81305,70275,3259,0
-22-Mar,China,81435,70782,3274,0
-23-Mar,China,81498,71232,3274,0
-24-Mar,China,81591,71807,3281,0
-25-Mar,China,81661,72380,3285,0
-26-Mar,China,81782,72788,3291,0
-27-Mar,China,81897,73420,3296,0
-28-Mar,China,81999,74025,3299,0
-29-Mar,China,82122,74524,3304,0
-30-Mar,China,82198,74946,3308,0
-31-Mar,China,82279,76352,3309,0
-1-Apr,China,82361,76366,3316,0
-2-Apr,China,82432,77036,3322,0
-3-Apr,China,82511,77765,3326,0
-4-Apr,China,82543,78449,3330,0
-5-Apr,China,82602,79234,3333,0
-6-Apr,China,82665,79691,3335,0
-7-Apr,China,82718,80516,3335,0
-8-Apr,China,82809,81267,3337,0
-9-Apr,China,82883,82543,3339,0
-10-Apr,China,82941,83677,3340,0
-11-Apr,China,83014,84785,3343,0
-12-Apr,China,83134,85591,3343,0
-13-Apr,China,83213,86616,3345,0
-22-Jan,Italy,0,0,0,0
-23-Jan,Italy,0,0,0,0
-24-Jan,Italy,0,0,0,0
-25-Jan,Italy,0,0,0,0
-26-Jan,Italy,0,0,0,0
-27-Jan,Italy,0,0,0,0
-28-Jan,Italy,0,0,0,0
-29-Jan,Italy,0,0,0,0
-30-Jan,Italy,0,0,0,0
-31-Jan,Italy,2,0,0,0
-1-Feb,Italy,2,0,0,0
-2-Feb,Italy,2,0,0,0
-3-Feb,Italy,2,0,0,0
-4-Feb,Italy,2,0,0,0
-5-Feb,Italy,2,0,0,0
-6-Feb,Italy,2,0,0,0
-7-Feb,Italy,3,0,0,0
-8-Feb,Italy,3,0,0,0
-9-Feb,Italy,3,0,0,0
-10-Feb,Italy,3,0,0,0
-11-Feb,Italy,3,0,0,0
-12-Feb,Italy,3,0,0,0
-13-Feb,Italy,3,0,0,0
-14-Feb,Italy,3,0,0,0
-15-Feb,Italy,3,0,0,0
-16-Feb,Italy,3,0,0,0
-17-Feb,Italy,3,0,0,0
-18-Feb,Italy,3,0,0,0
-19-Feb,Italy,3,0,0,0
-20-Feb,Italy,3,0,0,0
-21-Feb,Italy,20,0,1,0
-22-Feb,Italy,62,1,2,0
-23-Feb,Italy,155,2,3,0
-24-Feb,Italy,229,1,7,4324
-25-Feb,Italy,322,1,10,8623
-26-Feb,Italy,453,3,12,9587
-27-Feb,Italy,655,45,17,12014
-28-Feb,Italy,888,46,21,15695
-29-Feb,Italy,1128,46,29,18661
-1-Mar,Italy,1694,83,34,21127
-2-Mar,Italy,2036,149,52,23345
-3-Mar,Italy,2502,160,79,25856
-4-Mar,Italy,3089,276,107,29837
-5-Mar,Italy,3858,414,148,32362
-6-Mar,Italy,4636,523,197,36359
-7-Mar,Italy,5883,589,233,42062
-8-Mar,Italy,7375,622,366,49937
-9-Mar,Italy,9172,724,463,53826
-10-Mar,Italy,10149,724,631,60761
-11-Mar,Italy,12462,1045,827,73154
-12-Mar,Italy,12462,1045,827,86011
-13-Mar,Italy,17660,1439,1266,97488
-14-Mar,Italy,21157,1966,1441,109170
-15-Mar,Italy,24747,2335,1809,124899
-16-Mar,Italy,27980,2749,2158,137962
-17-Mar,Italy,31506,2941,2503,148657
-18-Mar,Italy,35713,4025,2978,165541
-19-Mar,Italy,41035,4440,3405,182777
-20-Mar,Italy,47021,4440,4032,206886
-21-Mar,Italy,53578,6072,4825,233222
-22-Mar,Italy,59138,7024,5476,258402
-23-Mar,Italy,63927,7024,6077,275468
-24-Mar,Italy,69176,8326,6820,296964
-25-Mar,Italy,74386,9362,7503,324445
-26-Mar,Italy,80589,10361,8215,361060
-27-Mar,Italy,86498,10950,9134,394079
-28-Mar,Italy,92472,12384,10023,429526
-29-Mar,Italy,97689,13030,10779,454030
-30-Mar,Italy,101739,14620,11591,477359
-31-Mar,Italy,105792,15729,12428,506968
-1-Apr,Italy,110574,16847,13155,541423
-2-Apr,Italy,115242,18278,13915,581232
-3-Apr,Italy,119827,19758,14681,619849
-4-Apr,Italy,124632,20996,15362,657224
-5-Apr,Italy,128948,21815,15887,691461
-6-Apr,Italy,132547,22837,16523,721732
-7-Apr,Italy,135586,24392,17127,755445
-8-Apr,Italy,139422,26491,17669,807125
-9-Apr,Italy,143626,28470,18279,853369
-10-Apr,Italy,147577,30455,18849,906864
-11-Apr,Italy,152271,32534,19468,963473
-12-Apr,Italy,156363,34211,19899,1010193
-13-Apr,Italy,159516,35435,20465,1046910
-22-Jan,Iran,0,0,0,0
-23-Jan,Iran,0,0,0,0
-24-Jan,Iran,0,0,0,0
-25-Jan,Iran,0,0,0,0
-26-Jan,Iran,0,0,0,0
-27-Jan,Iran,0,0,0,0
-28-Jan,Iran,0,0,0,0
-29-Jan,Iran,0,0,0,0
-30-Jan,Iran,0,0,0,0
-31-Jan,Iran,0,0,0,0
-1-Feb,Iran,0,0,0,0
-2-Feb,Iran,0,0,0,0
-3-Feb,Iran,0,0,0,0
-4-Feb,Iran,0,0,0,0
-5-Feb,Iran,0,0,0,0
-6-Feb,Iran,0,0,0,0
-7-Feb,Iran,0,0,0,0
-8-Feb,Iran,0,0,0,0
-9-Feb,Iran,0,0,0,0
-10-Feb,Iran,0,0,0,0
-11-Feb,Iran,0,0,0,0
-12-Feb,Iran,0,0,0,0
-13-Feb,Iran,0,0,0,0
-14-Feb,Iran,0,0,0,0
-15-Feb,Iran,0,0,0,0
-16-Feb,Iran,0,0,0,0
-17-Feb,Iran,0,0,0,0
-18-Feb,Iran,0,0,0,0
-19-Feb,Iran,2,0,2,0
-20-Feb,Iran,5,0,2,0
-21-Feb,Iran,18,0,4,0
-22-Feb,Iran,28,0,5,0
-23-Feb,Iran,43,0,8,0
-24-Feb,Iran,61,0,12,0
-25-Feb,Iran,95,0,16,0
-26-Feb,Iran,139,49,19,0
-27-Feb,Iran,245,49,26,0
-28-Feb,Iran,388,73,34,0
-29-Feb,Iran,593,123,43,0
-1-Mar,Iran,978,175,54,0
-2-Mar,Iran,1501,291,66,0
-3-Mar,Iran,2336,291,77,0
-4-Mar,Iran,2922,552,92,0
-5-Mar,Iran,3513,739,107,0
-6-Mar,Iran,4747,913,124,0
-7-Mar,Iran,5823,1669,145,0
-8-Mar,Iran,6566,2134,194,0
-9-Mar,Iran,7161,2394,237,0
-10-Mar,Iran,8042,2731,291,0
-11-Mar,Iran,9000,2959,354,0
-12-Mar,Iran,10075,2959,429,0
-13-Mar,Iran,11364,2959,514,0
-14-Mar,Iran,12729,2959,611,0
-15-Mar,Iran,13938,4590,724,0
-16-Mar,Iran,14991,4590,853,0
-17-Mar,Iran,16169,5389,988,0
-18-Mar,Iran,17361,5389,1135,0
-19-Mar,Iran,18407,5710,1284,0
-20-Mar,Iran,19644,6745,1433,0
-21-Mar,Iran,20610,7635,1556,0
-22-Mar,Iran,21638,7931,1685,0
-23-Mar,Iran,23049,7931,1812,0
-24-Mar,Iran,24811,8913,1934,0
-25-Mar,Iran,27017,9625,2077,0
-26-Mar,Iran,29406,10457,2234,0
-27-Mar,Iran,32332,11133,2378,0
-28-Mar,Iran,35408,11679,2517,0
-29-Mar,Iran,38309,12391,2640,0
-30-Mar,Iran,41495,13911,2757,0
-31-Mar,Iran,44605,14656,2898,0
-1-Apr,Iran,47593,15473,3036,0
-2-Apr,Iran,50468,16711,3160,0
-3-Apr,Iran,53183,17935,3294,0
-4-Apr,Iran,55743,19736,3452,0
-5-Apr,Iran,58226,19736,3603,189790
-6-Apr,Iran,60500,24236,3739,189790
-7-Apr,Iran,62589,27039,3872,189790
-8-Apr,Iran,64586,29812,3993,220975
-9-Apr,Iran,66220,32309,4110,231393
-10-Apr,Iran,68192,35465,4232,242568
-11-Apr,Iran,70029,41947,4357,251703
-12-Apr,Iran,71686,43894,4474,263388
-13-Apr,Iran,73303,45983,4585,263388
-22-Jan,South Korea,1,0,0,16
-23-Jan,South Korea,1,0,0,16
-24-Jan,South Korea,2,0,0,25
-25-Jan,South Korea,2,0,0,25
-26-Jan,South Korea,3,0,0,48
-27-Jan,South Korea,4,0,0,57
-28-Jan,South Korea,4,0,0,187
-29-Jan,South Korea,4,0,0,187
-30-Jan,South Korea,4,0,0,244
-31-Jan,South Korea,11,0,0,244
-1-Feb,South Korea,12,0,0,371
-2-Feb,South Korea,15,0,0,429
-3-Feb,South Korea,15,0,0,429
-4-Feb,South Korea,16,0,0,607
-5-Feb,South Korea,19,0,0,714
-6-Feb,South Korea,23,0,0,885
-7-Feb,South Korea,24,1,0,1130
-8-Feb,South Korea,24,1,0,1701
-9-Feb,South Korea,25,3,0,2340
-10-Feb,South Korea,27,3,0,2776
-11-Feb,South Korea,28,3,0,3629
-12-Feb,South Korea,28,7,0,5074
-13-Feb,South Korea,28,7,0,5797
-14-Feb,South Korea,28,7,0,6854
-15-Feb,South Korea,28,9,0,7519
-16-Feb,South Korea,29,9,0,7919
-17-Feb,South Korea,30,10,0,8171
-18-Feb,South Korea,31,12,0,9265
-19-Feb,South Korea,31,12,0,10411
-20-Feb,South Korea,104,16,1,12161
-21-Feb,South Korea,204,16,2,14816
-22-Feb,South Korea,433,16,2,19621
-23-Feb,South Korea,602,18,6,22633
-24-Feb,South Korea,833,18,8,28615
-25-Feb,South Korea,977,22,10,36716
-26-Feb,South Korea,1261,22,12,46127
-27-Feb,South Korea,1766,22,13,57990
-28-Feb,South Korea,2337,22,13,70940
-29-Feb,South Korea,3150,27,16,85693
-1-Mar,South Korea,3736,30,17,96985
-2-Mar,South Korea,4335,30,28,109591
-3-Mar,South Korea,5186,30,28,125851
-4-Mar,South Korea,5621,41,35,136707
-5-Mar,South Korea,6088,41,35,146541
-6-Mar,South Korea,6593,135,42,164740
-7-Mar,South Korea,7041,135,44,178189
-8-Mar,South Korea,7314,118,50,188518
-9-Mar,South Korea,7478,118,53,196618
-10-Mar,South Korea,7513,247,54,210144
-11-Mar,South Korea,7755,288,60,222395
-12-Mar,South Korea,7869,333,66,234998
-13-Mar,South Korea,7979,510,66,248647
-14-Mar,South Korea,8086,510,72,261335
-15-Mar,South Korea,8162,510,75,268212
-16-Mar,South Korea,8236,1137,75,274504
-17-Mar,South Korea,8320,1407,81,286716
-18-Mar,South Korea,8413,1540,84,295647
-19-Mar,South Korea,8565,1540,91,307024
-20-Mar,South Korea,8652,1540,94,316664
-21-Mar,South Korea,8799,1540,102,327509
-22-Mar,South Korea,8961,2909,111,331780
-23-Mar,South Korea,8961,2909,111,338036
-24-Mar,South Korea,9037,3507,120,348582
-25-Mar,South Korea,9137,3730,126,357896
-26-Mar,South Korea,9241,4144,131,364942
-27-Mar,South Korea,9332,4528,139,376961
-28-Mar,South Korea,9478,4811,144,387925
-29-Mar,South Korea,9583,5033,152,394141
-30-Mar,South Korea,9661,5228,158,395194
-31-Mar,South Korea,9786,5408,162,410564
-1-Apr,South Korea,9887,5567,165,421547
-2-Apr,South Korea,9976,5828,169,431743
-3-Apr,South Korea,10062,6021,174,443273
-4-Apr,South Korea,10156,6325,177,455032
-5-Apr,South Korea,10237,6463,183,461233
-6-Apr,South Korea,10284,6598,186,466804
-7-Apr,South Korea,10331,6694,192,477304
-8-Apr,South Korea,10384,6776,200,486003
-9-Apr,South Korea,10423,6973,204,494711
-10-Apr,South Korea,10450,7117,208,503051
-11-Apr,South Korea,10480,7243,211,510479
-12-Apr,South Korea,10512,7368,214,514621
-13-Apr,South Korea,10537,7447,217,518743
-22-Jan,France,0,0,0,0
-23-Jan,France,0,0,0,0
-24-Jan,France,2,0,0,0
-25-Jan,France,3,0,0,0
-26-Jan,France,3,0,0,0
-27-Jan,France,3,0,0,0
-28-Jan,France,4,0,0,0
-29-Jan,France,5,0,0,0
-30-Jan,France,5,0,0,0
-31-Jan,France,5,0,0,0
-1-Feb,France,6,0,0,0
-2-Feb,France,6,0,0,0
-3-Feb,France,6,0,0,0
-4-Feb,France,6,0,0,0
-5-Feb,France,6,0,0,0
-6-Feb,France,6,0,0,0
-7-Feb,France,6,0,0,0
-8-Feb,France,11,0,0,0
-9-Feb,France,11,0,0,0
-10-Feb,France,11,0,0,0
-11-Feb,France,11,0,0,0
-12-Feb,France,11,1,0,0
-13-Feb,France,11,1,0,0
-14-Feb,France,11,1,0,0
-15-Feb,France,12,1,1,0
-16-Feb,France,12,1,1,0
-17-Feb,France,12,1,1,0
-18-Feb,France,12,1,1,0
-19-Feb,France,12,1,1,0
-20-Feb,France,12,1,1,0
-21-Feb,France,12,1,1,0
-22-Feb,France,12,1,1,0
-23-Feb,France,12,1,1,0
-24-Feb,France,12,1,1,31
-25-Feb,France,14,1,1,146
-26-Feb,France,18,1,2,412
-27-Feb,France,38,1,2,851
-28-Feb,France,57,1,2,1316
-29-Feb,France,100,1,2,1902
-1-Mar,France,130,1,2,2451
-2-Mar,France,191,1,3,2887
-3-Mar,France,204,1,4,3594
-4-Mar,France,288,1,4,4803
-5-Mar,France,380,1,6,6046
-6-Mar,France,656,1,9,7695
-7-Mar,France,959,1,11,9495
-8-Mar,France,1136,1,19,11071
-9-Mar,France,1219,1,19,12667
-10-Mar,France,1794,1,33,15018
-11-Mar,France,2293,1,48,15018
-12-Mar,France,2293,1,48,15018
-13-Mar,France,3681,1,79,15018
-14-Mar,France,4496,1,91,15018
-15-Mar,France,4532,11,91,36747
-16-Mar,France,6683,11,149,36747
-17-Mar,France,7715,11,149,36747
-18-Mar,France,9124,11,149,36747
-19-Mar,France,10970,11,244,36747
-20-Mar,France,12758,11,451,36747
-21-Mar,France,14463,11,563,36747
-22-Mar,France,16243,22,676,36747
-23-Mar,France,20123,22,862,36747
-24-Mar,France,22622,23,1102,107546
-25-Mar,France,25600,24,1333,107546
-26-Mar,France,29551,24,1698,107546
-27-Mar,France,33402,27,1997,107546
-28-Mar,France,38105,54,2317,107546
-29-Mar,France,40708,54,2611,107546
-30-Mar,France,45170,57,3030,107546
-31-Mar,France,52827,93,3532,224254
-1-Apr,France,57749,111,4043,224254
-2-Apr,France,59929,414,5398,224254
-3-Apr,France,65202,424,6520,224254
-4-Apr,France,90848,436,7574,224254
-5-Apr,France,93773,469,8093,224254
-6-Apr,France,98963,485,8926,224254
-7-Apr,France,110065,492,10343,333807
-8-Apr,France,113959,510,10887,333807
-9-Apr,France,118781,530,12228,333807
-10-Apr,France,125931,564,13215,333807
-11-Apr,France,130727,570,13851,333807
-12-Apr,France,133670,583,14412,333807
-13-Apr,France,137875,591,14986,333807
-22-Jan,Spain,0,0,0,0
-23-Jan,Spain,0,0,0,0
-24-Jan,Spain,0,0,0,0
-25-Jan,Spain,0,0,0,0
-26-Jan,Spain,0,0,0,0
-27-Jan,Spain,0,0,0,0
-28-Jan,Spain,0,0,0,0
-29-Jan,Spain,0,0,0,0
-30-Jan,Spain,0,0,0,0
-31-Jan,Spain,0,0,0,0
-1-Feb,Spain,1,0,0,0
-2-Feb,Spain,1,0,0,0
-3-Feb,Spain,1,0,0,0
-4-Feb,Spain,1,0,0,0
-5-Feb,Spain,1,0,0,0
-6-Feb,Spain,1,0,0,0
-7-Feb,Spain,1,0,0,0
-8-Feb,Spain,1,0,0,0
-9-Feb,Spain,2,0,0,0
-10-Feb,Spain,2,0,0,0
-11-Feb,Spain,2,0,0,0
-12-Feb,Spain,2,0,0,0
-13-Feb,Spain,2,0,0,0
-14-Feb,Spain,2,0,0,0
-15-Feb,Spain,2,2,0,0
-16-Feb,Spain,2,2,0,0
-17-Feb,Spain,2,2,0,0
-18-Feb,Spain,2,2,0,0
-19-Feb,Spain,2,2,0,0
-20-Feb,Spain,2,2,0,0
-21-Feb,Spain,2,2,0,0
-22-Feb,Spain,2,2,0,0
-23-Feb,Spain,2,2,0,0
-24-Feb,Spain,2,2,0,0
-25-Feb,Spain,6,2,0,0
-26-Feb,Spain,13,2,0,0
-27-Feb,Spain,15,2,0,0
-28-Feb,Spain,32,2,0,0
-29-Feb,Spain,45,2,0,0
-1-Mar,Spain,84,2,0,0
-2-Mar,Spain,120,2,0,0
-3-Mar,Spain,165,2,1,0
-4-Mar,Spain,222,2,2,0
-5-Mar,Spain,259,2,3,0
-6-Mar,Spain,400,2,5,0
-7-Mar,Spain,500,30,10,0
-8-Mar,Spain,673,30,17,0
-9-Mar,Spain,1073,32,28,0
-10-Mar,Spain,1695,32,35,0
-11-Mar,Spain,2277,183,54,0
-12-Mar,Spain,2277,183,55,0
-13-Mar,Spain,5232,193,133,0
-14-Mar,Spain,6391,517,195,0
-15-Mar,Spain,7798,517,289,0
-16-Mar,Spain,9942,530,342,0
-17-Mar,Spain,11748,1028,533,0
-18-Mar,Spain,13910,1081,623,0
-19-Mar,Spain,17963,1107,830,0
-20-Mar,Spain,20410,1588,1043,0
-21-Mar,Spain,25374,2125,1375,0
-22-Mar,Spain,28768,2575,1772,0
-23-Mar,Spain,35136,2575,2311,0
-24-Mar,Spain,39885,3794,2808,0
-25-Mar,Spain,49515,5367,3647,0
-26-Mar,Spain,57786,7015,4365,0
-27-Mar,Spain,65719,9357,5138,0
-28-Mar,Spain,73235,12285,5982,0
-29-Mar,Spain,80110,14709,6803,0
-30-Mar,Spain,87956,16780,7716,0
-31-Mar,Spain,95923,19259,8464,0
-1-Apr,Spain,104118,22647,9387,0
-2-Apr,Spain,112065,26743,10348,0
-3-Apr,Spain,119199,30513,11198,0
-4-Apr,Spain,126168,34219,11947,0
-5-Apr,Spain,131646,38080,12641,0
-6-Apr,Spain,136675,40437,13341,0
-7-Apr,Spain,141942,43208,14045,0
-8-Apr,Spain,148220,48021,14792,0
-9-Apr,Spain,153222,52165,15447,0
-10-Apr,Spain,158273,55668,16081,0
-11-Apr,Spain,163027,59109,16606,0
-12-Apr,Spain,166831,62391,17209,0
-13-Apr,Spain,170099,64727,17756,930230
-22-Jan,Germany,0,0,0,0
-23-Jan,Germany,0,0,0,0
-24-Jan,Germany,0,0,0,0
-25-Jan,Germany,0,0,0,0
-26-Jan,Germany,0,0,0,0
-27-Jan,Germany,1,0,0,0
-28-Jan,Germany,4,0,0,0
-29-Jan,Germany,4,0,0,0
-30-Jan,Germany,4,0,0,0
-31-Jan,Germany,5,0,0,0
-1-Feb,Germany,8,0,0,0
-2-Feb,Germany,10,0,0,0
-3-Feb,Germany,12,0,0,0
-4-Feb,Germany,12,0,0,0
-5-Feb,Germany,12,0,0,0
-6-Feb,Germany,12,0,0,0
-7-Feb,Germany,13,0,0,0
-8-Feb,Germany,13,0,0,0
-9-Feb,Germany,14,0,0,0
-10-Feb,Germany,14,0,0,0
-11-Feb,Germany,16,0,0,0
-12-Feb,Germany,16,0,0,0
-13-Feb,Germany,16,1,0,0
-14-Feb,Germany,16,1,0,0
-15-Feb,Germany,16,1,0,0
-16-Feb,Germany,16,1,0,0
-17-Feb,Germany,16,1,0,0
-18-Feb,Germany,16,12,0,0
-19-Feb,Germany,16,12,0,0
-20-Feb,Germany,16,12,0,0
-21-Feb,Germany,16,14,0,0
-22-Feb,Germany,16,14,0,0
-23-Feb,Germany,16,14,0,0
-24-Feb,Germany,16,14,0,0
-25-Feb,Germany,17,14,0,0
-26-Feb,Germany,27,15,0,0
-27-Feb,Germany,46,16,0,0
-28-Feb,Germany,48,16,0,0
-29-Feb,Germany,79,16,0,0
-1-Mar,Germany,130,16,0,0
-2-Mar,Germany,159,16,0,0
-3-Mar,Germany,196,16,0,0
-4-Mar,Germany,262,16,0,0
-5-Mar,Germany,482,16,0,0
-6-Mar,Germany,670,17,0,0
-7-Mar,Germany,799,18,0,0
-8-Mar,Germany,1040,18,0,124716
-9-Mar,Germany,1176,18,2,124716
-10-Mar,Germany,1457,18,2,124716
-11-Mar,Germany,1908,25,3,124716
-12-Mar,Germany,2078,25,3,124716
-13-Mar,Germany,3675,46,7,124716
-14-Mar,Germany,4585,46,9,124716
-15-Mar,Germany,5795,46,11,252173
-16-Mar,Germany,7272,67,17,252173
-17-Mar,Germany,9257,67,24,252173
-18-Mar,Germany,12327,105,28,252173
-19-Mar,Germany,15320,113,44,252173
-20-Mar,Germany,19848,180,67,252173
-21-Mar,Germany,22213,233,84,252173
-22-Mar,Germany,24873,266,94,600792
-23-Mar,Germany,29056,266,123,600792
-24-Mar,Germany,32986,3243,157,600792
-25-Mar,Germany,37323,3547,206,600792
-26-Mar,Germany,43938,5673,267,600792
-27-Mar,Germany,50871,6658,342,600792
-28-Mar,Germany,57695,8481,433,600792
-29-Mar,Germany,62095,9211,533,962166
-30-Mar,Germany,66885,13500,645,962166
-31-Mar,Germany,71808,16100,775,962166
-1-Apr,Germany,77872,18700,920,962166
-2-Apr,Germany,84794,22440,1107,962166
-3-Apr,Germany,91159,24575,1275,962166
-4-Apr,Germany,96092,26400,1444,962166
-5-Apr,Germany,100123,28700,1584,1368218
-6-Apr,Germany,103374,28700,1810,1368218
-7-Apr,Germany,107663,36081,2016,1368218
-8-Apr,Germany,113296,46300,2349,1368218
-9-Apr,Germany,118181,52407,2607,1368218
-10-Apr,Germany,122171,53913,2767,1368218
-11-Apr,Germany,124908,57400,2736,1368218
-12-Apr,Germany,127854,60300,3022,1728357
-13-Apr,Germany,130072,64300,3194,1728357
-22-Jan,United States,1,0,0,0
-23-Jan,United States,1,0,0,0
-24-Jan,United States,2,0,0,0
-25-Jan,United States,2,0,0,0
-26-Jan,United States,5,0,0,0
-27-Jan,United States,5,0,0,0
-28-Jan,United States,5,0,0,0
-29-Jan,United States,5,0,0,0
-30-Jan,United States,5,0,0,0
-31-Jan,United States,7,0,0,0
-1-Feb,United States,8,0,0,0
-2-Feb,United States,8,0,0,0
-3-Feb,United States,11,0,0,0
-4-Feb,United States,11,0,0,0
-5-Feb,United States,11,0,0,0
-6-Feb,United States,11,0,0,0
-7-Feb,United States,11,0,0,0
-8-Feb,United States,11,0,0,0
-9-Feb,United States,11,3,0,0
-10-Feb,United States,11,3,0,0
-11-Feb,United States,12,3,0,0
-12-Feb,United States,12,3,0,0
-13-Feb,United States,13,3,0,0
-14-Feb,United States,13,3,0,0
-15-Feb,United States,13,3,0,0
-16-Feb,United States,13,3,0,0
-17-Feb,United States,13,3,0,0
-18-Feb,United States,13,3,0,0
-19-Feb,United States,13,3,0,0
-20-Feb,United States,13,3,0,0
-21-Feb,United States,15,5,0,0
-22-Feb,United States,15,5,0,0
-23-Feb,United States,15,5,0,0
-24-Feb,United States,51,5,0,0
-25-Feb,United States,51,6,0,0
-26-Feb,United States,57,6,0,0
-27-Feb,United States,58,6,0,0
-28-Feb,United States,60,7,0,0
-29-Feb,United States,68,7,1,0
-1-Mar,United States,74,7,1,0
-2-Mar,United States,98,7,6,0
-3-Mar,United States,118,7,7,0
-4-Mar,United States,149,7,11,0
-5-Mar,United States,217,7,12,0
-6-Mar,United States,262,7,14,0
-7-Mar,United States,402,7,17,2389
-8-Mar,United States,518,7,21,3066
-9-Mar,United States,583,7,22,4392
-10-Mar,United States,959,8,28,5177
-11-Mar,United States,1281,8,36,7863
-12-Mar,United States,1663,12,40,10262
-13-Mar,United States,2179,12,47,16708
-14-Mar,United States,2727,12,54,20948
-15-Mar,United States,3499,12,63,27526
-16-Mar,United States,4632,17,85,42286
-17-Mar,United States,6421,17,108,56419
-18-Mar,United States,7783,105,118,78107
-19-Mar,United States,13747,121,200,104073
-20-Mar,United States,19273,147,244,139878
-21-Mar,United States,25600,176,307,184971
-22-Mar,United States,33276,178,417,231497
-23-Mar,United States,43847,178,557,287226
-24-Mar,United States,53740,348,706,353809
-25-Mar,United States,65778,361,942,432699
-26-Mar,United States,83836,681,1209,529092
-27-Mar,United States,101657,869,1581,639733
-28-Mar,United States,121465,1072,2026,747663
-29-Mar,United States,140909,2665,2467,840749
-30-Mar,United States,161831,5644,2978,959393
-31-Mar,United States,188172,7024,3873,1066365
-1-Apr,United States,213372,8474,4757,1169846
-2-Apr,United States,243762,9001,5926,1291801
-3-Apr,United States,275586,9707,7087,1423812
-4-Apr,United States,308853,14652,8407,1653080
-5-Apr,United States,337072,17448,9619,1775683
-6-Apr,United States,366667,19581,10783,1924931
-7-Apr,United States,396223,21763,12722,2073030
-8-Apr,United States,429052,23559,14695,2212566
-9-Apr,United States,461437,25410,16478,2375355
-10-Apr,United States,496535,28790,18586,2529215
-11-Apr,United States,526396,31270,20463,2665666
-12-Apr,United States,555313,32988,22020,2805892
-13-Apr,United States,580619,43482,23529,2935006
-22-Jan,Switzerland,0,0,0,0
-23-Jan,Switzerland,0,0,0,0
-24-Jan,Switzerland,0,0,0,0
-25-Jan,Switzerland,0,0,0,0
-26-Jan,Switzerland,0,0,0,0
-27-Jan,Switzerland,0,0,0,0
-28-Jan,Switzerland,0,0,0,0
-29-Jan,Switzerland,0,0,0,0
-30-Jan,Switzerland,0,0,0,0
-31-Jan,Switzerland,0,0,0,0
-1-Feb,Switzerland,0,0,0,0
-2-Feb,Switzerland,0,0,0,0
-3-Feb,Switzerland,0,0,0,0
-4-Feb,Switzerland,0,0,0,0
-5-Feb,Switzerland,0,0,0,0
-6-Feb,Switzerland,0,0,0,0
-7-Feb,Switzerland,0,0,0,0
-8-Feb,Switzerland,0,0,0,0
-9-Feb,Switzerland,0,0,0,0
-10-Feb,Switzerland,0,0,0,0
-11-Feb,Switzerland,0,0,0,0
-12-Feb,Switzerland,0,0,0,0
-13-Feb,Switzerland,0,0,0,0
-14-Feb,Switzerland,0,0,0,0
-15-Feb,Switzerland,0,0,0,0
-16-Feb,Switzerland,0,0,0,0
-17-Feb,Switzerland,0,0,0,0
-18-Feb,Switzerland,0,0,0,0
-19-Feb,Switzerland,0,0,0,0
-20-Feb,Switzerland,0,0,0,0
-21-Feb,Switzerland,0,0,0,0
-22-Feb,Switzerland,0,0,0,0
-23-Feb,Switzerland,0,0,0,0
-24-Feb,Switzerland,0,0,0,0
-25-Feb,Switzerland,1,0,0,0
-26-Feb,Switzerland,1,0,0,0
-27-Feb,Switzerland,8,0,0,0
-28-Feb,Switzerland,8,0,0,0
-29-Feb,Switzerland,18,0,0,0
-1-Mar,Switzerland,27,0,0,0
-2-Mar,Switzerland,42,0,0,0
-3-Mar,Switzerland,56,2,0,0
-4-Mar,Switzerland,90,3,0,0
-5-Mar,Switzerland,114,3,1,0
-6-Mar,Switzerland,214,3,1,0
-7-Mar,Switzerland,268,3,1,0
-8-Mar,Switzerland,337,3,2,0
-9-Mar,Switzerland,374,3,2,0
-10-Mar,Switzerland,491,3,3,0
-11-Mar,Switzerland,652,4,4,0
-12-Mar,Switzerland,652,4,4,0
-13-Mar,Switzerland,1139,4,11,0
-14-Mar,Switzerland,1359,4,13,0
-15-Mar,Switzerland,2200,4,14,0
-16-Mar,Switzerland,2200,4,14,0
-17-Mar,Switzerland,2700,4,27,0
-18-Mar,Switzerland,3028,15,28,0
-19-Mar,Switzerland,4075,15,41,0
-20-Mar,Switzerland,5294,15,54,0
-21-Mar,Switzerland,6575,15,75,0
-22-Mar,Switzerland,7474,131,98,0
-23-Mar,Switzerland,8795,131,120,0
-24-Mar,Switzerland,9877,131,122,0
-25-Mar,Switzerland,10897,131,153,84000
-26-Mar,Switzerland,11811,131,191,91400
-27-Mar,Switzerland,12928,1530,231,97000
-28-Mar,Switzerland,14076,1530,264,106000
-29-Mar,Switzerland,14829,1595,300,111000
-30-Mar,Switzerland,15922,1823,359,116700
-31-Mar,Switzerland,16605,1823,433,123150
-1-Apr,Switzerland,17768,2967,488,130700
-2-Apr,Switzerland,18827,4013,536,139330
-3-Apr,Switzerland,19606,4846,591,145780
-4-Apr,Switzerland,20505,6415,666,145780
-5-Apr,Switzerland,21100,6415,715,158000
-6-Apr,Switzerland,21657,8056,765,162500
-7-Apr,Switzerland,22253,8704,821,162500
-8-Apr,Switzerland,23280,9800,895,171938
-9-Apr,Switzerland,24051,10600,948,178500
-10-Apr,Switzerland,24551,11100,1002,184750
-11-Apr,Switzerland,25107,12100,1036,190000
-12-Apr,Switzerland,25415,12700,1106,193800
-13-Apr,Switzerland,25688,13700,1138,196600
-22-Jan,United Kingdom,0,0,0,0
-23-Jan,United Kingdom,0,0,0,0
-24-Jan,United Kingdom,0,0,0,0
-25-Jan,United Kingdom,0,0,0,31
-26-Jan,United Kingdom,0,2,0,52
-27-Jan,United Kingdom,0,2,0,73
-28-Jan,United Kingdom,0,5,0,97
-29-Jan,United Kingdom,0,5,0,130
-30-Jan,United Kingdom,0,5,0,161
-31-Jan,United Kingdom,2,5,0,177
-1-Feb,United Kingdom,2,5,0,203
-2-Feb,United Kingdom,2,5,0,266
-3-Feb,United Kingdom,2,5,0,326
-4-Feb,United Kingdom,2,5,0,416
-5-Feb,United Kingdom,2,5,0,468
-6-Feb,United Kingdom,2,6,0,566
-7-Feb,United Kingdom,3,6,0,620
-8-Feb,United Kingdom,3,11,0,686
-9-Feb,United Kingdom,3,11,0,795
-10-Feb,United Kingdom,8,11,0,1114
-11-Feb,United Kingdom,8,11,0,1358
-12-Feb,United Kingdom,9,11,0,1758
-13-Feb,United Kingdom,9,13,0,2521
-14-Feb,United Kingdom,9,14,0,2964
-15-Feb,United Kingdom,9,14,0,2992
-16-Feb,United Kingdom,9,16,0,3109
-17-Feb,United Kingdom,9,17,0,4501
-18-Feb,United Kingdom,9,17,0,4916
-19-Feb,United Kingdom,9,17,0,5207
-20-Feb,United Kingdom,9,17,0,5549
-21-Feb,United Kingdom,9,19,0,5885
-22-Feb,United Kingdom,9,19,0,6152
-23-Feb,United Kingdom,9,23,0,6324
-24-Feb,United Kingdom,13,26,0,6536
-25-Feb,United Kingdom,13,27,0,6795
-26-Feb,United Kingdom,13,27,0,7132
-27-Feb,United Kingdom,15,27,0,7690
-28-Feb,United Kingdom,20,34,0,8986
-29-Feb,United Kingdom,23,37,0,10483
-1-Mar,United Kingdom,36,37,0,11750
-2-Mar,United Kingdom,40,43,0,13525
-3-Mar,United Kingdom,51,45,0,13911
-4-Mar,United Kingdom,86,46,0,16659
-5-Mar,United Kingdom,116,46,1,18083
-6-Mar,United Kingdom,164,46,2,20338
-7-Mar,United Kingdom,207,46,2,21460
-8-Mar,United Kingdom,274,47,3,23513
-9-Mar,United Kingdom,322,50,4,24960
-10-Mar,United Kingdom,384,54,6,26261
-11-Mar,United Kingdom,459,56,8,27476
-12-Mar,United Kingdom,459,59,8,29764
-13-Mar,United Kingdom,802,60,8,32771
-14-Mar,United Kingdom,1144,60,21,37746
-15-Mar,United Kingdom,1145,60,21,40279
-16-Mar,United Kingdom,1551,60,56,44105
-17-Mar,United Kingdom,1960,68,56,50442
-18-Mar,United Kingdom,2642,80,72,56221
-19-Mar,United Kingdom,2716,99,138,64621
-20-Mar,United Kingdom,4014,99,178,66976
-21-Mar,United Kingdom,5067,101,234,72818
-22-Mar,United Kingdom,5745,219,282,78340
-23-Mar,United Kingdom,6726,219,336,83945
-24-Mar,United Kingdom,8164,228,423,90436
-25-Mar,United Kingdom,9640,246,466,97019
-26-Mar,United Kingdom,11812,264,580,104866
-27-Mar,United Kingdom,14745,1673,761,113777
-28-Mar,United Kingdom,17312,1674,1021,120776
-29-Mar,United Kingdom,19780,1739,1231,127737
-30-Mar,United Kingdom,22453,2108,1411,134946
-31-Mar,United Kingdom,25481,2221,1793,143186
-1-Apr,United Kingdom,29865,3615,2357,152979
-2-Apr,United Kingdom,34173,4668,2926,163194
-3-Apr,United Kingdom,38689,5716,3611,173784
-4-Apr,United Kingdom,42477,7349,4320,183190
-5-Apr,United Kingdom,48436,7468,4943,195524
-6-Apr,United Kingdom,52279,9116,5385,208837
-7-Apr,United Kingdom,55949,9862,6171,213181
-8-Apr,United Kingdom,61474,10964,7111,232708
-9-Apr,United Kingdom,65872,11822,7993,243421
-10-Apr,United Kingdom,74605,12596,8974,256605
-11-Apr,United Kingdom,79874,13729,9892,269598
-12-Apr,United Kingdom,85206,14422,10629,282374
-13-Apr,United Kingdom,89570,15495,11347,290720
-22-Jan,Netherlands,0,0,0,0
-23-Jan,Netherlands,0,0,0,0
-24-Jan,Netherlands,0,0,0,0
-25-Jan,Netherlands,0,0,0,0
-26-Jan,Netherlands,0,0,0,0
-27-Jan,Netherlands,0,0,0,0
-28-Jan,Netherlands,0,0,0,0
-29-Jan,Netherlands,0,0,0,0
-30-Jan,Netherlands,0,0,0,0
-31-Jan,Netherlands,0,0,0,0
-1-Feb,Netherlands,0,0,0,0
-2-Feb,Netherlands,0,0,0,0
-3-Feb,Netherlands,0,0,0,0
-4-Feb,Netherlands,0,0,0,0
-5-Feb,Netherlands,0,0,0,0
-6-Feb,Netherlands,0,0,0,0
-7-Feb,Netherlands,0,0,0,0
-8-Feb,Netherlands,0,0,0,0
-9-Feb,Netherlands,0,0,0,0
-10-Feb,Netherlands,0,0,0,0
-11-Feb,Netherlands,0,0,0,0
-12-Feb,Netherlands,0,0,0,0
-13-Feb,Netherlands,0,0,0,0
-14-Feb,Netherlands,0,0,0,0
-15-Feb,Netherlands,0,0,0,0
-16-Feb,Netherlands,0,0,0,0
-17-Feb,Netherlands,0,0,0,0
-18-Feb,Netherlands,0,0,0,0
-19-Feb,Netherlands,0,0,0,0
-20-Feb,Netherlands,0,0,0,0
-21-Feb,Netherlands,0,0,0,0
-22-Feb,Netherlands,0,0,0,0
-23-Feb,Netherlands,0,0,0,0
-24-Feb,Netherlands,0,0,0,0
-25-Feb,Netherlands,0,0,0,0
-26-Feb,Netherlands,0,0,0,0
-27-Feb,Netherlands,1,0,0,0
-28-Feb,Netherlands,1,0,0,0
-29-Feb,Netherlands,6,0,0,0
-1-Mar,Netherlands,10,0,0,0
-2-Mar,Netherlands,18,0,0,0
-3-Mar,Netherlands,24,1,0,0
-4-Mar,Netherlands,38,1,0,0
-5-Mar,Netherlands,82,1,0,0
-6-Mar,Netherlands,128,1,1,0
-7-Mar,Netherlands,188,1,1,0
-8-Mar,Netherlands,265,1,3,0
-9-Mar,Netherlands,321,1,3,0
-10-Mar,Netherlands,382,4,4,0
-11-Mar,Netherlands,503,4,5,0
-12-Mar,Netherlands,503,4,5,0
-13-Mar,Netherlands,806,4,10,0
-14-Mar,Netherlands,962,4,12,14555
-15-Mar,Netherlands,1138,4,20,14555
-16-Mar,Netherlands,1416,4,24,18689
-17-Mar,Netherlands,1711,5,43,18689
-18-Mar,Netherlands,2058,5,58,18689
-19-Mar,Netherlands,2467,5,77,18689
-20-Mar,Netherlands,3003,5,107,32420
-21-Mar,Netherlands,3640,5,137,32420
-22-Mar,Netherlands,4217,5,180,37374
-23-Mar,Netherlands,4764,5,214,40196
-24-Mar,Netherlands,5580,6,277,44832
-25-Mar,Netherlands,6438,6,357,44832
-26-Mar,Netherlands,7468,6,435,44832
-27-Mar,Netherlands,8647,6,547,56033
-28-Mar,Netherlands,9819,6,640,56033
-29-Mar,Netherlands,10930,8,772,65771
-30-Mar,Netherlands,11817,52,865,69216
-31-Mar,Netherlands,12667,55,1040,73610
-1-Apr,Netherlands,13696,60,1175,77883
-2-Apr,Netherlands,14786,60,1341,82734
-3-Apr,Netherlands,15819,661,1490,88064
-4-Apr,Netherlands,16725,671,1656,91707
-5-Apr,Netherlands,17951,672,1771,94198
-6-Apr,Netherlands,18924,679,1874,98465
-7-Apr,Netherlands,19707,683,2108,104728
-8-Apr,Netherlands,20680,694,2255,112927
-9-Apr,Netherlands,21901,708,2403,119985
-10-Apr,Netherlands,23247,714,2520,126261
-11-Apr,Netherlands,24569,738,2653,131109
-12-Apr,Netherlands,25743,1910,2747,134631
-13-Apr,Netherlands,26707,1994,2833,137384
-22-Jan,Turkey,0,0,0,0
-23-Jan,Turkey,0,0,0,0
-24-Jan,Turkey,0,0,0,0
-25-Jan,Turkey,0,0,0,0
-26-Jan,Turkey,0,0,0,0
-27-Jan,Turkey,0,0,0,0
-28-Jan,Turkey,0,0,0,0
-29-Jan,Turkey,0,0,0,0
-30-Jan,Turkey,0,0,0,0
-31-Jan,Turkey,0,0,0,0
-1-Feb,Turkey,0,0,0,0
-2-Feb,Turkey,0,0,0,0
-3-Feb,Turkey,0,0,0,0
-4-Feb,Turkey,0,0,0,0
-5-Feb,Turkey,0,0,0,0
-6-Feb,Turkey,0,0,0,0
-7-Feb,Turkey,0,0,0,0
-8-Feb,Turkey,0,0,0,0
-9-Feb,Turkey,0,0,0,0
-10-Feb,Turkey,0,0,0,0
-11-Feb,Turkey,0,0,0,0
-12-Feb,Turkey,0,0,0,0
-13-Feb,Turkey,0,0,0,0
-14-Feb,Turkey,0,0,0,0
-15-Feb,Turkey,0,0,0,0
-16-Feb,Turkey,0,0,0,0
-17-Feb,Turkey,0,0,0,0
-18-Feb,Turkey,0,0,0,0
-19-Feb,Turkey,0,0,0,0
-20-Feb,Turkey,0,0,0,0
-21-Feb,Turkey,0,0,0,0
-22-Feb,Turkey,0,0,0,0
-23-Feb,Turkey,0,0,0,0
-24-Feb,Turkey,0,0,0,0
-25-Feb,Turkey,0,0,0,0
-26-Feb,Turkey,0,0,0,0
-27-Feb,Turkey,0,0,0,0
-28-Feb,Turkey,0,0,0,0
-29-Feb,Turkey,0,0,0,0
-1-Mar,Turkey,0,0,0,0
-2-Mar,Turkey,0,0,0,0
-3-Mar,Turkey,0,0,0,0
-4-Mar,Turkey,0,0,0,0
-5-Mar,Turkey,0,0,0,0
-6-Mar,Turkey,0,0,0,0
-7-Mar,Turkey,0,0,0,0
-8-Mar,Turkey,0,0,0,0
-9-Mar,Turkey,0,0,0,0
-10-Mar,Turkey,0,0,0,0
-11-Mar,Turkey,1,0,0,0
-12-Mar,Turkey,1,0,0,0
-13-Mar,Turkey,5,0,0,0
-14-Mar,Turkey,5,0,0,0
-15-Mar,Turkey,6,0,0,0
-16-Mar,Turkey,18,0,0,0
-17-Mar,Turkey,47,0,1,0
-18-Mar,Turkey,98,0,1,10018
-19-Mar,Turkey,192,0,3,11999
-20-Mar,Turkey,359,0,4,15655
-21-Mar,Turkey,670,0,9,18607
-22-Mar,Turkey,1236,0,30,20345
-23-Mar,Turkey,1529,0,37,24017
-24-Mar,Turkey,1872,0,44,27969
-25-Mar,Turkey,2433,26,59,33004
-26-Mar,Turkey,3629,26,75,40290
-27-Mar,Turkey,5698,42,92,47823
-28-Mar,Turkey,7402,70,108,55464
-29-Mar,Turkey,9217,105,131,65446
-30-Mar,Turkey,10827,162,168,76981
-31-Mar,Turkey,13531,243,214,92403
-1-Apr,Turkey,15679,333,277,106799
-2-Apr,Turkey,18135,415,356,125556
-3-Apr,Turkey,20921,484,425,141716
-4-Apr,Turkey,23934,786,501,161380
-5-Apr,Turkey,27069,1042,574,181445
-6-Apr,Turkey,30217,1326,649,202845
-7-Apr,Turkey,34109,1582,725,228868
-8-Apr,Turkey,38226,1846,812,247768
-9-Apr,Turkey,42282,2142,908,276338
-10-Apr,Turkey,47029,2423,1006,307210
-11-Apr,Turkey,52167,2965,1101,340380
-12-Apr,Turkey,56956,3446,1198,376100
-13-Apr,Turkey,61049,3957,1296,410556
-22-Jan,Total,555,28,17,0
-23-Jan,Total,654,30,18,0
-24-Jan,Total,941,36,26,0
-25-Jan,Total,1434,39,42,0
-26-Jan,Total,2118,52,56,0
-27-Jan,Total,2927,61,82,0
-28-Jan,Total,5578,107,131,0
-29-Jan,Total,6166,126,133,0
-30-Jan,Total,8234,143,171,0
-31-Jan,Total,9927,222,213,0
-1-Feb,Total,12038,284,259,0
-2-Feb,Total,16787,472,362,0
-3-Feb,Total,19881,623,426,0
-4-Feb,Total,23892,852,492,0
-5-Feb,Total,27635,1124,564,0
-6-Feb,Total,30794,1487,634,0
-7-Feb,Total,34391,2011,719,0
-8-Feb,Total,37120,2616,806,0
-9-Feb,Total,40150,3244,906,0
-10-Feb,Total,42762,3946,1013,0
-11-Feb,Total,44802,4683,1113,0
-12-Feb,Total,45221,5150,1118,0
-13-Feb,Total,60368,6295,1371,0
-14-Feb,Total,66885,8058,1523,0
-15-Feb,Total,69030,9395,1666,0
-16-Feb,Total,71224,10865,1770,0
-17-Feb,Total,73258,12583,1868,0
-18-Feb,Total,75136,14352,2007,0
-19-Feb,Total,75639,16121,2122,0
-20-Feb,Total,76197,18177,2247,0
-21-Feb,Total,76819,18890,2251,0
-22-Feb,Total,78572,22886,2458,0
-23-Feb,Total,78958,23394,2469,0
-24-Feb,Total,79561,25227,2629,0
-25-Feb,Total,80406,27905,2708,0
-26-Feb,Total,81388,30384,2770,0
-27-Feb,Total,82746,33277,2814,0
-28-Feb,Total,84112,36711,2872,0
-29-Feb,Total,86011,39782,2941,0
-1-Mar,Total,88369,42716,2996,0
-2-Mar,Total,90306,45602,3085,0
-3-Mar,Total,92840,48228,3160,0
-4-Mar,Total,95120,51170,3254,0
-5-Mar,Total,97886,53796,3348,0
-6-Mar,Total,101801,55865,3460,0
-7-Mar,Total,105847,58358,3558,0
-8-Mar,Total,109821,60694,3802,0
-9-Mar,Total,113590,62494,3988,0
-10-Mar,Total,118620,64404,4262,0
-11-Mar,Total,125875,67003,4615,0
-12-Mar,Total,128352,68324,4720,0
-13-Mar,Total,145205,70251,5404,0
-14-Mar,Total,156101,72624,5819,0
-15-Mar,Total,167454,76034,6440,0
-16-Mar,Total,181574,78088,7126,0
-17-Mar,Total,197102,80840,7905,0
-18-Mar,Total,214821,83312,8733,0
-19-Mar,Total,242570,84975,9867,0
-20-Mar,Total,272208,87420,11299,0
-21-Mar,Total,304507,91692,12973,0
-22-Mar,Total,336953,97899,14651,0
-23-Mar,Total,378235,98351,16505,0
-24-Mar,Total,418045,108000,18625,0
-25-Mar,Total,467653,113787,21181,0
-26-Mar,Total,529591,122150,23970,0
-27-Mar,Total,593291,130915,27198,0
-28-Mar,Total,660693,139415,30652,0
-29-Mar,Total,720140,149082,33925,0
-30-Mar,Total,782389,164566,37582,0
-31-Mar,Total,857487,178034,42107,0
-1-Apr,Total,932605,193177,46809,0
-2-Apr,Total,1013466,210263,52983,0
-3-Apr,Total,1095917,225796,58787,0
-4-Apr,Total,1197408,246152,64606,0
-5-Apr,Total,1272115,260012,69374,0
-6-Apr,Total,1345101,276515,74565,0
-7-Apr,Total,1426096,300054,81865,0
-8-Apr,Total,1511104,328661,88338,0
-9-Apr,Total,1595350,353975,95455,0
-10-Apr,Total,1691719,376096,102525,0
-11-Apr,Total,1771514,402110,108503,0
-12-Apr,Total,1846679,421722,114091,0
-13-Apr,Total,1917319,448655,119482,0
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
+1/22/2020,China,548,28,17,0
+1/23/2020,China,643,30,18,0
+1/24/2020,China,920,35,26,0
+1/25/2020,China,1406,38,42,0
+1/26/2020,China,2075,48,56,0
+1/27/2020,China,2877,57,82,0
+1/28/2020,China,5509,98,131,0
+1/29/2020,China,6087,117,133,0
+1/30/2020,China,8141,131,171,0
+1/31/2020,China,9802,199,213,0
+2/1/2020,China,11891,252,259,0
+2/2/2020,China,16630,427,361,0
+2/3/2020,China,19716,565,425,0
+2/4/2020,China,23707,774,491,0
+2/5/2020,China,27440,1030,563,0
+2/6/2020,China,30587,1374,633,0
+2/7/2020,China,34110,1862,718,0
+2/8/2020,China,36814,2400,805,0
+2/9/2020,China,39829,2996,905,0
+2/10/2020,China,42354,3649,1012,0
+2/11/2020,China,44386,4333,1112,0
+2/12/2020,China,44759,4721,1117,0
+2/13/2020,China,59895,5803,1369,0
+2/14/2020,China,66358,7501,1521,0
+2/15/2020,China,68413,8781,1663,0
+2/16/2020,China,70513,10200,1766,0
+2/17/2020,China,72434,11850,1864,0
+2/18/2020,China,74211,13554,2003,0
+2/19/2020,China,74619,15224,2116,0
+2/20/2020,China,75077,17221,2238,0
+2/21/2020,China,75550,17845,2238,0
+2/22/2020,China,77001,21785,2443,0
+2/23/2020,China,77022,22205,2445,0
+2/24/2020,China,77241,23994,2595,0
+2/25/2020,China,77754,26620,2665,0
+2/26/2020,China,78166,28945,2717,0
+2/27/2020,China,78600,31708,2746,0
+2/28/2020,China,78928,35049,2790,0
+2/29/2020,China,79356,37981,2837,0
+3/1/2020,China,79932,40783,2872,0
+3/2/2020,China,80136,43445,2914,0
+3/3/2020,China,80261,46001,2947,0
+3/4/2020,China,80386,48530,2983,0
+3/5/2020,China,80537,50806,3015,0
+3/6/2020,China,80690,52433,3044,0
+3/7/2020,China,80770,54022,3072,0
+3/8/2020,China,80823,55863,3100,0
+3/9/2020,China,80860,57262,3123,0
+3/10/2020,China,80887,58623,3139,0
+3/11/2020,China,80921,60082,3161,0
+3/12/2020,China,80932,61336,3172,0
+3/13/2020,China,80945,62631,3180,0
+3/14/2020,China,80977,64079,3193,0
+3/15/2020,China,81003,65435,3203,0
+3/16/2020,China,81033,66324,3217,0
+3/17/2020,China,81058,67212,3230,0
+3/18/2020,China,81102,68169,3241,0
+3/19/2020,China,81156,68948,3249,0
+3/20/2020,China,81250,69683,3253,0
+3/21/2020,China,81305,70275,3259,0
+3/22/2020,China,81435,70782,3274,0
+3/23/2020,China,81498,71232,3274,0
+3/24/2020,China,81591,71807,3281,0
+3/25/2020,China,81661,72380,3285,0
+3/26/2020,China,81782,72788,3291,0
+3/27/2020,China,81897,73420,3296,0
+3/28/2020,China,81999,74025,3299,0
+3/29/2020,China,82122,74524,3304,0
+3/30/2020,China,82198,74946,3308,0
+3/31/2020,China,82279,76352,3309,0
+4/1/2020,China,82361,76366,3316,0
+4/2/2020,China,82432,77036,3322,0
+4/3/2020,China,82511,77765,3326,0
+4/4/2020,China,82543,78449,3330,0
+4/5/2020,China,82602,79234,3333,0
+4/6/2020,China,82665,79691,3335,0
+4/7/2020,China,82718,80516,3335,0
+4/8/2020,China,82809,81267,3337,0
+4/9/2020,China,82883,82543,3339,0
+4/10/2020,China,82941,83677,3340,0
+4/11/2020,China,83014,84785,3343,0
+4/12/2020,China,83134,85591,3343,0
+4/13/2020,China,83213,86616,3345,0
+1/22/2020,Italy,0,0,0,0
+1/23/2020,Italy,0,0,0,0
+1/24/2020,Italy,0,0,0,0
+1/25/2020,Italy,0,0,0,0
+1/26/2020,Italy,0,0,0,0
+1/27/2020,Italy,0,0,0,0
+1/28/2020,Italy,0,0,0,0
+1/29/2020,Italy,0,0,0,0
+1/30/2020,Italy,0,0,0,0
+1/31/2020,Italy,2,0,0,0
+2/1/2020,Italy,2,0,0,0
+2/2/2020,Italy,2,0,0,0
+2/3/2020,Italy,2,0,0,0
+2/4/2020,Italy,2,0,0,0
+2/5/2020,Italy,2,0,0,0
+2/6/2020,Italy,2,0,0,0
+2/7/2020,Italy,3,0,0,0
+2/8/2020,Italy,3,0,0,0
+2/9/2020,Italy,3,0,0,0
+2/10/2020,Italy,3,0,0,0
+2/11/2020,Italy,3,0,0,0
+2/12/2020,Italy,3,0,0,0
+2/13/2020,Italy,3,0,0,0
+2/14/2020,Italy,3,0,0,0
+2/15/2020,Italy,3,0,0,0
+2/16/2020,Italy,3,0,0,0
+2/17/2020,Italy,3,0,0,0
+2/18/2020,Italy,3,0,0,0
+2/19/2020,Italy,3,0,0,0
+2/20/2020,Italy,3,0,0,0
+2/21/2020,Italy,20,0,1,0
+2/22/2020,Italy,62,1,2,0
+2/23/2020,Italy,155,2,3,0
+2/24/2020,Italy,229,1,7,4324
+2/25/2020,Italy,322,1,10,8623
+2/26/2020,Italy,453,3,12,9587
+2/27/2020,Italy,655,45,17,12014
+2/28/2020,Italy,888,46,21,15695
+2/29/2020,Italy,1128,46,29,18661
+3/1/2020,Italy,1694,83,34,21127
+3/2/2020,Italy,2036,149,52,23345
+3/3/2020,Italy,2502,160,79,25856
+3/4/2020,Italy,3089,276,107,29837
+3/5/2020,Italy,3858,414,148,32362
+3/6/2020,Italy,4636,523,197,36359
+3/7/2020,Italy,5883,589,233,42062
+3/8/2020,Italy,7375,622,366,49937
+3/9/2020,Italy,9172,724,463,53826
+3/10/2020,Italy,10149,724,631,60761
+3/11/2020,Italy,12462,1045,827,73154
+3/12/2020,Italy,12462,1045,827,86011
+3/13/2020,Italy,17660,1439,1266,97488
+3/14/2020,Italy,21157,1966,1441,109170
+3/15/2020,Italy,24747,2335,1809,124899
+3/16/2020,Italy,27980,2749,2158,137962
+3/17/2020,Italy,31506,2941,2503,148657
+3/18/2020,Italy,35713,4025,2978,165541
+3/19/2020,Italy,41035,4440,3405,182777
+3/20/2020,Italy,47021,4440,4032,206886
+3/21/2020,Italy,53578,6072,4825,233222
+3/22/2020,Italy,59138,7024,5476,258402
+3/23/2020,Italy,63927,7024,6077,275468
+3/24/2020,Italy,69176,8326,6820,296964
+3/25/2020,Italy,74386,9362,7503,324445
+3/26/2020,Italy,80589,10361,8215,361060
+3/27/2020,Italy,86498,10950,9134,394079
+3/28/2020,Italy,92472,12384,10023,429526
+3/29/2020,Italy,97689,13030,10779,454030
+3/30/2020,Italy,101739,14620,11591,477359
+3/31/2020,Italy,105792,15729,12428,506968
+4/1/2020,Italy,110574,16847,13155,541423
+4/2/2020,Italy,115242,18278,13915,581232
+4/3/2020,Italy,119827,19758,14681,619849
+4/4/2020,Italy,124632,20996,15362,657224
+4/5/2020,Italy,128948,21815,15887,691461
+4/6/2020,Italy,132547,22837,16523,721732
+4/7/2020,Italy,135586,24392,17127,755445
+4/8/2020,Italy,139422,26491,17669,807125
+4/9/2020,Italy,143626,28470,18279,853369
+4/10/2020,Italy,147577,30455,18849,906864
+4/11/2020,Italy,152271,32534,19468,963473
+4/12/2020,Italy,156363,34211,19899,1010193
+4/13/2020,Italy,159516,35435,20465,1046910
+1/22/2020,Iran,0,0,0,0
+1/23/2020,Iran,0,0,0,0
+1/24/2020,Iran,0,0,0,0
+1/25/2020,Iran,0,0,0,0
+1/26/2020,Iran,0,0,0,0
+1/27/2020,Iran,0,0,0,0
+1/28/2020,Iran,0,0,0,0
+1/29/2020,Iran,0,0,0,0
+1/30/2020,Iran,0,0,0,0
+1/31/2020,Iran,0,0,0,0
+2/1/2020,Iran,0,0,0,0
+2/2/2020,Iran,0,0,0,0
+2/3/2020,Iran,0,0,0,0
+2/4/2020,Iran,0,0,0,0
+2/5/2020,Iran,0,0,0,0
+2/6/2020,Iran,0,0,0,0
+2/7/2020,Iran,0,0,0,0
+2/8/2020,Iran,0,0,0,0
+2/9/2020,Iran,0,0,0,0
+2/10/2020,Iran,0,0,0,0
+2/11/2020,Iran,0,0,0,0
+2/12/2020,Iran,0,0,0,0
+2/13/2020,Iran,0,0,0,0
+2/14/2020,Iran,0,0,0,0
+2/15/2020,Iran,0,0,0,0
+2/16/2020,Iran,0,0,0,0
+2/17/2020,Iran,0,0,0,0
+2/18/2020,Iran,0,0,0,0
+2/19/2020,Iran,2,0,2,0
+2/20/2020,Iran,5,0,2,0
+2/21/2020,Iran,18,0,4,0
+2/22/2020,Iran,28,0,5,0
+2/23/2020,Iran,43,0,8,0
+2/24/2020,Iran,61,0,12,0
+2/25/2020,Iran,95,0,16,0
+2/26/2020,Iran,139,49,19,0
+2/27/2020,Iran,245,49,26,0
+2/28/2020,Iran,388,73,34,0
+2/29/2020,Iran,593,123,43,0
+3/1/2020,Iran,978,175,54,0
+3/2/2020,Iran,1501,291,66,0
+3/3/2020,Iran,2336,291,77,0
+3/4/2020,Iran,2922,552,92,0
+3/5/2020,Iran,3513,739,107,0
+3/6/2020,Iran,4747,913,124,0
+3/7/2020,Iran,5823,1669,145,0
+3/8/2020,Iran,6566,2134,194,0
+3/9/2020,Iran,7161,2394,237,0
+3/10/2020,Iran,8042,2731,291,0
+3/11/2020,Iran,9000,2959,354,0
+3/12/2020,Iran,10075,2959,429,0
+3/13/2020,Iran,11364,2959,514,0
+3/14/2020,Iran,12729,2959,611,0
+3/15/2020,Iran,13938,4590,724,0
+3/16/2020,Iran,14991,4590,853,0
+3/17/2020,Iran,16169,5389,988,0
+3/18/2020,Iran,17361,5389,1135,0
+3/19/2020,Iran,18407,5710,1284,0
+3/20/2020,Iran,19644,6745,1433,0
+3/21/2020,Iran,20610,7635,1556,0
+3/22/2020,Iran,21638,7931,1685,0
+3/23/2020,Iran,23049,7931,1812,0
+3/24/2020,Iran,24811,8913,1934,0
+3/25/2020,Iran,27017,9625,2077,0
+3/26/2020,Iran,29406,10457,2234,0
+3/27/2020,Iran,32332,11133,2378,0
+3/28/2020,Iran,35408,11679,2517,0
+3/29/2020,Iran,38309,12391,2640,0
+3/30/2020,Iran,41495,13911,2757,0
+3/31/2020,Iran,44605,14656,2898,0
+4/1/2020,Iran,47593,15473,3036,0
+4/2/2020,Iran,50468,16711,3160,0
+4/3/2020,Iran,53183,17935,3294,0
+4/4/2020,Iran,55743,19736,3452,0
+4/5/2020,Iran,58226,19736,3603,189790
+4/6/2020,Iran,60500,24236,3739,189790
+4/7/2020,Iran,62589,27039,3872,189790
+4/8/2020,Iran,64586,29812,3993,220975
+4/9/2020,Iran,66220,32309,4110,231393
+4/10/2020,Iran,68192,35465,4232,242568
+4/11/2020,Iran,70029,41947,4357,251703
+4/12/2020,Iran,71686,43894,4474,263388
+4/13/2020,Iran,73303,45983,4585,263388
+1/22/2020,South Korea,1,0,0,16
+1/23/2020,South Korea,1,0,0,16
+1/24/2020,South Korea,2,0,0,25
+1/25/2020,South Korea,2,0,0,25
+1/26/2020,South Korea,3,0,0,48
+1/27/2020,South Korea,4,0,0,57
+1/28/2020,South Korea,4,0,0,187
+1/29/2020,South Korea,4,0,0,187
+1/30/2020,South Korea,4,0,0,244
+1/31/2020,South Korea,11,0,0,244
+2/1/2020,South Korea,12,0,0,371
+2/2/2020,South Korea,15,0,0,429
+2/3/2020,South Korea,15,0,0,429
+2/4/2020,South Korea,16,0,0,607
+2/5/2020,South Korea,19,0,0,714
+2/6/2020,South Korea,23,0,0,885
+2/7/2020,South Korea,24,1,0,1130
+2/8/2020,South Korea,24,1,0,1701
+2/9/2020,South Korea,25,3,0,2340
+2/10/2020,South Korea,27,3,0,2776
+2/11/2020,South Korea,28,3,0,3629
+2/12/2020,South Korea,28,7,0,5074
+2/13/2020,South Korea,28,7,0,5797
+2/14/2020,South Korea,28,7,0,6854
+2/15/2020,South Korea,28,9,0,7519
+2/16/2020,South Korea,29,9,0,7919
+2/17/2020,South Korea,30,10,0,8171
+2/18/2020,South Korea,31,12,0,9265
+2/19/2020,South Korea,31,12,0,10411
+2/20/2020,South Korea,104,16,1,12161
+2/21/2020,South Korea,204,16,2,14816
+2/22/2020,South Korea,433,16,2,19621
+2/23/2020,South Korea,602,18,6,22633
+2/24/2020,South Korea,833,18,8,28615
+2/25/2020,South Korea,977,22,10,36716
+2/26/2020,South Korea,1261,22,12,46127
+2/27/2020,South Korea,1766,22,13,57990
+2/28/2020,South Korea,2337,22,13,70940
+2/29/2020,South Korea,3150,27,16,85693
+3/1/2020,South Korea,3736,30,17,96985
+3/2/2020,South Korea,4335,30,28,109591
+3/3/2020,South Korea,5186,30,28,125851
+3/4/2020,South Korea,5621,41,35,136707
+3/5/2020,South Korea,6088,41,35,146541
+3/6/2020,South Korea,6593,135,42,164740
+3/7/2020,South Korea,7041,135,44,178189
+3/8/2020,South Korea,7314,118,50,188518
+3/9/2020,South Korea,7478,118,53,196618
+3/10/2020,South Korea,7513,247,54,210144
+3/11/2020,South Korea,7755,288,60,222395
+3/12/2020,South Korea,7869,333,66,234998
+3/13/2020,South Korea,7979,510,66,248647
+3/14/2020,South Korea,8086,510,72,261335
+3/15/2020,South Korea,8162,510,75,268212
+3/16/2020,South Korea,8236,1137,75,274504
+3/17/2020,South Korea,8320,1407,81,286716
+3/18/2020,South Korea,8413,1540,84,295647
+3/19/2020,South Korea,8565,1540,91,307024
+3/20/2020,South Korea,8652,1540,94,316664
+3/21/2020,South Korea,8799,1540,102,327509
+3/22/2020,South Korea,8961,2909,111,331780
+3/23/2020,South Korea,8961,2909,111,338036
+3/24/2020,South Korea,9037,3507,120,348582
+3/25/2020,South Korea,9137,3730,126,357896
+3/26/2020,South Korea,9241,4144,131,364942
+3/27/2020,South Korea,9332,4528,139,376961
+3/28/2020,South Korea,9478,4811,144,387925
+3/29/2020,South Korea,9583,5033,152,394141
+3/30/2020,South Korea,9661,5228,158,395194
+3/31/2020,South Korea,9786,5408,162,410564
+4/1/2020,South Korea,9887,5567,165,421547
+4/2/2020,South Korea,9976,5828,169,431743
+4/3/2020,South Korea,10062,6021,174,443273
+4/4/2020,South Korea,10156,6325,177,455032
+4/5/2020,South Korea,10237,6463,183,461233
+4/6/2020,South Korea,10284,6598,186,466804
+4/7/2020,South Korea,10331,6694,192,477304
+4/8/2020,South Korea,10384,6776,200,486003
+4/9/2020,South Korea,10423,6973,204,494711
+4/10/2020,South Korea,10450,7117,208,503051
+4/11/2020,South Korea,10480,7243,211,510479
+4/12/2020,South Korea,10512,7368,214,514621
+4/13/2020,South Korea,10537,7447,217,518743
+1/22/2020,France,0,0,0,0
+1/23/2020,France,0,0,0,0
+1/24/2020,France,2,0,0,0
+1/25/2020,France,3,0,0,0
+1/26/2020,France,3,0,0,0
+1/27/2020,France,3,0,0,0
+1/28/2020,France,4,0,0,0
+1/29/2020,France,5,0,0,0
+1/30/2020,France,5,0,0,0
+1/31/2020,France,5,0,0,0
+2/1/2020,France,6,0,0,0
+2/2/2020,France,6,0,0,0
+2/3/2020,France,6,0,0,0
+2/4/2020,France,6,0,0,0
+2/5/2020,France,6,0,0,0
+2/6/2020,France,6,0,0,0
+2/7/2020,France,6,0,0,0
+2/8/2020,France,11,0,0,0
+2/9/2020,France,11,0,0,0
+2/10/2020,France,11,0,0,0
+2/11/2020,France,11,0,0,0
+2/12/2020,France,11,1,0,0
+2/13/2020,France,11,1,0,0
+2/14/2020,France,11,1,0,0
+2/15/2020,France,12,1,1,0
+2/16/2020,France,12,1,1,0
+2/17/2020,France,12,1,1,0
+2/18/2020,France,12,1,1,0
+2/19/2020,France,12,1,1,0
+2/20/2020,France,12,1,1,0
+2/21/2020,France,12,1,1,0
+2/22/2020,France,12,1,1,0
+2/23/2020,France,12,1,1,0
+2/24/2020,France,12,1,1,31
+2/25/2020,France,14,1,1,146
+2/26/2020,France,18,1,2,412
+2/27/2020,France,38,1,2,851
+2/28/2020,France,57,1,2,1316
+2/29/2020,France,100,1,2,1902
+3/1/2020,France,130,1,2,2451
+3/2/2020,France,191,1,3,2887
+3/3/2020,France,204,1,4,3594
+3/4/2020,France,288,1,4,4803
+3/5/2020,France,380,1,6,6046
+3/6/2020,France,656,1,9,7695
+3/7/2020,France,959,1,11,9495
+3/8/2020,France,1136,1,19,11071
+3/9/2020,France,1219,1,19,12667
+3/10/2020,France,1794,1,33,15018
+3/11/2020,France,2293,1,48,15018
+3/12/2020,France,2293,1,48,15018
+3/13/2020,France,3681,1,79,15018
+3/14/2020,France,4496,1,91,15018
+3/15/2020,France,4532,11,91,36747
+3/16/2020,France,6683,11,149,36747
+3/17/2020,France,7715,11,149,36747
+3/18/2020,France,9124,11,149,36747
+3/19/2020,France,10970,11,244,36747
+3/20/2020,France,12758,11,451,36747
+3/21/2020,France,14463,11,563,36747
+3/22/2020,France,16243,22,676,36747
+3/23/2020,France,20123,22,862,36747
+3/24/2020,France,22622,23,1102,107546
+3/25/2020,France,25600,24,1333,107546
+3/26/2020,France,29551,24,1698,107546
+3/27/2020,France,33402,27,1997,107546
+3/28/2020,France,38105,54,2317,107546
+3/29/2020,France,40708,54,2611,107546
+3/30/2020,France,45170,57,3030,107546
+3/31/2020,France,52827,93,3532,224254
+4/1/2020,France,57749,111,4043,224254
+4/2/2020,France,59929,414,5398,224254
+4/3/2020,France,65202,424,6520,224254
+4/4/2020,France,90848,436,7574,224254
+4/5/2020,France,93773,469,8093,224254
+4/6/2020,France,98963,485,8926,224254
+4/7/2020,France,110065,492,10343,333807
+4/8/2020,France,113959,510,10887,333807
+4/9/2020,France,118781,530,12228,333807
+4/10/2020,France,125931,564,13215,333807
+4/11/2020,France,130727,570,13851,333807
+4/12/2020,France,133670,583,14412,333807
+4/13/2020,France,137875,591,14986,333807
+1/22/2020,Spain,0,0,0,0
+1/23/2020,Spain,0,0,0,0
+1/24/2020,Spain,0,0,0,0
+1/25/2020,Spain,0,0,0,0
+1/26/2020,Spain,0,0,0,0
+1/27/2020,Spain,0,0,0,0
+1/28/2020,Spain,0,0,0,0
+1/29/2020,Spain,0,0,0,0
+1/30/2020,Spain,0,0,0,0
+1/31/2020,Spain,0,0,0,0
+2/1/2020,Spain,1,0,0,0
+2/2/2020,Spain,1,0,0,0
+2/3/2020,Spain,1,0,0,0
+2/4/2020,Spain,1,0,0,0
+2/5/2020,Spain,1,0,0,0
+2/6/2020,Spain,1,0,0,0
+2/7/2020,Spain,1,0,0,0
+2/8/2020,Spain,1,0,0,0
+2/9/2020,Spain,2,0,0,0
+2/10/2020,Spain,2,0,0,0
+2/11/2020,Spain,2,0,0,0
+2/12/2020,Spain,2,0,0,0
+2/13/2020,Spain,2,0,0,0
+2/14/2020,Spain,2,0,0,0
+2/15/2020,Spain,2,2,0,0
+2/16/2020,Spain,2,2,0,0
+2/17/2020,Spain,2,2,0,0
+2/18/2020,Spain,2,2,0,0
+2/19/2020,Spain,2,2,0,0
+2/20/2020,Spain,2,2,0,0
+2/21/2020,Spain,2,2,0,0
+2/22/2020,Spain,2,2,0,0
+2/23/2020,Spain,2,2,0,0
+2/24/2020,Spain,2,2,0,0
+2/25/2020,Spain,6,2,0,0
+2/26/2020,Spain,13,2,0,0
+2/27/2020,Spain,15,2,0,0
+2/28/2020,Spain,32,2,0,0
+2/29/2020,Spain,45,2,0,0
+3/1/2020,Spain,84,2,0,0
+3/2/2020,Spain,120,2,0,0
+3/3/2020,Spain,165,2,1,0
+3/4/2020,Spain,222,2,2,0
+3/5/2020,Spain,259,2,3,0
+3/6/2020,Spain,400,2,5,0
+3/7/2020,Spain,500,30,10,0
+3/8/2020,Spain,673,30,17,0
+3/9/2020,Spain,1073,32,28,0
+3/10/2020,Spain,1695,32,35,0
+3/11/2020,Spain,2277,183,54,0
+3/12/2020,Spain,2277,183,55,0
+3/13/2020,Spain,5232,193,133,0
+3/14/2020,Spain,6391,517,195,0
+3/15/2020,Spain,7798,517,289,0
+3/16/2020,Spain,9942,530,342,0
+3/17/2020,Spain,11748,1028,533,0
+3/18/2020,Spain,13910,1081,623,0
+3/19/2020,Spain,17963,1107,830,0
+3/20/2020,Spain,20410,1588,1043,0
+3/21/2020,Spain,25374,2125,1375,0
+3/22/2020,Spain,28768,2575,1772,0
+3/23/2020,Spain,35136,2575,2311,0
+3/24/2020,Spain,39885,3794,2808,0
+3/25/2020,Spain,49515,5367,3647,0
+3/26/2020,Spain,57786,7015,4365,0
+3/27/2020,Spain,65719,9357,5138,0
+3/28/2020,Spain,73235,12285,5982,0
+3/29/2020,Spain,80110,14709,6803,0
+3/30/2020,Spain,87956,16780,7716,0
+3/31/2020,Spain,95923,19259,8464,0
+4/1/2020,Spain,104118,22647,9387,0
+4/2/2020,Spain,112065,26743,10348,0
+4/3/2020,Spain,119199,30513,11198,0
+4/4/2020,Spain,126168,34219,11947,0
+4/5/2020,Spain,131646,38080,12641,0
+4/6/2020,Spain,136675,40437,13341,0
+4/7/2020,Spain,141942,43208,14045,0
+4/8/2020,Spain,148220,48021,14792,0
+4/9/2020,Spain,153222,52165,15447,0
+4/10/2020,Spain,158273,55668,16081,0
+4/11/2020,Spain,163027,59109,16606,0
+4/12/2020,Spain,166831,62391,17209,0
+4/13/2020,Spain,170099,64727,17756,930230
+1/22/2020,Germany,0,0,0,0
+1/23/2020,Germany,0,0,0,0
+1/24/2020,Germany,0,0,0,0
+1/25/2020,Germany,0,0,0,0
+1/26/2020,Germany,0,0,0,0
+1/27/2020,Germany,1,0,0,0
+1/28/2020,Germany,4,0,0,0
+1/29/2020,Germany,4,0,0,0
+1/30/2020,Germany,4,0,0,0
+1/31/2020,Germany,5,0,0,0
+2/1/2020,Germany,8,0,0,0
+2/2/2020,Germany,10,0,0,0
+2/3/2020,Germany,12,0,0,0
+2/4/2020,Germany,12,0,0,0
+2/5/2020,Germany,12,0,0,0
+2/6/2020,Germany,12,0,0,0
+2/7/2020,Germany,13,0,0,0
+2/8/2020,Germany,13,0,0,0
+2/9/2020,Germany,14,0,0,0
+2/10/2020,Germany,14,0,0,0
+2/11/2020,Germany,16,0,0,0
+2/12/2020,Germany,16,0,0,0
+2/13/2020,Germany,16,1,0,0
+2/14/2020,Germany,16,1,0,0
+2/15/2020,Germany,16,1,0,0
+2/16/2020,Germany,16,1,0,0
+2/17/2020,Germany,16,1,0,0
+2/18/2020,Germany,16,12,0,0
+2/19/2020,Germany,16,12,0,0
+2/20/2020,Germany,16,12,0,0
+2/21/2020,Germany,16,14,0,0
+2/22/2020,Germany,16,14,0,0
+2/23/2020,Germany,16,14,0,0
+2/24/2020,Germany,16,14,0,0
+2/25/2020,Germany,17,14,0,0
+2/26/2020,Germany,27,15,0,0
+2/27/2020,Germany,46,16,0,0
+2/28/2020,Germany,48,16,0,0
+2/29/2020,Germany,79,16,0,0
+3/1/2020,Germany,130,16,0,0
+3/2/2020,Germany,159,16,0,0
+3/3/2020,Germany,196,16,0,0
+3/4/2020,Germany,262,16,0,0
+3/5/2020,Germany,482,16,0,0
+3/6/2020,Germany,670,17,0,0
+3/7/2020,Germany,799,18,0,0
+3/8/2020,Germany,1040,18,0,124716
+3/9/2020,Germany,1176,18,2,124716
+3/10/2020,Germany,1457,18,2,124716
+3/11/2020,Germany,1908,25,3,124716
+3/12/2020,Germany,2078,25,3,124716
+3/13/2020,Germany,3675,46,7,124716
+3/14/2020,Germany,4585,46,9,124716
+3/15/2020,Germany,5795,46,11,252173
+3/16/2020,Germany,7272,67,17,252173
+3/17/2020,Germany,9257,67,24,252173
+3/18/2020,Germany,12327,105,28,252173
+3/19/2020,Germany,15320,113,44,252173
+3/20/2020,Germany,19848,180,67,252173
+3/21/2020,Germany,22213,233,84,252173
+3/22/2020,Germany,24873,266,94,600792
+3/23/2020,Germany,29056,266,123,600792
+3/24/2020,Germany,32986,3243,157,600792
+3/25/2020,Germany,37323,3547,206,600792
+3/26/2020,Germany,43938,5673,267,600792
+3/27/2020,Germany,50871,6658,342,600792
+3/28/2020,Germany,57695,8481,433,600792
+3/29/2020,Germany,62095,9211,533,962166
+3/30/2020,Germany,66885,13500,645,962166
+3/31/2020,Germany,71808,16100,775,962166
+4/1/2020,Germany,77872,18700,920,962166
+4/2/2020,Germany,84794,22440,1107,962166
+4/3/2020,Germany,91159,24575,1275,962166
+4/4/2020,Germany,96092,26400,1444,962166
+4/5/2020,Germany,100123,28700,1584,1368218
+4/6/2020,Germany,103374,28700,1810,1368218
+4/7/2020,Germany,107663,36081,2016,1368218
+4/8/2020,Germany,113296,46300,2349,1368218
+4/9/2020,Germany,118181,52407,2607,1368218
+4/10/2020,Germany,122171,53913,2767,1368218
+4/11/2020,Germany,124908,57400,2736,1368218
+4/12/2020,Germany,127854,60300,3022,1728357
+4/13/2020,Germany,130072,64300,3194,1728357
+1/22/2020,United States,1,0,0,0
+1/23/2020,United States,1,0,0,0
+1/24/2020,United States,2,0,0,0
+1/25/2020,United States,2,0,0,0
+1/26/2020,United States,5,0,0,0
+1/27/2020,United States,5,0,0,0
+1/28/2020,United States,5,0,0,0
+1/29/2020,United States,5,0,0,0
+1/30/2020,United States,5,0,0,0
+1/31/2020,United States,7,0,0,0
+2/1/2020,United States,8,0,0,0
+2/2/2020,United States,8,0,0,0
+2/3/2020,United States,11,0,0,0
+2/4/2020,United States,11,0,0,0
+2/5/2020,United States,11,0,0,0
+2/6/2020,United States,11,0,0,0
+2/7/2020,United States,11,0,0,0
+2/8/2020,United States,11,0,0,0
+2/9/2020,United States,11,3,0,0
+2/10/2020,United States,11,3,0,0
+2/11/2020,United States,12,3,0,0
+2/12/2020,United States,12,3,0,0
+2/13/2020,United States,13,3,0,0
+2/14/2020,United States,13,3,0,0
+2/15/2020,United States,13,3,0,0
+2/16/2020,United States,13,3,0,0
+2/17/2020,United States,13,3,0,0
+2/18/2020,United States,13,3,0,0
+2/19/2020,United States,13,3,0,0
+2/20/2020,United States,13,3,0,0
+2/21/2020,United States,15,5,0,0
+2/22/2020,United States,15,5,0,0
+2/23/2020,United States,15,5,0,0
+2/24/2020,United States,51,5,0,0
+2/25/2020,United States,51,6,0,0
+2/26/2020,United States,57,6,0,0
+2/27/2020,United States,58,6,0,0
+2/28/2020,United States,60,7,0,0
+2/29/2020,United States,68,7,1,0
+3/1/2020,United States,74,7,1,0
+3/2/2020,United States,98,7,6,0
+3/3/2020,United States,118,7,7,0
+3/4/2020,United States,149,7,11,0
+3/5/2020,United States,217,7,12,0
+3/6/2020,United States,262,7,14,0
+3/7/2020,United States,402,7,17,2389
+3/8/2020,United States,518,7,21,3066
+3/9/2020,United States,583,7,22,4392
+3/10/2020,United States,959,8,28,5177
+3/11/2020,United States,1281,8,36,7863
+3/12/2020,United States,1663,12,40,10262
+3/13/2020,United States,2179,12,47,16708
+3/14/2020,United States,2727,12,54,20948
+3/15/2020,United States,3499,12,63,27526
+3/16/2020,United States,4632,17,85,42286
+3/17/2020,United States,6421,17,108,56419
+3/18/2020,United States,7783,105,118,78107
+3/19/2020,United States,13747,121,200,104073
+3/20/2020,United States,19273,147,244,139878
+3/21/2020,United States,25600,176,307,184971
+3/22/2020,United States,33276,178,417,231497
+3/23/2020,United States,43847,178,557,287226
+3/24/2020,United States,53740,348,706,353809
+3/25/2020,United States,65778,361,942,432699
+3/26/2020,United States,83836,681,1209,529092
+3/27/2020,United States,101657,869,1581,639733
+3/28/2020,United States,121465,1072,2026,747663
+3/29/2020,United States,140909,2665,2467,840749
+3/30/2020,United States,161831,5644,2978,959393
+3/31/2020,United States,188172,7024,3873,1066365
+4/1/2020,United States,213372,8474,4757,1169846
+4/2/2020,United States,243762,9001,5926,1291801
+4/3/2020,United States,275586,9707,7087,1423812
+4/4/2020,United States,308853,14652,8407,1653080
+4/5/2020,United States,337072,17448,9619,1775683
+4/6/2020,United States,366667,19581,10783,1924931
+4/7/2020,United States,396223,21763,12722,2073030
+4/8/2020,United States,429052,23559,14695,2212566
+4/9/2020,United States,461437,25410,16478,2375355
+4/10/2020,United States,496535,28790,18586,2529215
+4/11/2020,United States,526396,31270,20463,2665666
+4/12/2020,United States,555313,32988,22020,2805892
+4/13/2020,United States,580619,43482,23529,2935006
+1/22/2020,Switzerland,0,0,0,0
+1/23/2020,Switzerland,0,0,0,0
+1/24/2020,Switzerland,0,0,0,0
+1/25/2020,Switzerland,0,0,0,0
+1/26/2020,Switzerland,0,0,0,0
+1/27/2020,Switzerland,0,0,0,0
+1/28/2020,Switzerland,0,0,0,0
+1/29/2020,Switzerland,0,0,0,0
+1/30/2020,Switzerland,0,0,0,0
+1/31/2020,Switzerland,0,0,0,0
+2/1/2020,Switzerland,0,0,0,0
+2/2/2020,Switzerland,0,0,0,0
+2/3/2020,Switzerland,0,0,0,0
+2/4/2020,Switzerland,0,0,0,0
+2/5/2020,Switzerland,0,0,0,0
+2/6/2020,Switzerland,0,0,0,0
+2/7/2020,Switzerland,0,0,0,0
+2/8/2020,Switzerland,0,0,0,0
+2/9/2020,Switzerland,0,0,0,0
+2/10/2020,Switzerland,0,0,0,0
+2/11/2020,Switzerland,0,0,0,0
+2/12/2020,Switzerland,0,0,0,0
+2/13/2020,Switzerland,0,0,0,0
+2/14/2020,Switzerland,0,0,0,0
+2/15/2020,Switzerland,0,0,0,0
+2/16/2020,Switzerland,0,0,0,0
+2/17/2020,Switzerland,0,0,0,0
+2/18/2020,Switzerland,0,0,0,0
+2/19/2020,Switzerland,0,0,0,0
+2/20/2020,Switzerland,0,0,0,0
+2/21/2020,Switzerland,0,0,0,0
+2/22/2020,Switzerland,0,0,0,0
+2/23/2020,Switzerland,0,0,0,0
+2/24/2020,Switzerland,0,0,0,0
+2/25/2020,Switzerland,1,0,0,0
+2/26/2020,Switzerland,1,0,0,0
+2/27/2020,Switzerland,8,0,0,0
+2/28/2020,Switzerland,8,0,0,0
+2/29/2020,Switzerland,18,0,0,0
+3/1/2020,Switzerland,27,0,0,0
+3/2/2020,Switzerland,42,0,0,0
+3/3/2020,Switzerland,56,2,0,0
+3/4/2020,Switzerland,90,3,0,0
+3/5/2020,Switzerland,114,3,1,0
+3/6/2020,Switzerland,214,3,1,0
+3/7/2020,Switzerland,268,3,1,0
+3/8/2020,Switzerland,337,3,2,0
+3/9/2020,Switzerland,374,3,2,0
+3/10/2020,Switzerland,491,3,3,0
+3/11/2020,Switzerland,652,4,4,0
+3/12/2020,Switzerland,652,4,4,0
+3/13/2020,Switzerland,1139,4,11,0
+3/14/2020,Switzerland,1359,4,13,0
+3/15/2020,Switzerland,2200,4,14,0
+3/16/2020,Switzerland,2200,4,14,0
+3/17/2020,Switzerland,2700,4,27,0
+3/18/2020,Switzerland,3028,15,28,0
+3/19/2020,Switzerland,4075,15,41,0
+3/20/2020,Switzerland,5294,15,54,0
+3/21/2020,Switzerland,6575,15,75,0
+3/22/2020,Switzerland,7474,131,98,0
+3/23/2020,Switzerland,8795,131,120,0
+3/24/2020,Switzerland,9877,131,122,0
+3/25/2020,Switzerland,10897,131,153,84000
+3/26/2020,Switzerland,11811,131,191,91400
+3/27/2020,Switzerland,12928,1530,231,97000
+3/28/2020,Switzerland,14076,1530,264,106000
+3/29/2020,Switzerland,14829,1595,300,111000
+3/30/2020,Switzerland,15922,1823,359,116700
+3/31/2020,Switzerland,16605,1823,433,123150
+4/1/2020,Switzerland,17768,2967,488,130700
+4/2/2020,Switzerland,18827,4013,536,139330
+4/3/2020,Switzerland,19606,4846,591,145780
+4/4/2020,Switzerland,20505,6415,666,145780
+4/5/2020,Switzerland,21100,6415,715,158000
+4/6/2020,Switzerland,21657,8056,765,162500
+4/7/2020,Switzerland,22253,8704,821,162500
+4/8/2020,Switzerland,23280,9800,895,171938
+4/9/2020,Switzerland,24051,10600,948,178500
+4/10/2020,Switzerland,24551,11100,1002,184750
+4/11/2020,Switzerland,25107,12100,1036,190000
+4/12/2020,Switzerland,25415,12700,1106,193800
+4/13/2020,Switzerland,25688,13700,1138,196600
+1/22/2020,United Kingdom,0,0,0,0
+1/23/2020,United Kingdom,0,0,0,0
+1/24/2020,United Kingdom,0,0,0,0
+1/25/2020,United Kingdom,0,0,0,31
+1/26/2020,United Kingdom,0,2,0,52
+1/27/2020,United Kingdom,0,2,0,73
+1/28/2020,United Kingdom,0,5,0,97
+1/29/2020,United Kingdom,0,5,0,130
+1/30/2020,United Kingdom,0,5,0,161
+1/31/2020,United Kingdom,2,5,0,177
+2/1/2020,United Kingdom,2,5,0,203
+2/2/2020,United Kingdom,2,5,0,266
+2/3/2020,United Kingdom,2,5,0,326
+2/4/2020,United Kingdom,2,5,0,416
+2/5/2020,United Kingdom,2,5,0,468
+2/6/2020,United Kingdom,2,6,0,566
+2/7/2020,United Kingdom,3,6,0,620
+2/8/2020,United Kingdom,3,11,0,686
+2/9/2020,United Kingdom,3,11,0,795
+2/10/2020,United Kingdom,8,11,0,1114
+2/11/2020,United Kingdom,8,11,0,1358
+2/12/2020,United Kingdom,9,11,0,1758
+2/13/2020,United Kingdom,9,13,0,2521
+2/14/2020,United Kingdom,9,14,0,2964
+2/15/2020,United Kingdom,9,14,0,2992
+2/16/2020,United Kingdom,9,16,0,3109
+2/17/2020,United Kingdom,9,17,0,4501
+2/18/2020,United Kingdom,9,17,0,4916
+2/19/2020,United Kingdom,9,17,0,5207
+2/20/2020,United Kingdom,9,17,0,5549
+2/21/2020,United Kingdom,9,19,0,5885
+2/22/2020,United Kingdom,9,19,0,6152
+2/23/2020,United Kingdom,9,23,0,6324
+2/24/2020,United Kingdom,13,26,0,6536
+2/25/2020,United Kingdom,13,27,0,6795
+2/26/2020,United Kingdom,13,27,0,7132
+2/27/2020,United Kingdom,15,27,0,7690
+2/28/2020,United Kingdom,20,34,0,8986
+2/29/2020,United Kingdom,23,37,0,10483
+3/1/2020,United Kingdom,36,37,0,11750
+3/2/2020,United Kingdom,40,43,0,13525
+3/3/2020,United Kingdom,51,45,0,13911
+3/4/2020,United Kingdom,86,46,0,16659
+3/5/2020,United Kingdom,116,46,1,18083
+3/6/2020,United Kingdom,164,46,2,20338
+3/7/2020,United Kingdom,207,46,2,21460
+3/8/2020,United Kingdom,274,47,3,23513
+3/9/2020,United Kingdom,322,50,4,24960
+3/10/2020,United Kingdom,384,54,6,26261
+3/11/2020,United Kingdom,459,56,8,27476
+3/12/2020,United Kingdom,459,59,8,29764
+3/13/2020,United Kingdom,802,60,8,32771
+3/14/2020,United Kingdom,1144,60,21,37746
+3/15/2020,United Kingdom,1145,60,21,40279
+3/16/2020,United Kingdom,1551,60,56,44105
+3/17/2020,United Kingdom,1960,68,56,50442
+3/18/2020,United Kingdom,2642,80,72,56221
+3/19/2020,United Kingdom,2716,99,138,64621
+3/20/2020,United Kingdom,4014,99,178,66976
+3/21/2020,United Kingdom,5067,101,234,72818
+3/22/2020,United Kingdom,5745,219,282,78340
+3/23/2020,United Kingdom,6726,219,336,83945
+3/24/2020,United Kingdom,8164,228,423,90436
+3/25/2020,United Kingdom,9640,246,466,97019
+3/26/2020,United Kingdom,11812,264,580,104866
+3/27/2020,United Kingdom,14745,1673,761,113777
+3/28/2020,United Kingdom,17312,1674,1021,120776
+3/29/2020,United Kingdom,19780,1739,1231,127737
+3/30/2020,United Kingdom,22453,2108,1411,134946
+3/31/2020,United Kingdom,25481,2221,1793,143186
+4/1/2020,United Kingdom,29865,3615,2357,152979
+4/2/2020,United Kingdom,34173,4668,2926,163194
+4/3/2020,United Kingdom,38689,5716,3611,173784
+4/4/2020,United Kingdom,42477,7349,4320,183190
+4/5/2020,United Kingdom,48436,7468,4943,195524
+4/6/2020,United Kingdom,52279,9116,5385,208837
+4/7/2020,United Kingdom,55949,9862,6171,213181
+4/8/2020,United Kingdom,61474,10964,7111,232708
+4/9/2020,United Kingdom,65872,11822,7993,243421
+4/10/2020,United Kingdom,74605,12596,8974,256605
+4/11/2020,United Kingdom,79874,13729,9892,269598
+4/12/2020,United Kingdom,85206,14422,10629,282374
+4/13/2020,United Kingdom,89570,15495,11347,290720
+1/22/2020,Netherlands,0,0,0,0
+1/23/2020,Netherlands,0,0,0,0
+1/24/2020,Netherlands,0,0,0,0
+1/25/2020,Netherlands,0,0,0,0
+1/26/2020,Netherlands,0,0,0,0
+1/27/2020,Netherlands,0,0,0,0
+1/28/2020,Netherlands,0,0,0,0
+1/29/2020,Netherlands,0,0,0,0
+1/30/2020,Netherlands,0,0,0,0
+1/31/2020,Netherlands,0,0,0,0
+2/1/2020,Netherlands,0,0,0,0
+2/2/2020,Netherlands,0,0,0,0
+2/3/2020,Netherlands,0,0,0,0
+2/4/2020,Netherlands,0,0,0,0
+2/5/2020,Netherlands,0,0,0,0
+2/6/2020,Netherlands,0,0,0,0
+2/7/2020,Netherlands,0,0,0,0
+2/8/2020,Netherlands,0,0,0,0
+2/9/2020,Netherlands,0,0,0,0
+2/10/2020,Netherlands,0,0,0,0
+2/11/2020,Netherlands,0,0,0,0
+2/12/2020,Netherlands,0,0,0,0
+2/13/2020,Netherlands,0,0,0,0
+2/14/2020,Netherlands,0,0,0,0
+2/15/2020,Netherlands,0,0,0,0
+2/16/2020,Netherlands,0,0,0,0
+2/17/2020,Netherlands,0,0,0,0
+2/18/2020,Netherlands,0,0,0,0
+2/19/2020,Netherlands,0,0,0,0
+2/20/2020,Netherlands,0,0,0,0
+2/21/2020,Netherlands,0,0,0,0
+2/22/2020,Netherlands,0,0,0,0
+2/23/2020,Netherlands,0,0,0,0
+2/24/2020,Netherlands,0,0,0,0
+2/25/2020,Netherlands,0,0,0,0
+2/26/2020,Netherlands,0,0,0,0
+2/27/2020,Netherlands,1,0,0,0
+2/28/2020,Netherlands,1,0,0,0
+2/29/2020,Netherlands,6,0,0,0
+3/1/2020,Netherlands,10,0,0,0
+3/2/2020,Netherlands,18,0,0,0
+3/3/2020,Netherlands,24,1,0,0
+3/4/2020,Netherlands,38,1,0,0
+3/5/2020,Netherlands,82,1,0,0
+3/6/2020,Netherlands,128,1,1,0
+3/7/2020,Netherlands,188,1,1,0
+3/8/2020,Netherlands,265,1,3,0
+3/9/2020,Netherlands,321,1,3,0
+3/10/2020,Netherlands,382,4,4,0
+3/11/2020,Netherlands,503,4,5,0
+3/12/2020,Netherlands,503,4,5,0
+3/13/2020,Netherlands,806,4,10,0
+3/14/2020,Netherlands,962,4,12,14555
+3/15/2020,Netherlands,1138,4,20,14555
+3/16/2020,Netherlands,1416,4,24,18689
+3/17/2020,Netherlands,1711,5,43,18689
+3/18/2020,Netherlands,2058,5,58,18689
+3/19/2020,Netherlands,2467,5,77,18689
+3/20/2020,Netherlands,3003,5,107,32420
+3/21/2020,Netherlands,3640,5,137,32420
+3/22/2020,Netherlands,4217,5,180,37374
+3/23/2020,Netherlands,4764,5,214,40196
+3/24/2020,Netherlands,5580,6,277,44832
+3/25/2020,Netherlands,6438,6,357,44832
+3/26/2020,Netherlands,7468,6,435,44832
+3/27/2020,Netherlands,8647,6,547,56033
+3/28/2020,Netherlands,9819,6,640,56033
+3/29/2020,Netherlands,10930,8,772,65771
+3/30/2020,Netherlands,11817,52,865,69216
+3/31/2020,Netherlands,12667,55,1040,73610
+4/1/2020,Netherlands,13696,60,1175,77883
+4/2/2020,Netherlands,14786,60,1341,82734
+4/3/2020,Netherlands,15819,661,1490,88064
+4/4/2020,Netherlands,16725,671,1656,91707
+4/5/2020,Netherlands,17951,672,1771,94198
+4/6/2020,Netherlands,18924,679,1874,98465
+4/7/2020,Netherlands,19707,683,2108,104728
+4/8/2020,Netherlands,20680,694,2255,112927
+4/9/2020,Netherlands,21901,708,2403,119985
+4/10/2020,Netherlands,23247,714,2520,126261
+4/11/2020,Netherlands,24569,738,2653,131109
+4/12/2020,Netherlands,25743,1910,2747,134631
+4/13/2020,Netherlands,26707,1994,2833,137384
+1/22/2020,Turkey,0,0,0,0
+1/23/2020,Turkey,0,0,0,0
+1/24/2020,Turkey,0,0,0,0
+1/25/2020,Turkey,0,0,0,0
+1/26/2020,Turkey,0,0,0,0
+1/27/2020,Turkey,0,0,0,0
+1/28/2020,Turkey,0,0,0,0
+1/29/2020,Turkey,0,0,0,0
+1/30/2020,Turkey,0,0,0,0
+1/31/2020,Turkey,0,0,0,0
+2/1/2020,Turkey,0,0,0,0
+2/2/2020,Turkey,0,0,0,0
+2/3/2020,Turkey,0,0,0,0
+2/4/2020,Turkey,0,0,0,0
+2/5/2020,Turkey,0,0,0,0
+2/6/2020,Turkey,0,0,0,0
+2/7/2020,Turkey,0,0,0,0
+2/8/2020,Turkey,0,0,0,0
+2/9/2020,Turkey,0,0,0,0
+2/10/2020,Turkey,0,0,0,0
+2/11/2020,Turkey,0,0,0,0
+2/12/2020,Turkey,0,0,0,0
+2/13/2020,Turkey,0,0,0,0
+2/14/2020,Turkey,0,0,0,0
+2/15/2020,Turkey,0,0,0,0
+2/16/2020,Turkey,0,0,0,0
+2/17/2020,Turkey,0,0,0,0
+2/18/2020,Turkey,0,0,0,0
+2/19/2020,Turkey,0,0,0,0
+2/20/2020,Turkey,0,0,0,0
+2/21/2020,Turkey,0,0,0,0
+2/22/2020,Turkey,0,0,0,0
+2/23/2020,Turkey,0,0,0,0
+2/24/2020,Turkey,0,0,0,0
+2/25/2020,Turkey,0,0,0,0
+2/26/2020,Turkey,0,0,0,0
+2/27/2020,Turkey,0,0,0,0
+2/28/2020,Turkey,0,0,0,0
+2/29/2020,Turkey,0,0,0,0
+3/1/2020,Turkey,0,0,0,0
+3/2/2020,Turkey,0,0,0,0
+3/3/2020,Turkey,0,0,0,0
+3/4/2020,Turkey,0,0,0,0
+3/5/2020,Turkey,0,0,0,0
+3/6/2020,Turkey,0,0,0,0
+3/7/2020,Turkey,0,0,0,0
+3/8/2020,Turkey,0,0,0,0
+3/9/2020,Turkey,0,0,0,0
+3/10/2020,Turkey,0,0,0,0
+3/11/2020,Turkey,1,0,0,0
+3/12/2020,Turkey,1,0,0,0
+3/13/2020,Turkey,5,0,0,0
+3/14/2020,Turkey,5,0,0,0
+3/15/2020,Turkey,6,0,0,0
+3/16/2020,Turkey,18,0,0,0
+3/17/2020,Turkey,47,0,1,0
+3/18/2020,Turkey,98,0,1,10018
+3/19/2020,Turkey,192,0,3,11999
+3/20/2020,Turkey,359,0,4,15655
+3/21/2020,Turkey,670,0,9,18607
+3/22/2020,Turkey,1236,0,30,20345
+3/23/2020,Turkey,1529,0,37,24017
+3/24/2020,Turkey,1872,0,44,27969
+3/25/2020,Turkey,2433,26,59,33004
+3/26/2020,Turkey,3629,26,75,40290
+3/27/2020,Turkey,5698,42,92,47823
+3/28/2020,Turkey,7402,70,108,55464
+3/29/2020,Turkey,9217,105,131,65446
+3/30/2020,Turkey,10827,162,168,76981
+3/31/2020,Turkey,13531,243,214,92403
+4/1/2020,Turkey,15679,333,277,106799
+4/2/2020,Turkey,18135,415,356,125556
+4/3/2020,Turkey,20921,484,425,141716
+4/4/2020,Turkey,23934,786,501,161380
+4/5/2020,Turkey,27069,1042,574,181445
+4/6/2020,Turkey,30217,1326,649,202845
+4/7/2020,Turkey,34109,1582,725,228868
+4/8/2020,Turkey,38226,1846,812,247768
+4/9/2020,Turkey,42282,2142,908,276338
+4/10/2020,Turkey,47029,2423,1006,307210
+4/11/2020,Turkey,52167,2965,1101,340380
+4/12/2020,Turkey,56956,3446,1198,376100
+4/13/2020,Turkey,61049,3957,1296,410556
+1/22/2020,Total,555,28,17,0
+1/23/2020,Total,654,30,18,0
+1/24/2020,Total,941,36,26,0
+1/25/2020,Total,1434,39,42,0
+1/26/2020,Total,2118,52,56,0
+1/27/2020,Total,2927,61,82,0
+1/28/2020,Total,5578,107,131,0
+1/29/2020,Total,6166,126,133,0
+1/30/2020,Total,8234,143,171,0
+1/31/2020,Total,9927,222,213,0
+2/1/2020,Total,12038,284,259,0
+2/2/2020,Total,16787,472,362,0
+2/3/2020,Total,19881,623,426,0
+2/4/2020,Total,23892,852,492,0
+2/5/2020,Total,27635,1124,564,0
+2/6/2020,Total,30794,1487,634,0
+2/7/2020,Total,34391,2011,719,0
+2/8/2020,Total,37120,2616,806,0
+2/9/2020,Total,40150,3244,906,0
+2/10/2020,Total,42762,3946,1013,0
+2/11/2020,Total,44802,4683,1113,0
+2/12/2020,Total,45221,5150,1118,0
+2/13/2020,Total,60368,6295,1371,0
+2/14/2020,Total,66885,8058,1523,0
+2/15/2020,Total,69030,9395,1666,0
+2/16/2020,Total,71224,10865,1770,0
+2/17/2020,Total,73258,12583,1868,0
+2/18/2020,Total,75136,14352,2007,0
+2/19/2020,Total,75639,16121,2122,0
+2/20/2020,Total,76197,18177,2247,0
+2/21/2020,Total,76819,18890,2251,0
+2/22/2020,Total,78572,22886,2458,0
+2/23/2020,Total,78958,23394,2469,0
+2/24/2020,Total,79561,25227,2629,0
+2/25/2020,Total,80406,27905,2708,0
+2/26/2020,Total,81388,30384,2770,0
+2/27/2020,Total,82746,33277,2814,0
+2/28/2020,Total,84112,36711,2872,0
+2/29/2020,Total,86011,39782,2941,0
+3/1/2020,Total,88369,42716,2996,0
+3/2/2020,Total,90306,45602,3085,0
+3/3/2020,Total,92840,48228,3160,0
+3/4/2020,Total,95120,51170,3254,0
+3/5/2020,Total,97886,53796,3348,0
+3/6/2020,Total,101801,55865,3460,0
+3/7/2020,Total,105847,58358,3558,0
+3/8/2020,Total,109821,60694,3802,0
+3/9/2020,Total,113590,62494,3988,0
+3/10/2020,Total,118620,64404,4262,0
+3/11/2020,Total,125875,67003,4615,0
+3/12/2020,Total,128352,68324,4720,0
+3/13/2020,Total,145205,70251,5404,0
+3/14/2020,Total,156101,72624,5819,0
+3/15/2020,Total,167454,76034,6440,0
+3/16/2020,Total,181574,78088,7126,0
+3/17/2020,Total,197102,80840,7905,0
+3/18/2020,Total,214821,83312,8733,0
+3/19/2020,Total,242570,84975,9867,0
+3/20/2020,Total,272208,87420,11299,0
+3/21/2020,Total,304507,91692,12973,0
+3/22/2020,Total,336953,97899,14651,0
+3/23/2020,Total,378235,98351,16505,0
+3/24/2020,Total,418045,108000,18625,0
+3/25/2020,Total,467653,113787,21181,0
+3/26/2020,Total,529591,122150,23970,0
+3/27/2020,Total,593291,130915,27198,0
+3/28/2020,Total,660693,139415,30652,0
+3/29/2020,Total,720140,149082,33925,0
+3/30/2020,Total,782389,164566,37582,0
+3/31/2020,Total,857487,178034,42107,0
+4/1/2020,Total,932605,193177,46809,0
+4/2/2020,Total,1013466,210263,52983,0
+4/3/2020,Total,1095917,225796,58787,0
+4/4/2020,Total,1197408,246152,64606,0
+4/5/2020,Total,1272115,260012,69374,0
+4/6/2020,Total,1345101,276515,74565,0
+4/7/2020,Total,1426096,300054,81865,0
+4/8/2020,Total,1511104,328661,88338,0
+4/9/2020,Total,1595350,353975,95455,0
+4/10/2020,Total,1691719,376096,102525,0
+4/11/2020,Total,1771514,402110,108503,0
+4/12/2020,Total,1846679,421722,114091,0
+4/13/2020,Total,1917319,448655,119482,0

@@ -28,14 +28,12 @@ var dateFormat = new Date();
 var startDateFormat = new Date(2020, 0, 1);
 var endDateFormat = new Date(2020, 5, 31);
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+var fileName = "newestCSV.csv";
+// var fileName = "Corona_April13th.csv";
 
-d3.csv("Corona_April13th.csv", function(data){
-    data.forEach(function(item){
-        if ($.inArray(item.Country,countries) == -1){
-            countries.push(item.Country)
-        }
-    });
-});
+// date bound
+var minDateFormat = new Date("2020-12-31");
+var maxDateFormat = new Date("2020-01-01");
 
 // get parameters from url
 // reference: https://blog.csdn.net/weixin_38676276/java/article/details/86594494
@@ -47,6 +45,29 @@ d3.csv("Corona_April13th.csv", function(data){
     }
 })(jQuery);
 
+// change date object to string
+//reference: https://blog.csdn.net/vasilis_1/java/article/details/72869533
+Date.prototype.Format = function (fmt) {
+    var o = {
+        "M+": this.getMonth() + 1,
+        "d+": this.getDate(), 
+        "h+": this.getHours(),
+        "m+": this.getMinutes(),
+        "s+": this.getSeconds(),
+        "q+": Math.floor((this.getMonth() + 3) / 3),
+        "S": this.getMilliseconds()
+    };
+    if (/(y+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    }
+    for (var k in o){
+        if (new RegExp("(" + k + ")").test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        }
+    }
+    return fmt;
+}
+
 window.onload = function(){
     generateItems();
     width = dataMax*scaleFactor;
@@ -55,32 +76,39 @@ window.onload = function(){
 }
 
 function generateItems(){
-    d3.csv("Corona_April13th.csv", function(data){
+    d3.csv(fileName, function(data){
         data.forEach(function(item){
             if ($.inArray(item.Country,countries) == -1){
-                countries.push(item.Country)
+                countries.push(item.Country);
+            }
+            if (new Date(item.Date) <= minDateFormat) {
+                minDateFormat = new Date(item.Date);
+            }
+            if (new Date(item.Date) >= maxDateFormat) {
+                maxDateFormat = new Date(item.Date);
             }
         });
 
+        //generate drop down menu for countries
         countries.forEach(function(item){
             $('#changeLeft').append("<option value = '" + item + "'>" + item + "</option>");
             $('#changeRight').append("<option value = '" + item + "'>" + item + "</option>");
         });
 
+        // obtain values from url parameters
         country1 = ($.getUrlParam("country1")) ? $.getUrlParam("country1") : "Total";
         localStorage.setItem("left", country1);
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
         localStorage.setItem("right", country2);
-        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "2020-01-01";
+        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : minDateFormat.Format("yyyy-MM-dd");
         startDateFormat = new Date(startDate);
-        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "2020-05-31";
+        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : maxDateFormat.Format("yyyy-MM-dd");
         endDateFormat = new Date(endDate);
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
         $("#dateSlider").dateRangeSlider({
-            bounds: {min: new Date(2020, 0, 1), max: new Date(2020, 11, 31, 12, 59, 59)},
-            defaultValues: {min: startDate ? new Date(startDate) : startDateFormat,
-                max: endDate ? new Date(endDate) : endDateFormat},
+            bounds: {min: new Date(2020, minDateFormat.getMonth(), 1), max: new Date(2020, maxDateFormat.getMonth(), 31)},
+            defaultValues: {min: startDateFormat, max: endDateFormat},
             scales: [{
                 first: function(value){ return value; },
                 end: function(value) {return value; },
@@ -100,8 +128,8 @@ function generateItems(){
         $("#dateSlider").bind("valuesChanged", function(e, data){
             startDateFormat = data.values.min;
             endDateFormat = data.values.max;
-            startDate = startDateFormat.getFullYear() + "-" + (startDateFormat.getMonth() + 1) + "-" + startDateFormat.getDate();
-            endDate = endDateFormat.getFullYear() + "-" + (endDateFormat.getMonth() + 1) + "-" + endDateFormat.getDate();
+            startDate = startDateFormat.Format("yyyy-MM-dd");
+            endDate = endDateFormat.Format("yyyy-MM-dd")
             $("#startDate").val(startDate);
             $("#endDate").val(endDate);
         });
@@ -483,5 +511,5 @@ function type(d) {
 }
 
 function main (){
-    d3.csv("Corona_April13th.csv", type, render);
+    d3.csv(fileName, type, render);
 }

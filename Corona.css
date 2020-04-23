@@ -45,7 +45,7 @@ button{
     background: red;
 }
 .data{
-    height: calc(100% - 50px);
+    height: calc(100%-);
     width: 100%;
 }
 .DateDiv{
@@ -53,7 +53,10 @@ button{
     overflow-y: scroll;
     overflow-x: hidden;
     width: 98px;
-    height: calc(100% - 50px);
+    height: calc(100% - 81px);
+}
+#dateSlider{
+    height: 32px;
 }
 .deathsBar{
     fill: red;
@@ -96,7 +99,7 @@ button{
     overflow-x: hidden;
     border-right: 1px solid black;
     width: calc(50% - 50px);
-    height: calc(100% - 50px);
+    height: calc(100% - 131px);
 }
 .LeftScale{
     width: calc(50% - 50px);
@@ -143,7 +146,7 @@ button{
     float:left;
     overflow-y: hidden;
     overflow-x: hidden;
-    height: calc(100% - 50px);
+    height: calc(100% - 131px);
     border-left: 1px solid black;
 }
 .RightScale{

@@ -71,9 +71,9 @@ function generateItems(){
         localStorage.setItem("left", country1);
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
         localStorage.setItem("right", country2);
-        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "2020-01-01";
+        startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : "2020-01-22";
         startDateFormat = new Date(startDate);
-        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "2020-05-31";
+        endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : "2020-04-13";
         endDateFormat = new Date(endDate);
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 

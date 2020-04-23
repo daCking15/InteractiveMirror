@@ -45,18 +45,20 @@ button{
     background: red;
 }
 .data{
-    height: calc(100%-);
+    height: calc(100% - 131px);
     width: 100%;
 }
 .DateDiv{
     float:left;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 98px;
-    height: calc(100% - 81px);
+    width: 116px;
+    height: calc(100% - 41px);
 }
 #dateSlider{
     height: 32px;
+    width: 90%;
+    margin-left: 5%;
 }
 .deathsBar{
     fill: red;
@@ -98,11 +100,11 @@ button{
     overflow-y: hidden;
     overflow-x: hidden;
     border-right: 1px solid black;
-    width: calc(50% - 50px);
-    height: calc(100% - 131px);
+    width: calc(50% - 59px);
+    height: calc(100% - 41px);
 }
 .LeftScale{
-    width: calc(50% - 50px);
+    width: calc(50% - 59px);
     height: 50px;
     float: right;
     overflow-x: scroll;
@@ -142,15 +144,15 @@ button{
 }
 .RightMirrorDiv{
     background-color: lightgray;
-    width: calc(50% - 50px);
+    width: calc(50% - 59px);
     float:left;
     overflow-y: hidden;
     overflow-x: hidden;
-    height: calc(100% - 131px);
+    height: calc(100% - 41px);
     border-left: 1px solid black;
 }
 .RightScale{
-    width: calc(50% - 50px);
+    width: calc(50% - 59px);
     height: 50px;
     float: right;
     overflow-x: scroll;

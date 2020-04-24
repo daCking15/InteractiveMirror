@@ -32,8 +32,8 @@ var fileName = "newestCSV.csv";
 // var fileName = "Corona_April13th.csv";
 
 // date bound
-var minDateFormat = new Date("2020-12-31");
-var maxDateFormat = new Date("2020-01-01");
+var minDateFormat = new Date("2020-12-31 00:00:00");
+var maxDateFormat = new Date("2020-01-01 00:00:00");
 
 // get parameters from url
 // reference: https://blog.csdn.net/weixin_38676276/java/article/details/86594494
@@ -101,9 +101,9 @@ function generateItems(){
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
         localStorage.setItem("right", country2);
         startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : minDateFormat.Format("yyyy-MM-dd");
-        startDateFormat = new Date(startDate);
+        startDateFormat = new Date(startDate + " 00:00:00");
         endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : maxDateFormat.Format("yyyy-MM-dd");
-        endDateFormat = new Date(endDate);
+        endDateFormat = new Date(endDate + " 00:00:00");
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
         $("#dateSlider").dateRangeSlider({

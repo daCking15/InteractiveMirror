@@ -17,8 +17,8 @@ var h = 50;
 var height = bar_height * 200;
 var labelArea = 160;
 var maxWidth;
-var minDateFormat = new Date("2020-12-31");
-var maxDateFormat = new Date("2020-01-01");
+var minDateFormat = new Date("2020-12-31 00:00:00");
+var maxDateFormat = new Date("2020-01-01 00:00:00");
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 var padding = 5;
 var rightOffset = 50;
@@ -98,9 +98,9 @@ function generateItems(){
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Spain";
         localStorage.setItem("right", country2);
         startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : minDateFormat.Format("yyyy-MM-dd");
-        startDateFormat = new Date(startDate);
+        startDateFormat = new Date(startDate + " 00:00:00");
         endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : maxDateFormat.Format("yyyy-MM-dd");
-        endDateFormat = new Date(endDate);
+        endDateFormat = new Date(endDate + " 00:00:00");
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
         $("#dateSlider").dateRangeSlider({

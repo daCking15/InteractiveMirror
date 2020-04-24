@@ -1,4 +1,4 @@
-var bar_height = 6;
+var bar_height = 15;
 var chart;
 var compare = "Infections";
 //var countries = ["Total", "China", "Italy", "Iran", "South Korea", "France", "Spain", "Germany", "United States", "Switzerland", "United Kingdom", "Netherlands"];
@@ -8,32 +8,29 @@ var country1Slice = new Array();
 var country2;
 var country2Slice = new Array();
 var dataMax = 500000;
+var dateFormat = new Date();
 var dateWidth = 94;
+var endDate = "";
+var endDateFormat = new Date(2020, 5, 31);
+var fileName = "newestCSV.csv";
 var h = 50;
 var height = bar_height * 200;
 var labelArea = 160;
 var maxWidth;
+var minDateFormat = new Date("2020-12-31");
+var maxDateFormat = new Date("2020-01-01");
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 var padding = 5;
 var rightOffset = 50;
 var scaleFactor;
+var startDate = "";
+var startDateFormat = new Date(2020, 0, 1);
 var textArea = 75;
 var textHeight = 20;
 var width;
 var xFrom = d3.scale.identity();
 var xTo = d3.scale.identity();
 var y = d3.scale.ordinal().rangeBands([textHeight, height]);
-var startDate = "";
-var endDate = "";
-var dateFormat = new Date();
-var startDateFormat = new Date(2020, 0, 1);
-var endDateFormat = new Date(2020, 5, 31);
-var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
-var fileName = "newestCSV.csv";
-// var fileName = "Corona_April13th.csv";
-
-// date bound
-var minDateFormat = new Date("2020-12-31");
-var maxDateFormat = new Date("2020-01-01");
 
 // get parameters from url
 // reference: https://blog.csdn.net/weixin_38676276/java/article/details/86594494
@@ -96,9 +93,9 @@ function generateItems(){
         });
 
         // obtain values from url parameters
-        country1 = ($.getUrlParam("country1")) ? $.getUrlParam("country1") : "Total";
+        country1 = ($.getUrlParam("country1")) ? $.getUrlParam("country1") : "Italy";
         localStorage.setItem("left", country1);
-        country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Total";
+        country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Spain";
         localStorage.setItem("right", country2);
         startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : minDateFormat.Format("yyyy-MM-dd");
         startDateFormat = new Date(startDate);
@@ -235,12 +232,12 @@ function render(data) {
         );
     }
     function setWidth(data){
-        dataMax = country1Slice[country1Slice.length-1]["Tests"];
+        dataMax = country1Slice[country1Slice.length-1]["Tests"]*0.5;
         if (country1Slice[country1Slice.length-1]["Infections"]>dataMax){
             dataMax = country1Slice[country1Slice.length-1]["Infections"];
         }
-        if (country2Slice[country2Slice.length-1]["Tests"]>dataMax){
-            dataMax = country2Slice[country2Slice.length-1]["Tests"];
+        if (country2Slice[country2Slice.length-1]["Tests"]*0.5>dataMax){
+            dataMax = country2Slice[country2Slice.length-1]["Tests"]*0.5;
         }
         if (country2Slice[country2Slice.length-1]["Infections"]>dataMax){
             dataMax = country2Slice[country2Slice.length-1]["Infections"];
@@ -390,12 +387,12 @@ function render(data) {
                 .data(country1Slice)
                 .enter().append("rect")
                 .attr("x", function (d) {
-                    return width - xFrom(d["Tests"]*scaleFactor);
+                    return width - xFrom(d["Tests"]*scaleFactor*0.5);
                 })  
                 .attr("y", yPosByIndex)
                 .attr("class", "testsBar")
                 .attr("width", function (d) {
-                    return xFrom(d["Tests"]*scaleFactor);
+                    return xFrom(d["Tests"]*scaleFactor*0.5);
                 })
                 .attr("height", 2);
         /*
@@ -472,7 +469,7 @@ function render(data) {
                 .attr("y", yPosByIndex)
                 .attr("class", "testsBar")
                 .attr("width", function (d) {
-                    return xTo(d["Tests"]*scaleFactor);
+                    return xTo(d["Tests"]*scaleFactor*0.5);
                 })
                 .attr("height", 2);
         

@@ -241,12 +241,12 @@ function render(data) {
         );
     }
     function setWidth(data){
-        dataMax = country1Slice[country1Slice.length-1]["Tests"]*0.5;
+        dataMax = country1Slice[country1Slice.length-1]["Tests"]*0.1;
         if (country1Slice[country1Slice.length-1]["Infections"]>dataMax){
             dataMax = country1Slice[country1Slice.length-1]["Infections"];
         }
-        if (country2Slice[country2Slice.length-1]["Tests"]*0.5>dataMax){
-            dataMax = country2Slice[country2Slice.length-1]["Tests"]*0.5;
+        if (country2Slice[country2Slice.length-1]["Tests"]*0.1>dataMax){
+            dataMax = country2Slice[country2Slice.length-1]["Tests"]*0.1;
         }
         if (country2Slice[country2Slice.length-1]["Infections"]>dataMax){
             dataMax = country2Slice[country2Slice.length-1]["Infections"];
@@ -396,12 +396,12 @@ function render(data) {
                 .data(country1Slice)
                 .enter().append("rect")
                 .attr("x", function (d) {
-                    return width - xFrom(d["Tests"]*scaleFactor*0.5);
+                    return width - xFrom(d["Tests"]*scaleFactor*0.1);
                 })  
                 .attr("y", yPosByIndex)
                 .attr("class", "testsBar")
                 .attr("width", function (d) {
-                    return xFrom(d["Tests"]*scaleFactor*0.5);
+                    return xFrom(d["Tests"]*scaleFactor*0.1);
                 })
                 .attr("height", 2);
         /*
@@ -478,7 +478,7 @@ function render(data) {
                 .attr("y", yPosByIndex)
                 .attr("class", "testsBar")
                 .attr("width", function (d) {
-                    return xTo(d["Tests"]*scaleFactor*0.5);
+                    return xTo(d["Tests"]*scaleFactor*0.1);
                 })
                 .attr("height", 2);
         

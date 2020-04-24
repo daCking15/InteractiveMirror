@@ -14,6 +14,7 @@ var endDate = "";
 var endDateFormat = new Date(2020, 5, 31);
 var fileName = "newestCSV.csv";
 var h = 50;
+var days = 0;
 var height = bar_height * 200;
 var labelArea = 160;
 var maxWidth;
@@ -65,9 +66,13 @@ Date.prototype.Format = function (fmt) {
     return fmt;
 }
 
+function getDaysBetween(date1,date2){ // format:yyyy-MM-dd
+    return Math.floor((Date.parse(date2) - Date.parse(date1)) / (1 * 24 * 60 * 60 * 1000));
+}
+
 window.onload = function(){
     generateItems();
-    width = dataMax*scaleFactor;
+    width = dataMax * scaleFactor;
     main();
     mirror();
 }
@@ -102,6 +107,8 @@ function generateItems(){
         endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : maxDateFormat.Format("yyyy-MM-dd");
         endDateFormat = new Date(endDate + " 00:00:00");
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
+
+        days = getDaysBetween(startDate, endDate);
 
         $("#dateSlider").dateRangeSlider({
             bounds: {min: new Date(2020, minDateFormat.getMonth(), 1), max: new Date(2020, maxDateFormat.getMonth(), 31)},

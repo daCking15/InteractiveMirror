@@ -83,8 +83,10 @@ function generateItems(){
             if ($.inArray(item.Country,countries) == -1){
                 countries.push(item.Country);
             }
+            if (new Date(item.Date) < minDateFormat) {
                 minDateFormat = new Date(item.Date);
             }
+            if (new Date(item.Date) > maxDateFormat) {
                 maxDateFormat = new Date(item.Date);
             }
         });
@@ -108,6 +110,7 @@ function generateItems(){
 
         days = getDaysBetween(startDate, endDate);
         height = bar_height * days * 2;
+        y = d3.scale.ordinal().rangeBands([textHeight, height]);
 
         $("#dateSlider").dateRangeSlider({
             bounds: {min: new Date(2020, minDateFormat.getMonth(), 1), max: new Date(2020, maxDateFormat.getMonth(), 31)},

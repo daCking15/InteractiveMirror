@@ -156,7 +156,8 @@ if __name__ == '__main__':
         "Switzerland",
         "United Kingdom",
         "Netherlands",
-        "Turkey"
+        "Turkey",
+        "Total"
     ]
 
     all_data = get_data_from_jhu("time_series_covid19_confirmed_global.csv", all_data, countries_regions)

@@ -23,24 +23,7 @@ def get_data_from_jhu(filename, data, countries):
             month, day = 1, 21
             for i in range(len(dates)):
                 day += 1
-                if (month in [1, 3, 5, 7, 8, 10, 12] and day > 31) or \
-                        (month in [4, 6, 8, 11] and day > 30) or \
-                        (month == 2 and day > 29):
-                    month += 1
-                    day = 1
-
-                if month < 10:
-                    date = "2020-0" + str(month)
-                    if day < 10:
-                        date += "-0" + str(day)
-                    else:
-                        date += "-" + str(day)
-                else:
-                    date = "2020-" + str(month)
-                    if day < 10:
-                        date += "-0" + str(day)
-                    else:
-                        date += "-" + str(day)
+                date, month, day = generate_date(month, day)
 
                 data[date]["Total"][classification] += int(dates[i])
                 if country in countries:
@@ -110,6 +93,41 @@ def get_data_from_oxford(filename, data, countries):
     return data
 
 
+def generate_date(month, day):
+    if (month in [1, 3, 5, 7, 8, 10, 12] and day > 31) or \
+            (month in [4, 6, 8, 11] and day > 30) or \
+            (month == 2 and day > 29):
+        month += 1
+        day = 1
+
+    if month < 10:
+        date = "2020-0" + str(month)
+        if day < 10:
+            date += "-0" + str(day)
+        else:
+            date += "-" + str(day)
+    else:
+        date = "2020-" + str(month)
+        if day < 10:
+            date += "-0" + str(day)
+        else:
+            date += "-" + str(day)
+    return date, month, day
+
+
+def check_data(data, countries):
+    month, day = 1, 22
+    for i in range(len(data.keys()) - 1):
+        prev_date, _, _ = generate_date(month, day)
+        day += 1
+        date, month, day = generate_date(month, day)
+        for country in countries:
+            for classification in ["Infections", "Deaths", "Recovered", "Tests"]:
+                if data[date][country][classification] < data[prev_date][country][classification]:
+                    data[date][country][classification] = data[prev_date][country][classification]
+    return data
+
+
 def create_csv(filename, data):
     with open(filename, "w") as f:
         f.write("Date,Country,Infections,Recovered,Deaths,Tests\n")
@@ -145,5 +163,6 @@ if __name__ == '__main__':
     all_data = get_data_from_jhu("time_series_covid19_deaths_global.csv", all_data, countries_regions)
     all_data = get_data_from_jhu("time_series_covid19_recovered_global.csv", all_data, countries_regions)
     all_data = get_data_from_oxford("full-list-total-tests-for-covid-19.csv", all_data, countries_regions)
+    all_data = check_data(all_data, countries_regions)
 
     create_csv("newestCSV.csv", all_data)

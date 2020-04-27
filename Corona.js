@@ -209,7 +209,7 @@ function render(data) {
     function countrySlice(data){
         data.forEach(
             function(item){
-                dateFormat = new Date(item.Date);
+                dateFormat = new Date(item.Date + " 23:59:59");
                 if (startDate && endDate) {
                     if (dateFormat >= startDateFormat && dateFormat <= endDateFormat) {
                         if (item.Country == country1) {

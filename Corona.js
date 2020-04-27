@@ -18,7 +18,7 @@ var days = 0;
 var height = bar_height * 200;
 var labelArea = 160;
 var maxWidth;
-var minDateFormat = new Date("2020-12-31 00:00:00");    
+var minDateFormat = new Date("2020-12-31 23:59:59");
 var maxDateFormat = new Date("2020-01-01 00:00:00");
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 var padding = 5;
@@ -104,11 +104,11 @@ function generateItems(){
             if ($.inArray(item.Country,countries) == -1){
                 countries.push(item.Country);
             }
-            if (new Date(item.Date) < minDateFormat) {
-                minDateFormat = new Date(item.Date);
+            if (new Date(item.Date + " 23:59:59") < minDateFormat) {
+                minDateFormat = new Date(item.Date + " 23:59:59");
             }
-            if (new Date(item.Date) > maxDateFormat) {
-                maxDateFormat = new Date(item.Date);
+            if (new Date(item.Date + " 23:59:59") > maxDateFormat) {
+                maxDateFormat = new Date(item.Date + " 23:59:59");
             }
         });
 
@@ -124,9 +124,9 @@ function generateItems(){
         country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Spain";
         localStorage.setItem("right", country2);
         startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : minDateFormat.Format("yyyy-MM-dd");
-        startDateFormat = new Date(startDate + " 00:00:00");
+        startDateFormat = new Date(startDate + " 23:59:59");
         endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : maxDateFormat.Format("yyyy-MM-dd");
-        endDateFormat = new Date(endDate + " 00:00:00");
+        endDateFormat = new Date(endDate + " 23:59:59");
         scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
 
         days = getDaysBetween(startDate, endDate);

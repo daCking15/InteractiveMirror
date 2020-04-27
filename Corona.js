@@ -18,7 +18,7 @@ var days = 0;
 var height = bar_height * 200;
 var labelArea = 160;
 var maxWidth;
-var minDateFormat = new Date("2020-12-31 00:00:00");
+var minDateFormat = new Date("2020-12-31 00:00:00");    
 var maxDateFormat = new Date("2020-01-01 00:00:00");
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 var padding = 5;
@@ -77,6 +77,27 @@ window.onload = function(){
     mirror();
 }
 
+function generateDateSlider(){
+    $("#dateSlider").dateRangeSlider({
+        bounds: {min: new Date(2020, minDateFormat.getMonth(), 1), max: new Date(2020, maxDateFormat.getMonth(), 31)},
+        defaultValues: {min: startDateFormat, max: endDateFormat},
+        scales: [{
+            first: function(value){ return value; },
+            end: function(value) {return value; },
+            next: function(value){
+                var next = new Date(value);
+                return new Date(next.setMonth(value.getMonth() + 1));
+            },
+            label: function(value){
+                return months[value.getMonth()];
+            },
+            format: function(tickContainer, tickStart, tickEnd){
+                tickContainer.addClass("myCustomClass");
+            }
+        }]
+    });
+}
+
 function generateItems(){
     d3.csv(fileName, function(data){
         data.forEach(function(item){
@@ -112,32 +133,20 @@ function generateItems(){
         height = bar_height * days * 2;
         y = d3.scale.ordinal().rangeBands([textHeight, height]);
 
-        $("#dateSlider").dateRangeSlider({
-            bounds: {min: new Date(2020, minDateFormat.getMonth(), 1), max: new Date(2020, maxDateFormat.getMonth(), 31)},
-            defaultValues: {min: startDateFormat, max: endDateFormat},
-            scales: [{
-                first: function(value){ return value; },
-                end: function(value) {return value; },
-                next: function(value){
-                    var next = new Date(value);
-                    return new Date(next.setMonth(value.getMonth() + 1));
-                },
-                label: function(value){
-                    return months[value.getMonth()];
-                },
-                format: function(tickContainer, tickStart, tickEnd){
-                    tickContainer.addClass("myCustomClass");
-                }
-            }]
-        });
+        generateDateSlider();
 
         $("#dateSlider").bind("valuesChanged", function(e, data){
-            startDateFormat = data.values.min;
-            endDateFormat = data.values.max;
+            startDateFormat = (data.values.min < minDateFormat) ? minDateFormat : data.values.min;
+            endDateFormat = (data.values.max > maxDateFormat) ? maxDateFormat : data.values.max;
             startDate = startDateFormat.Format("yyyy-MM-dd");
             endDate = endDateFormat.Format("yyyy-MM-dd")
             $("#startDate").val(startDate);
             $("#endDate").val(endDate);
+
+            if (data.values.min < minDateFormat || data.values.max > maxDateFormat) {
+                $(this).dateRangeSlider("destroy");
+                generateDateSlider();
+            }
         });
 
         $('#changeLeft').val(country1);

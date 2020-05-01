@@ -119,15 +119,15 @@ function generateItems(){
         });
 
         // obtain values from url parameters
-        country1 = ($.getUrlParam("country1")) ? $.getUrlParam("country1") : "Italy";
+        country1 = ($.getUrlParam("country1")) ? $.getUrlParam("country1") : "China";
         localStorage.setItem("left", country1);
-        country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "Spain";
+        country2 = ($.getUrlParam("country2")) ? $.getUrlParam("country2") : "China";
         localStorage.setItem("right", country2);
         startDate = ($.getUrlParam("startDate")) ? $.getUrlParam("startDate") : minDateFormat.Format("yyyy-MM-dd");
         startDateFormat = new Date(startDate + " 23:59:59");
         endDate = ($.getUrlParam("endDate")) ? $.getUrlParam("endDate") : maxDateFormat.Format("yyyy-MM-dd");
         endDateFormat = new Date(endDate + " 23:59:59");
-        scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.001;
+        scaleFactor = ($.getUrlParam("scaleFactor")) ? $.getUrlParam("scaleFactor") : 0.01;
 
         days = getDaysBetween(startDate, endDate);
         height = bar_height * days * 2;
